@@ -61,6 +61,8 @@ import time
 #importaçoes pessoais-------------->
 from mainwindow import Ui_MainWindow
 from funcoes import menus
+from  funcoes import home
+
 
 class MainWindow(QMainWindow):
     def movimentoMouse(self):
@@ -87,15 +89,15 @@ class MainWindow(QMainWindow):
         self.oldPos = event.globalPos()
 
 
-    #limpa os campos do painel bd
-    def limpaTitulodb(self,event):
-        self.ui.db_texto_titulo.clear()
-    def limpaLinkdb(self,event):
-        self.ui.db_texto_link.clear()
-    def limpaCodigodb(self,event):
-        self.ui.db_texto_codigo.clear()
-    def limpaObservacaodb(self,event):
-        self.ui.db_texto_observacao.clear()
+    #limpa os campos da homepage
+    def limpaNomedb(self,event):
+        self.ui.input_nome_database_home.clear()
+    def limpaUserdb(self,event):
+        self.ui.input_user_database_home.clear()
+    def limpaSenhadb(self,event):
+        self.ui.input_senha_database_home.clear()
+    def limpaHostdb(self,event):
+        self.ui.input_host_database_home.clear()
 
 
 
@@ -110,6 +112,8 @@ class MainWindow(QMainWindow):
         self.movimentoMouse()
         menus.menusJanela(self)
         #funcoes------------>
+        home.funcoesHome(self)
+
 
 
 
