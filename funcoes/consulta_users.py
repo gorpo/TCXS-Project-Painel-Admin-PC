@@ -16,7 +16,7 @@ from PyQt5.QtSql import QSqlDatabase, QSqlQuery, QSqlTableModel
 from PyQt5.QtWidgets import QTableView, QApplication, QMessageBox
 import sqlite3
 from datetime import datetime
-
+from funcoes import conexao
 
 
 def funcoesConsultaUsers(self):
@@ -37,29 +37,30 @@ def consultaUser(self):
     self.hostMysql_user = self.tabela_user[0][4]
     self.conexao_user.close()
     #login mysql
-    self.db = QtSql.QSqlDatabase.addDatabase('QMYSQL')
-    self.db.setHostName(self.hostMysql_user)
-    self.db.setDatabaseName(self.databaseMysql_user)
-    self.db.setUserName(self.usuarioMysql_user)
-    self.db.setPassword(self.senhaMysql_user)
-    self.ok = self.db.open()
-    if not self.ok: print(self.db.lastError().text())
+    self.db_user = QtSql.QSqlDatabase.addDatabase('QMYSQL')
+    self.db_user.setHostName(self.hostMysql_user)
+    self.db_user.setDatabaseName(self.databaseMysql_user)
+    self.db_user.setUserName(self.usuarioMysql_user)
+    self.db_user.setPassword(self.senhaMysql_user)
+    self.ok = self.db_user.open()
+    if not self.ok: print(self.db_user.lastError().text())
     # else: print("connected")
-    self.query = QSqlQuery(self.db)
-    self.model = QtSql.QSqlTableModel()
+    self.query_user = QSqlQuery(conexao.db_user)
+    self.model_user = QtSql.QSqlTableModel()
     #seleciona a tabela
     self.tabela_pesquisar_usuario = f'user_{self.ui.input_pesquisa_acessos_usuarios.text()}'
-    self.model.setTable(self.tabela_pesquisar_usuario)
-    self.model.setEditStrategy(QtSql.QSqlTableModel.OnFieldChange)
-    self.model.select()
+    self.model_user.setTable(self.tabela_pesquisar_usuario)
+    self.model_user.setEditStrategy(QtSql.QSqlTableModel.OnFieldChange)
+    self.model_user.select()
     #popula as tabelas
-    self.model.setHeaderData(0, QtCore.Qt.Horizontal, "Usuario")
-    self.model.setHeaderData(1, QtCore.Qt.Horizontal, "Senha")
-    self.model.setHeaderData(2, QtCore.Qt.Horizontal, "IP")
-    self.model.setHeaderData(3, QtCore.Qt.Horizontal, "Cadastrado")
+    self.model_user.setHeaderData(0, QtCore.Qt.Horizontal, "Usuario")
+    self.model_user.setHeaderData(1, QtCore.Qt.Horizontal, "Senha")
+    self.model_user.setHeaderData(2, QtCore.Qt.Horizontal, "IP")
+    self.model_user.setHeaderData(3, QtCore.Qt.Horizontal, "Cadastrado")
     #tabela de dados
-    self.ui.tabela_pesquisa_acessos_usuarios.setModel(self.model)
-    self.i = self.model.rowCount()
+    self.ui.tabela_pesquisa_acessos_usuarios.setModel(self.model_user)
+    self.i_user = self.model_user.rowCount()
+    self.db_user.close()
 
 
 

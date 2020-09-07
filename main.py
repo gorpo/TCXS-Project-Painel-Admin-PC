@@ -66,6 +66,8 @@ from funcoes import menus
 from funcoes import home
 from funcoes import cadastro_users
 from funcoes import consulta_users
+#from funcoes import cadastro_infos
+
 
 class MainWindow(QMainWindow):
     def movimentoMouse(self):
@@ -113,7 +115,9 @@ class MainWindow(QMainWindow):
  #limpa campos input_pesquisa_acessos_usuarios
     def limpaPesquisaAcessoUsers(self, event):
         self.ui.input_pesquisa_acessos_usuarios.clear()
-
+#limpa campos input_playstation_infos
+    def limpaInputInfos(self, event):
+        self.ui.input_playstation_infos.clear()
 
 
     def __init__(self):
@@ -128,6 +132,7 @@ class MainWindow(QMainWindow):
         home.funcoesHome(self)
         cadastro_users.funcoesCadastroUsers(self)
         consulta_users.funcoesConsultaUsers(self)
+        #cadastro_infos.funcoesCadastroInfos(self)
 
 
 

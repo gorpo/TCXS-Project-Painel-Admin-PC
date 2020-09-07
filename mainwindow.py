@@ -2,10 +2,9 @@
 
 # Form implementation generated from reading ui file 'mainwindow.ui'
 #
-# Created by: PyQt5 UI code generator 5.14.1
+# Created by: PyQt5 UI code generator 5.12
 #
 # WARNING! All changes made in this file will be lost!
-
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
@@ -62,7 +61,7 @@ class Ui_MainWindow(object):
         self.frame_informacoes.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_informacoes.setObjectName("frame_informacoes")
         self.label_6 = QtWidgets.QLabel(self.frame_informacoes)
-        self.label_6.setGeometry(QtCore.QRect(10, 10, 192, 21))
+        self.label_6.setGeometry(QtCore.QRect(10, 0, 192, 41))
         self.label_6.setMinimumSize(QtCore.QSize(192, 0))
         self.label_6.setStyleSheet("QLabel{\n"
 "    background-color: transparent;\n"
@@ -1259,8 +1258,16 @@ class Ui_MainWindow(object):
         self.input_playstation_infos.setClearButtonEnabled(False)
         self.input_playstation_infos.setObjectName("input_playstation_infos")
         self.verticalLayout_19.addWidget(self.input_playstation_infos)
-        self.btn_enviar_playstation_infos = QtWidgets.QPushButton(self.frame_inputs_playstation_infos)
-        self.btn_enviar_playstation_infos.setStyleSheet("QPushButton {\n"
+        self.frame_btns_info_home = QtWidgets.QFrame(self.frame_inputs_playstation_infos)
+        self.frame_btns_info_home.setMinimumSize(QtCore.QSize(0, 54))
+        self.frame_btns_info_home.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.frame_btns_info_home.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_btns_info_home.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_btns_info_home.setObjectName("frame_btns_info_home")
+        self.horizontalLayout_15 = QtWidgets.QHBoxLayout(self.frame_btns_info_home)
+        self.horizontalLayout_15.setObjectName("horizontalLayout_15")
+        self.btn_adiciona_infos = QtWidgets.QPushButton(self.frame_btns_info_home)
+        self.btn_adiciona_infos.setStyleSheet("QPushButton {\n"
 "    background-color:transparent;\n"
 "    background-repeat: no-repeat;\n"
 "    background-position: center;\n"
@@ -1275,8 +1282,45 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: rgb(130,0,0);\n"
 "}")
-        self.btn_enviar_playstation_infos.setObjectName("btn_enviar_playstation_infos")
-        self.verticalLayout_19.addWidget(self.btn_enviar_playstation_infos)
+        self.btn_adiciona_infos.setObjectName("btn_adiciona_infos")
+        self.horizontalLayout_15.addWidget(self.btn_adiciona_infos)
+        self.btn_atualiza_infos = QtWidgets.QPushButton(self.frame_btns_info_home)
+        self.btn_atualiza_infos.setStyleSheet("QPushButton {\n"
+"    background-color:transparent;\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: center;\n"
+"    border: 2px solid rgb(45,45,45);\n"
+"border-radius: 5px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    font: 20px SegoeUIl, bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(173,0,0);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(130,0,0);\n"
+"}")
+        self.btn_atualiza_infos.setObjectName("btn_atualiza_infos")
+        self.horizontalLayout_15.addWidget(self.btn_atualiza_infos)
+        self.btn_deleta_infos = QtWidgets.QPushButton(self.frame_btns_info_home)
+        self.btn_deleta_infos.setStyleSheet("QPushButton {\n"
+"    background-color:transparent;\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: center;\n"
+"    border: 2px solid rgb(45,45,45);\n"
+"border-radius: 5px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    font: 20px SegoeUIl, bold;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(173,0,0);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(130,0,0);\n"
+"}")
+        self.btn_deleta_infos.setObjectName("btn_deleta_infos")
+        self.horizontalLayout_15.addWidget(self.btn_deleta_infos)
+        self.verticalLayout_19.addWidget(self.frame_btns_info_home)
         self.verticalLayout_11.addWidget(self.frame_inputs_playstation_infos)
         self.frame_tabela_playstation_infos = QtWidgets.QFrame(self.pagina_playstation_infos)
         self.frame_tabela_playstation_infos.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -5313,7 +5357,9 @@ class Ui_MainWindow(object):
         self.titulo_playstation_infos.setText(_translate("MainWindow", "CADASTRO DE INFORMAÇÕES DA HOMEPAGE"))
         self.ex2_playstation_infos.setText(_translate("MainWindow", "- estas informações aparecem logo após a tela de login do usuário exibindo avisos importantes."))
         self.input_playstation_infos.setText(_translate("MainWindow", "Informação da homepage"))
-        self.btn_enviar_playstation_infos.setText(_translate("MainWindow", "enviar"))
+        self.btn_adiciona_infos.setText(_translate("MainWindow", "adiciona"))
+        self.btn_atualiza_infos.setText(_translate("MainWindow", "atualiza"))
+        self.btn_deleta_infos.setText(_translate("MainWindow", "deleta"))
         self.ex3__psp.setText(_translate("MainWindow", "- insira a content id, caso não tenha digite qualquer coisa jamais deixe o campo vazio."))
         self.ex1__psp.setText(_translate("MainWindow", "- insira o titulo do jogo de PlayStation PSP."))
         self.ex2__psp.setText(_translate("MainWindow", "<html><head/><body><p>- insira a descrição, atenção: para pular linhas use a tag html.<br/></p></body></html>"))
@@ -5599,6 +5645,8 @@ class Ui_MainWindow(object):
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.rodape_desenvolvedor.setText(_translate("MainWindow", "TCXS Project | 2020"))
         self.rodape_versao.setText(_translate("MainWindow", "v1.0  "))
+
+
 import files_rc_rc
 
 
