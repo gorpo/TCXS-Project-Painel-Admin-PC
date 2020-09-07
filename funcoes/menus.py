@@ -104,8 +104,6 @@ def paginaHome(self):
     self.ui.stackedWidget.setCurrentIndex(0)
 #cadastro user--------------------------->
 def paginaCadastroUser(self):
-    from funcoes import cadastro_users
-    cadastro_users.addDadosMysqlToDbUser(self)
     self.ui.stackedWidget.setCurrentIndex(1)
 
 #pagina python--------------------->

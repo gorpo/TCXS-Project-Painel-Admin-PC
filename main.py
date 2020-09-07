@@ -64,7 +64,8 @@ import time
 from mainwindow import Ui_MainWindow
 from funcoes import menus
 from funcoes import home
-from funcoes import  cadastro_users
+from funcoes import cadastro_users
+from funcoes import consulta_users
 
 class MainWindow(QMainWindow):
     def movimentoMouse(self):
@@ -109,7 +110,9 @@ class MainWindow(QMainWindow):
     def limpaSenhaCadastro(self, event):
         self.ui.input_senha_user.clear()
 
-
+ #limpa campos input_pesquisa_acessos_usuarios
+    def limpaPesquisaAcessoUsers(self, event):
+        self.ui.input_pesquisa_acessos_usuarios.clear()
 
 
 
@@ -124,6 +127,7 @@ class MainWindow(QMainWindow):
         #funcoes------------>
         home.funcoesHome(self)
         cadastro_users.funcoesCadastroUsers(self)
+        consulta_users.funcoesConsultaUsers(self)
 
 
 

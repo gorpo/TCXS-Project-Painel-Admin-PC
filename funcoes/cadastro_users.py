@@ -24,28 +24,24 @@ def funcoesCadastroUsers(self):
     self.ui.input_nome_user.mousePressEvent = self.limpaNomeCadastro
     self.ui.input_username_user.mousePressEvent = self.limpaUserCadastro
     self.ui.input_senha_user.mousePressEvent = self.limpaSenhaCadastro
-    #self.ui.btn_database_home.clicked.connect(lambda: addDadosMysqlToDbUser(self))
-    addDadosMysqlToDbUser(self)
+    bancoDadosUser(self)
 
 
 
 
 
-def addDadosMysqlToDbUser(self):
+
+
+def bancoDadosUser(self):
     self.conexao_user = sqlite3.connect('database.db')
-    #self.conexao_user.row_factory = sqlite3.Row
     self.cursor_user = self.conexao_user.cursor()
-    self.cursor_user.execute(""" SELECT * FROM dados_mysql; """)
+    self.cursor_user.execute(' SELECT * FROM dados_mysql; ')
     self.tabela_user = self.cursor_user.fetchall()
     self.databaseMysql_user = self.tabela_user[0][1]
     self.usuarioMysql_user = self.tabela_user[0][2]
     self.senhaMysql_user = self.tabela_user[0][3]
     self.hostMysql_user = self.tabela_user[0][4]
-    #self.conexao.commit()
     self.conexao_user.close()
-    bancoDadosUser(self)
-
-def bancoDadosUser(self):
     self.db = QtSql.QSqlDatabase.addDatabase('QMYSQL')
     self.db.setHostName(self.hostMysql_user)
     self.db.setDatabaseName(self.databaseMysql_user)
@@ -67,7 +63,7 @@ def bancoDadosUser(self):
     self.model.setEditStrategy(QtSql.QSqlTableModel.OnFieldChange)
     self.model.select()
     self.model.setHeaderData(0, QtCore.Qt.Horizontal, "Id")
-    self.model.setHeaderData(1, QtCore.Qt.Horizontal, "Username")
+    self.model.setHeaderData(1, QtCore.Qt.Horizontal, "Usuario")
     self.model.setHeaderData(2, QtCore.Qt.Horizontal, "Senha")
     self.model.setHeaderData(3, QtCore.Qt.Horizontal, "Nome")
     self.model.setHeaderData(4, QtCore.Qt.Horizontal, "Cadastro")
@@ -76,28 +72,32 @@ def bancoDadosUser(self):
     self.ui.tabela_dados_usuarios.setModel(self.model)
     self.i = self.model.rowCount()
     # botoes das açoes
-    self.ui.btn_adiciona_user.clicked.connect(lambda: addToDb(self))
-    self.ui.btn_atualiza_user.clicked.connect(lambda: updaterow(self))
-    self.ui.btn_deleta_user.clicked.connect(lambda:delrow(self))
+    self.ui.btn_adiciona_user.clicked.connect(lambda: addToDbUser(self))
+    self.ui.btn_atualiza_user.clicked.connect(lambda: updaterowUser(self))
+    self.ui.btn_deleta_user.clicked.connect(lambda: delrowUser(self))
 
 
 
-def addToDb(self):
-    #print(self.i)
-    self.hoje = datetime.now()
-    self.data_formatada = self.hoje.strftime('%Y-%m-%d %H:%M:%S')
-    #insere os dados na database
-    self.model.insertRows(self.i,1)
-    self.model.setData(self.model.index(self.i,1),self.ui.input_username_user.text())
-    self.model.setData(self.model.index(self.i, 2), self.ui.input_senha_user.text())
-    self.model.setData(self.model.index(self.i,3), self.ui.input_nome_user.text())
-    self.model.setData(self.model.index(self.i,4), self.data_formatada)
-    self.model.setData(self.model.index(self.i, 5), 'user')
-    self.model.submitAll()
-    self.i += 1
+
+def addToDbUser(self):
+    print(self.i)
+    if self.ui.tabela_dados_usuarios.currentIndex().row() == self.ui.tabela_dados_usuarios.currentIndex().row() +1:
+        pass
+    else:
+        self.hoje = datetime.now()
+        self.data_formatada = self.hoje.strftime('%Y-%m-%d %H:%M:%S')
+        #insere os dados na database
+        self.model.insertRows(self.i,1)
+        self.model.setData(self.model.index(self.i,1),self.ui.input_username_user.text())
+        self.model.setData(self.model.index(self.i, 2), self.ui.input_senha_user.text())
+        self.model.setData(self.model.index(self.i,3), self.ui.input_nome_user.text())
+        self.model.setData(self.model.index(self.i,4), self.data_formatada)
+        self.model.setData(self.model.index(self.i, 5), 'user')
+        self.model.submitAll()
+        self.i += 1
 
 
-def delrow(self):
+def delrowUser(self):
     if self.ui.tabela_dados_usuarios.currentIndex().row() > -1:
         self.model.removeRow(self.ui.tabela_dados_usuarios.currentIndex().row())
         self.i -= 1
@@ -106,7 +106,7 @@ def delrow(self):
         QMessageBox.question(self,'Mensagem', "Selecione uma linha para deletar, clique sobre o numero a esquerda na tabela correspondente a linha.", QMessageBox.Ok)
         self.show()
 
-def updaterow(self):
+def updaterowUser(self):
     self.hoje = datetime.now()
     self.data_formatada = self.hoje.strftime('%Y-%m-%d %H:%M:%S')
     if self.ui.tabela_dados_usuarios.currentIndex().row() > -1:
