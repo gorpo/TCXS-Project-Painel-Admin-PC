@@ -1,0 +1,7 @@
+
+Bpython:S125"Remove this commented out code.(ú½ïŒÿÿÿÿÿ8Á×ª‰ .
+|python:S117"YRename this local variable "fileName" to match the regular expression ^[_a-z][a-z0-9_]*$.(‚åÕÏýÿÿÿÿ8Á×ª‰ .
+}python:S1542
+"YRename function "selecionarImagem" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(§× ÷ÿÿÿÿÿ8Á×ª‰ .
+vpython:S1542$"WRename function "ativaDeepNudes" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(«çæµ8Á×ª‰ .
+[python:S5754!"<Specify an exception class to catch or reraise the exception(ˆÊÉ·8Á×ª‰ .

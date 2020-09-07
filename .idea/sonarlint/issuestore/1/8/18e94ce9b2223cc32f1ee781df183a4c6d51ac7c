@@ -1,0 +1,11 @@
+
+zpython:S1542$"VRename function "controleTimer" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(¥É´Ÿùÿÿÿÿ8Òªø‡ .
+upython:S15426"QRename function "bateFoto" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(Çå¤ãùÿÿÿÿ8Òªø‡ .
+upython:S1542"VRename function "funcoesCamera" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(èÀ¼•8ÅùŽÔ¡.
+[python:S5754?"<Specify an exception class to catch or reraise the exception(ˆÊÉ·8ÅùŽÔ¡.
+[python:S5754."<Specify an exception class to catch or reraise the exception(ˆÊÉ·8ÅùŽÔ¡.
+[python:S5754 "<Specify an exception class to catch or reraise the exception(ˆÊÉ·8Òªø‡ .
+xpython:S117"URename this local variable "qImg" to match the regular expression ^[_a-z][a-z0-9_]*$.(«™žÜúÿÿÿÿ8Òªø‡ .
+}python:S1542"YRename function "visualizarCamera" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(çÍˆÜøÿÿÿÿ8Òªø‡ .
+;python:S2772""Remove this unneeded "pass".(ã‘Û¾8ÅùŽÔ¡.
+|python:S117<"YRename this local variable "fileName" to match the regular expression ^[_a-z][a-z0-9_]*$.(ˆûõžÿÿÿÿÿ8Œ„Úˆ .

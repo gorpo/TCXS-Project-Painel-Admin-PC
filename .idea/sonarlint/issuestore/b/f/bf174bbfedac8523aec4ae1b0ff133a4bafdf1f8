@@ -1,0 +1,14 @@
+
+npython:S117'"WRename this local variable "startY" to match the regular expression ^[_a-z][a-z0-9_]*$.(‡‚‰¡
+lpython:S117("URename this local variable "endY" to match the regular expression ^[_a-z][a-z0-9_]*$.(¬Ã­€
+4python:S2772B"Remove this unneeded "pass".(ã‘Û¾
+lpython:S1175"URename this local variable "qImg" to match the regular expression ^[_a-z][a-z0-9_]*$.(úÀú
+lpython:S117("URename this local variable "endX" to match the regular expression ^[_a-z][a-z0-9_]*$.(¬Ã­€
+xpython:S1542"[Rename function "funcoesRecognition" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(–ü¶Èúÿÿÿÿ
+wpython:S1542"ZRename function "visualizarPessoas" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(êÀš¦ÿÿÿÿÿ
+lpython:S117U"URename this local variable "qImg" to match the regular expression ^[_a-z][a-z0-9_]*$.(úÀú
+npython:S117'"WRename this local variable "startX" to match the regular expression ^[_a-z][a-z0-9_]*$.(‡‚‰¡
+Tpython:S5754@"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+xpython:S1542E"[Rename function "visualizarCompleto" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(·»¯¶øÿÿÿÿ
+Tpython:S5754`"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+4python:S2772b"Remove this unneeded "pass".(ã‘Û¾

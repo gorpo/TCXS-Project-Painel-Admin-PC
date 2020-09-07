@@ -1,0 +1,5 @@
+
+qpython:S1542"YRename function "funcoesWindowsSO" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(Õè±€
+qpython:S1542"YRename function "fechaMenuIniciar" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(¾ú¾‰
+upython:S1542"XRename function "abreMenuIniciar" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(™Û¾æşÿÿÿÿ
+bpython:S3827"CQtCore is not defined. Change its name or define it before using it(®Ûï8ÿìÓ¡.

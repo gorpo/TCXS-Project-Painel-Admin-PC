@@ -1,0 +1,65 @@
+
+cpython:S1192B"KDefine a constant instead of duplicating this literal "QLabel{\n" 14 times.(œ™“§
+npython:S1192ö"PDefine a constant instead of duplicating this literal "QPushButton {\n" 3 times.(“·ÒÍüÿÿÿÿ
+qpython:S116†"YRename this field "verticalLayout_13" to match the regular expression ^[_a-z][_a-z0-9]*$.(È¸ˆç
+upython:S116ß"XRename this field "verticalLayout_7" to match the regular expression ^[_a-z][_a-z0-9]*$.(„¼éÛúÿÿÿÿ
+xpython:S116˜"[Rename this field "horizontalLayout_19" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ş­† şÿÿÿÿ
+ppython:S116Æ"XRename this field "verticalLayout_3" to match the regular expression ^[_a-z][_a-z0-9]*$.(èµ
+jpython:S100"NRename method "setupUi" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(ÂéÇ´ÿÿÿÿÿ
+qpython:S116İ"ZRename this field "horizontalLayout_6" to match the regular expression ^[_a-z][_a-z0-9]*$.(½£ıV
+ppython:S116Ê"XRename this field "verticalLayout_6" to match the regular expression ^[_a-z][_a-z0-9]*$.(ë«ÁÎ
+ppython:S116”"XRename this field "verticalLayout_9" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ñ¼¬í
+wpython:S116«"ZRename this field "horizontalLayout_8" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ç¾¯×ûÿÿÿÿ
+ypython:S116ˆ"aRename this field "textBrowser_bot_manicomio" to match the regular expression ^[_a-z][_a-z0-9]*$.(€ØàÍ
+spython:S116"[Rename this field "horizontalLayout_17" to match the regular expression ^[_a-z][_a-z0-9]*$.(Šã¤™
+lpython:S1192ì
+"NDefine a constant instead of duplicating this literal "QLineEdit{\n" 10 times.(É¬Œÿıÿÿÿÿ
+jpython:S1192¥"LDefine a constant instead of duplicating this literal "QFrame {\n" 13 times.(†¾§øøÿÿÿÿ
+rpython:S116"VRename this field "verticalLayout" to match the regular expression ^[_a-z][_a-z0-9]*$.(ï”öşÿÿÿÿ
+lpython:S116Å"URename this field "stackedWidget" to match the regular expression ^[_a-z][_a-z0-9]*$.(Òéê'
+|python:S1192”"cDefine a constant instead of duplicating this literal "background-color: rgb(35, 35, 35);" 3 times.(ıô¡
+qpython:S116•"YRename this field "verticalLayout_15" to match the regular expression ^[_a-z][_a-z0-9]*$.(ñˆ‰™
+npython:S1192©"PDefine a constant instead of duplicating this literal "QPushButton {\n" 3 times.(ÖĞåÕúÿÿÿÿ
+wpython:S116Î"ZRename this field "stackedWidget_home" to match the regular expression ^[_a-z][_a-z0-9]*$.(¨Œˆ˜ùÿÿÿÿ
+qpython:S116è"YRename this field "verticalLayout_16" to match the regular expression ^[_a-z][_a-z0-9]*$.(³Ÿ§
+wpython:S116"ZRename this field "horizontalLayout_9" to match the regular expression ^[_a-z][_a-z0-9]*$.(¥©²úÿÿÿÿ
+upython:S116Æ
+"XRename this field "verticalLayout_8" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÄÙµœøÿÿÿÿ
+qpython:S116õ"YRename this field "verticalLayout_10" to match the regular expression ^[_a-z][_a-z0-9]*$.(¯€åò
+wpython:S116ï"ZRename this field "horizontalLayout_4" to match the regular expression ^[_a-z][_a-z0-9]*$.(ş°™‡øÿÿÿÿ
+jpython:S116¹"SRename this field "textBrowser" to match the regular expression ^[_a-z][_a-z0-9]*$.(‰òÑ
+rpython:S116¾"[Rename this field "horizontalLayout_11" to match the regular expression ^[_a-z][_a-z0-9]*$.(öİˆ)
+xpython:S116‹
+"[Rename this field "horizontalLayout_15" to match the regular expression ^[_a-z][_a-z0-9]*$.(”ˆÕ°ıÿÿÿÿ
+npython:S1192í"PDefine a constant instead of duplicating this literal "QPushButton {\n" 5 times.(Çü“ôıÿÿÿÿ
+kpython:S1192Æ"MDefine a constant instead of duplicating this literal "camera local" 3 times.(Ï·ËÜşÿÿÿÿ
+ypython:S1192Ñ"`Define a constant instead of duplicating this literal "background-color: rgb(0, 0, 0);" 3 times.(î½«Á
+jpython:S1192"QDefine a constant instead of duplicating this literal "QPushButton {\n" 13 times.(Úª…ô
+npython:S101"RRename class "Ui_MainWindow" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.( Ìñıùÿÿÿÿ
+ppython:S116¡"XRename this field "verticalLayout_4" to match the regular expression ^[_a-z][_a-z0-9]*$.(öİë•
+qpython:S116È"YRename this field "verticalLayout_14" to match the regular expression ^[_a-z][_a-z0-9]*$.(¹÷ì¼
+spython:S116­	"[Rename this field "horizontalLayout_14" to match the regular expression ^[_a-z][_a-z0-9]*$.(»’‰
+xpython:S116Ó
+"[Rename this field "horizontalLayout_13" to match the regular expression ^[_a-z][_a-z0-9]*$.(ëíÃ±şÿÿÿÿ
+xpython:S116Ã"[Rename this field "horizontalLayout_10" to match the regular expression ^[_a-z][_a-z0-9]*$.(ùñ»Íıÿÿÿÿ
+spython:S116ö"[Rename this field "horizontalLayout_18" to match the regular expression ^[_a-z][_a-z0-9]*$.(îàñ
+npython:S1192ş"PDefine a constant instead of duplicating this literal "QRadioButton{\n" 6 times.(Å´Š’ıÿÿÿÿ
+spython:S116Ó"[Rename this field "horizontalLayout_12" to match the regular expression ^[_a-z][_a-z0-9]*$.(¼Äµ¼
+spython:S117ª"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(”«Àşÿÿÿÿ
+vpython:S116	"YRename this field "verticalLayout_11" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÓšŸòøÿÿÿÿ
+qpython:S100ª"TRename method "retranslateUi" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(”«Àşÿÿÿÿ
+qpython:S116æ"TRename this field "botManicomio" to match the regular expression ^[_a-z][_a-z0-9]*$.(İ¥ÅÄøÿÿÿÿ
+{python:S1192"cDefine a constant instead of duplicating this literal "background-color: rgb(31, 31, 31);" 3 times.(·Á†Š
+~python:S1192$"aDefine a constant instead of duplicating this literal "background-color: rgb(31,31,31);" 5 times.(±æÑüÿÿÿÿ
+opython:S1192º"QDefine a constant instead of duplicating this literal "face recognition" 3 times.(³äçüÿÿÿÿ
+upython:S116˜"XRename this field "horizontalLayout" to match the regular expression ^[_a-z][_a-z0-9]*$.(÷ ½òüÿÿÿÿ
+qpython:S116"ZRename this field "horizontalLayout_2" to match the regular expression ^[_a-z][_a-z0-9]*$.(—ÊÒ
+xpython:S116·"[Rename this field "horizontalLayout_16" to match the regular expression ^[_a-z][_a-z0-9]*$.(ûÕï£úÿÿÿÿ
+ppython:S116†"XRename this field "verticalLayout_5" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ö’ƒˆ
+rpython:S116ø"ZRename this field "horizontalLayout_3" to match the regular expression ^[_a-z][_a-z0-9]*$.(““ïâ
+rpython:S116ú"ZRename this field "horizontalLayout_7" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ï°êÁ
+vpython:S116û	"YRename this field "verticalLayout_12" to match the regular expression ^[_a-z][_a-z0-9]*$.(ªé¢ˆşÿÿÿÿ
+upython:S116é"XRename this field "verticalLayout_2" to match the regular expression ^[_a-z][_a-z0-9]*$.(ƒïØøÿÿÿÿ
+rpython:S117"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ
+wpython:S116Ï"ZRename this field "horizontalLayout_5" to match the regular expression ^[_a-z][_a-z0-9]*$.(¨¬şÄşÿÿÿÿ
+lpython:S116"PRename this field "menuTopo" to match the regular expression ^[_a-z][_a-z0-9]*$.(‚£à¯úÿÿÿÿ
