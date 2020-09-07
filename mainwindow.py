@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(773, 584)
+        MainWindow.resize(927, 710)
         self.janela_pai = QtWidgets.QWidget(MainWindow)
         self.janela_pai.setObjectName("janela_pai")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.janela_pai)
@@ -4898,7 +4898,7 @@ class Ui_MainWindow(object):
 "border: 2px solid  rgb(170,0,0);\n"
 "    color: rgb(170,0,0);\n"
 "}")
-        self.bot_token.setClearButtonEnabled(True)
+        self.bot_token.setClearButtonEnabled(False)
         self.bot_token.setObjectName("bot_token")
         self.horizontalLayout_19.addWidget(self.bot_token)
         self.bot_canalid = QtWidgets.QLineEdit(self.rodape_bot)
@@ -4918,7 +4918,7 @@ class Ui_MainWindow(object):
 "border: 2px solid  rgb(170,0,0);\n"
 "    color: rgb(170,0,0);\n"
 "}")
-        self.bot_canalid.setClearButtonEnabled(True)
+        self.bot_canalid.setClearButtonEnabled(False)
         self.bot_canalid.setObjectName("bot_canalid")
         self.horizontalLayout_19.addWidget(self.bot_canalid)
         self.bot_idpessoal = QtWidgets.QLineEdit(self.rodape_bot)
@@ -4938,7 +4938,7 @@ class Ui_MainWindow(object):
 "border: 2px solid  rgb(170,0,0);\n"
 "    color: rgb(170,0,0);\n"
 "}")
-        self.bot_idpessoal.setClearButtonEnabled(True)
+        self.bot_idpessoal.setClearButtonEnabled(False)
         self.bot_idpessoal.setObjectName("bot_idpessoal")
         self.horizontalLayout_19.addWidget(self.bot_idpessoal)
         self.verticalLayout_16.addWidget(self.rodape_bot)
@@ -5032,7 +5032,7 @@ class Ui_MainWindow(object):
         self.comboBox_databases.addItem("")
         self.comboBox_databases.addItem("")
         self.btn_verificar_databases = QtWidgets.QPushButton(self.frame_67_databases)
-        self.btn_verificar_databases.setGeometry(QtCore.QRect(400, 70, 258, 40))
+        self.btn_verificar_databases.setGeometry(QtCore.QRect(20, 120, 258, 40))
         self.btn_verificar_databases.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_verificar_databases.setStyleSheet("QPushButton {\n"
 "    background-color:transparent;\n"
@@ -5120,6 +5120,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_31 = QtWidgets.QHBoxLayout(self.frame_94_verifica_404)
         self.horizontalLayout_31.setObjectName("horizontalLayout_31")
         self.frame_96_verifica_404 = QtWidgets.QFrame(self.frame_94_verifica_404)
+        self.frame_96_verifica_404.setMinimumSize(QtCore.QSize(0, 160))
         self.frame_96_verifica_404.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_96_verifica_404.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_96_verifica_404.setObjectName("frame_96_verifica_404")
@@ -5174,7 +5175,7 @@ class Ui_MainWindow(object):
         self.comboBox_2_verifica_404.addItem("")
         self.comboBox_2_verifica_404.addItem("")
         self.btn_verifica_404 = QtWidgets.QPushButton(self.frame_96_verifica_404)
-        self.btn_verifica_404.setGeometry(QtCore.QRect(380, 70, 258, 40))
+        self.btn_verifica_404.setGeometry(QtCore.QRect(20, 120, 258, 40))
         self.btn_verifica_404.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_verifica_404.setStyleSheet("QPushButton {\n"
 "    background-color:transparent;\n"
@@ -5366,7 +5367,7 @@ class Ui_MainWindow(object):
         self.ex5_ps3.setText(_translate("MainWindow", "- faça o upload da imagem, caso esteja editando copie e cole o nome da imagem cadastrada."))
         self.ex6_ps3.setText(_translate("MainWindow", "- para atualizar preencha os dados normalmente, clique sobre o jogo na tabela  e em atualizar."))
         self.ex7_ps3.setText(_translate("MainWindow", "- somente remova os --- ( 3 traços) se for utilizar o link, caso contrário deixe exatamente como está."))
-        self.input_titulo_ps3.setText(_translate("MainWindow", "Titulo PSP"))
+        self.input_titulo_ps3.setText(_translate("MainWindow", "Titulo PS3"))
         self.input_descricao_ps3.setText(_translate("MainWindow", "Descrição | Usar tag <br> para pular linhas."))
         self.input_content_id_ps3.setText(_translate("MainWindow", "Content ID"))
         self.btn_upload_imagem_ps3.setText(_translate("MainWindow", "upload de imagem"))

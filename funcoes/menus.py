@@ -137,7 +137,7 @@ def paginaDatabase(self):
     self.ui.stackedWidget.setCurrentIndex(11)
 #pagina 404------------------->
 def pagina404(self):
-    self.ui.stackedWidget.setCurrentIndex(11)
+    self.ui.stackedWidget.setCurrentIndex(12)
 
 
 

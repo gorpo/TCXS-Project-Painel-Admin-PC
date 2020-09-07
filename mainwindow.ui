@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>773</width>
-    <height>584</height>
+    <width>927</width>
+    <height>710</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -4756,7 +4756,7 @@ border: 2px solid  rgb(170,0,0);
 }</string>
                       </property>
                       <property name="text">
-                       <string>Titulo PSP</string>
+                       <string>Titulo PS3</string>
                       </property>
                       <property name="echoMode">
                        <enum>QLineEdit::Normal</enum>
@@ -9212,7 +9212,7 @@ border: 2px solid  rgb(170,0,0);
                     <string>insira o token do bot</string>
                    </property>
                    <property name="clearButtonEnabled">
-                    <bool>true</bool>
+                    <bool>false</bool>
                    </property>
                   </widget>
                  </item>
@@ -9245,7 +9245,7 @@ border: 2px solid  rgb(170,0,0);
                     <string>insira id do canal do bot</string>
                    </property>
                    <property name="clearButtonEnabled">
-                    <bool>true</bool>
+                    <bool>false</bool>
                    </property>
                   </widget>
                  </item>
@@ -9278,7 +9278,7 @@ border: 2px solid  rgb(170,0,0);
                     <string>insira sua id do telegram</string>
                    </property>
                    <property name="clearButtonEnabled">
-                    <bool>true</bool>
+                    <bool>false</bool>
                    </property>
                   </widget>
                  </item>
@@ -9498,8 +9498,8 @@ border: 2px solid  rgb(170,0,0);
                    <widget class="QPushButton" name="btn_verificar_databases">
                     <property name="geometry">
                      <rect>
-                      <x>400</x>
-                      <y>70</y>
+                      <x>20</x>
+                      <y>120</y>
                       <width>258</width>
                       <height>40</height>
                      </rect>
@@ -9644,6 +9644,12 @@ border: 2px solid  rgb(170,0,0);
                 <layout class="QHBoxLayout" name="horizontalLayout_31">
                  <item>
                   <widget class="QFrame" name="frame_96_verifica_404">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>160</height>
+                    </size>
+                   </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
                    </property>
@@ -9781,8 +9787,8 @@ border: 2px solid  rgb(170,0,0);
                    <widget class="QPushButton" name="btn_verifica_404">
                     <property name="geometry">
                      <rect>
-                      <x>380</x>
-                      <y>70</y>
+                      <x>20</x>
+                      <y>120</y>
                       <width>258</width>
                       <height>40</height>
                      </rect>

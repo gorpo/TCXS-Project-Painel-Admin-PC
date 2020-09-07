@@ -85,6 +85,8 @@ class MainWindow(QMainWindow):
         # print(delta)
         self.move(self.x() + delta.x(), self.y() + delta.y())
         self.oldPos = event.globalPos()
+
+
     #limpa os campos do painel bd
     def limpaTitulodb(self,event):
         self.ui.db_texto_titulo.clear()
@@ -94,6 +96,9 @@ class MainWindow(QMainWindow):
         self.ui.db_texto_codigo.clear()
     def limpaObservacaodb(self,event):
         self.ui.db_texto_observacao.clear()
+
+
+
 
 
     def __init__(self):
