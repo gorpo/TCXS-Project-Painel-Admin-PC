@@ -66,7 +66,7 @@ def menuEsquerda(self):
     # botao homepage------------------------------------------>
     self.ui.botao_home.clicked.connect(lambda: paginaHome(self))
     # botao botao_cadastro_user---------------------------------------->
-    self.ui.botao_cadastro_user.clicked.connect(lambda: paginaCadastroUser(self))
+    self.ui.botao_cadastro_user.clicked.connect(lambda: paginaCadastroUser(self)  )
     #botao botao_verifica_user
     self.ui.botao_verifica_user.clicked.connect(lambda: paginaVerficaUser(self))
     #botao botao_infos_store---------------------------------------------->
@@ -104,7 +104,10 @@ def paginaHome(self):
     self.ui.stackedWidget.setCurrentIndex(0)
 #cadastro user--------------------------->
 def paginaCadastroUser(self):
+    from funcoes import cadastro_users
+    cadastro_users.addDadosMysqlToDbUser(self)
     self.ui.stackedWidget.setCurrentIndex(1)
+
 #pagina python--------------------->
 def paginaVerficaUser(self):
     self.ui.stackedWidget.setCurrentIndex(2)

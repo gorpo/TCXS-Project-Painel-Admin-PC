@@ -7,6 +7,7 @@
 #██║ ╚═╝ ██║██║  ██║██║ ╚████║██║╚██████╗╚██████╔╝██║ ╚═╝ ██║██║╚██████╔╝
 #╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝
 #            @GorpoOrko | Manicomio TCXS Project | 2020
+
 """Anotações:
 
 criar arquivo mainwindow.py:
@@ -14,6 +15,8 @@ criar arquivo mainwindow.py:
 
 criar arquivo files_rc_rc.py
     pyrcc5 -o files_rc_rc.py files_rc.qrc
+
+#necessario para rodar o QMysql do Pyqt5 versao | PyQT5==5.12  | pyqtwebengine==5.12
 
 
 sempre que quisermos chamar um stackedWidget usamos o comando abaixo e mudar sua "indexação"
