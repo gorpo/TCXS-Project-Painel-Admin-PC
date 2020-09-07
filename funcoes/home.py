@@ -24,21 +24,15 @@ def funcoesHome(self):
     self.ui.input_host_database_home.mousePressEvent = self.limpaHostdb
     self.ui.btn_database_home.clicked.connect(lambda: addDadosMysqlToDb(self))
 
-
-
-
-
-
 def addDadosMysqlToDb(self):
-
-    try:
+    '''try:
         self.conexao = sqlite3.connect('database.db')
         self.cursor = self.conexao.cursor()
         self.cursor.execute("""DROP TABLE dados_mysql """)
         self.conexao.commit()
         self.conexao.close()
     except:
-        pass
+        pass'''
     self.conexao = sqlite3.connect('database.db')
     # self.conexao.row_factory = self.sqlite3.Row
     self.cursor = self.conexao.cursor()

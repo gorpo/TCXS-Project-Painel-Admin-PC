@@ -53,7 +53,6 @@ from PyQt5.QtMultimedia import *
 from PyQt5.QtMultimediaWidgets import *
 import cvlib as cv
 import cv2
-from cvlib.object_detection import draw_bbox
 from PIL import Image, ImageQt
 import subprocess
 import sys
@@ -61,8 +60,8 @@ import time
 #importaçoes pessoais-------------->
 from mainwindow import Ui_MainWindow
 from funcoes import menus
-from  funcoes import home
-
+from funcoes import home
+from funcoes import  cadastro_users
 
 class MainWindow(QMainWindow):
     def movimentoMouse(self):
@@ -99,6 +98,14 @@ class MainWindow(QMainWindow):
     def limpaHostdb(self,event):
         self.ui.input_host_database_home.clear()
 
+    # limpa os campos da pagina Cadastro usuarios
+    def limpaNomeCadastro(self, event):
+        self.ui.input_nome_user.clear()
+    def limpaUserCadastro(self, event):
+        self.ui.input_username_user.clear()
+    def limpaSenhaCadastro(self, event):
+        self.ui.input_senha_user.clear()
+
 
 
 
@@ -113,6 +120,7 @@ class MainWindow(QMainWindow):
         menus.menusJanela(self)
         #funcoes------------>
         home.funcoesHome(self)
+        cadastro_users.funcoesCadastroUsers(self)
 
 
 
