@@ -138,7 +138,7 @@ def updaterowpsp(self):
     if self.ui.tabela_dados_db_psp.currentIndex().row() > -1:
         # hora e data para ser insidas no servidor
         self.hoje = datetime.now()
-        self.data_formatada = self.hoje_user.strftime('%Y-%m-%d %H:%M:%S')
+        self.data_formatada = self.hoje.strftime('%Y-%m-%d %H:%M:%S')
         #atualiza os dados baseado no nome das row's
         record = self.model_psp.record(self.ui.tabela_dados_db_psp.currentIndex().row())
         record.setValue("titulo", self.ui.input_titulo_jogo_psp.text())       #TITULO
