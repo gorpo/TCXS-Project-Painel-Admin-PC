@@ -53,17 +53,26 @@ def addToDbUser(self):
     # chama a função de conexao e popula a tabela
     bancoDadosUsers(self)
     #print(self.i)
-    self.hoje_user = datetime.now()
-    self.data_formatada_user = self.hoje_user.strftime('%Y-%m-%d %H:%M:%S')
-    #insere os dados na database
-    self.model_user.insertRows(self.i_user, 1)
-    self.model_user.setData(self.model_user.index(self.i_user, 1), self.ui.input_username_user.text())
-    self.model_user.setData(self.model_user.index(self.i_user, 2), self.ui.input_senha_user.text())
-    self.model_user.setData(self.model_user.index(self.i_user, 3), self.ui.input_nome_user.text())
-    self.model_user.setData(self.model_user.index(self.i_user, 4), self.data_formatada_user)
-    self.model_user.setData(self.model_user.index(self.i_user, 5), 'user')
-    self.model_user.submitAll()
-    self.i_user += 1
+    if self.ui.input_username_user.text() == 'Nome Exibição' or self.ui.input_senha_user.text() == 'senha' or self.ui.input_nome_user.text() == 'user':
+        QMessageBox.question(self, 'TCXS Project | Cadastro de Usuários', """Para cadastrar um usuário:
+Informe o nome que será exibido na loja, usuario para login e senha para login.
+Para editar um usuário:
+Preencha todos os campos, clique sobre a linha que quer alterar e clique em atualizar. Somente via este programa é possivel a edição da data de cadastro do usuário, para isto basta alterar os dados na tabela e atualizar.
+Para deletar um usuário:
+Clique sobre a linha do usuário e depois clique em deletar.""", QMessageBox.Ok)
+        self.show()
+    else:
+        self.hoje_user = datetime.now()
+        self.data_formatada_user = self.hoje_user.strftime('%Y-%m-%d %H:%M:%S')
+        #insere os dados na database
+        self.model_user.insertRows(self.i_user, 1)
+        self.model_user.setData(self.model_user.index(self.i_user, 1), self.ui.input_username_user.text())
+        self.model_user.setData(self.model_user.index(self.i_user, 2), self.ui.input_senha_user.text())
+        self.model_user.setData(self.model_user.index(self.i_user, 3), self.ui.input_nome_user.text())
+        self.model_user.setData(self.model_user.index(self.i_user, 4), self.data_formatada_user)
+        self.model_user.setData(self.model_user.index(self.i_user, 5), 'user')
+        self.model_user.submitAll()
+        self.i_user += 1
 
 
 

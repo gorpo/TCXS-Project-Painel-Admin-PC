@@ -45,8 +45,17 @@ def addToDbInfos(self):
     #chama a função de conexao e popula a tabela
     bancoDadosInfos(self)
     # print(self.i)
-    if self.ui.tabela_dados_playstation_infos.currentIndex().row() == self.ui.tabela_dados_playstation_infos.currentIndex().row() + 1:
-        pass
+    if self.ui.input_playstation_infos.text() == 'Informação da homepage':
+        QMessageBox.question(self, 'TCXS Project | Informações da Homepage',
+                             """Para adicionar informações a homepage da loja:
+                             Insira sua informação e clique em enviar, este sistema aceita tag's html.
+                             Para atualizar informação da homepage da loja:
+                             Insira todos dados nos campos, clique sobre a linha que quer editar e no botao atualizar.
+                             Para deletar uma informação da loja:
+                             Selecione a linha da informação e clique em deletar.""",
+                             QMessageBox.Ok)
+        self.show()
+
     else:
         # insere os dados na database
         self.model_infos.insertRows(self.i_infos, 1)

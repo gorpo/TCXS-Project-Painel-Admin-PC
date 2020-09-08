@@ -119,30 +119,33 @@ def bancoDadospsp(self):
 def addToDbpsp(self):
     #chama a função de conexao e popula a tabela | verificar com  print(self.i)
     bancoDadospsp(self)
-    try:
-        # hora e data para ser insidas no servidor
-        self.hoje = datetime.now()
-        self.data_formatada = self.hoje.strftime('%Y-%m-%d %H:%M:%S')
-        # insere os dados na database
-        self.model_psp.insertRows(self.i_psp, 1)
-        self.model_psp.setData(self.model_psp.index(self.i_psp, 1), self.ui.input_titulo_jogo_psp.text())     # TITULO
-        self.model_psp.setData(self.model_psp.index(self.i_psp, 2), self.ui.input_descricao_jogo_psp.text())  # DESCRIÇÃO
-        self.model_psp.setData(self.model_psp.index(self.i_psp, 3), self.ui.input_contentid_psp.text())       # CONTENT_ID
-        self.model_psp.setData(self.model_psp.index(self.i_psp, 4), self.nome_imagem)                         # IMAGEM
-        self.model_psp.setData(self.model_psp.index(self.i_psp, 5), self.data_formatada)                      # CADASTRO
-        self.model_psp.setData(self.model_psp.index(self.i_psp, 6), self.ui.input_link_jogo_psp.text())       # LINK
-        self.model_psp.submitAll()
-        self.i_psp += 1
-    except Exception as e:
-        print(e)
-        QMessageBox.question(self, 'Mensagem',"""Para Adicionar Jogo de PlayStation PSP:
-Sempre adicione os dados em todos os campos e insira uma imagem depois clique em adicionar.
-Para Editar Jogo de  PlayStation PSP:
-Para editar, preencha todos os campos, envie uma imagem e clique na linha que quer atualizar e no botao atualizar.
-Para Deletar Jogo de PlayStation PSP:
-Caso queira deletar, clique na linha que quer deletar e no botão deletar!""",QMessageBox.Ok)
+
+    if  self.ui.input_titulo_jogo_psp.text() == 'Titutlo PSP' or self.ui.input_descricao_jogo_psp.text() == 'Descrição | Usar tag <br> para pular linhas.' or self.ui.input_contentid_psp.text() == 'Content ID' or self.ui.input_link_jogo_psp.text() == 'Link':
+        QMessageBox.question(self, 'Tutorial Adicionar Jogo PSP', """Para Adicionar Jogo de PlayStation PSP:
+        Sempre adicione os dados em todos os campos e insira uma imagem depois clique em adicionar.
+        Para Editar Jogo de  PlayStation PSP:
+        Para editar, preencha todos os campos, envie uma imagem e clique na linha que quer atualizar e no botao atualizar.
+        Para Deletar Jogo de PlayStation PSP:
+        Caso queira deletar, clique na linha que quer deletar e no botão deletar!""", QMessageBox.Ok)
         self.show()
-        pass
+    else:
+
+        try:
+            # hora e data para ser insidas no servidor
+            self.hoje = datetime.now()
+            self.data_formatada = self.hoje.strftime('%Y-%m-%d %H:%M:%S')
+            # insere os dados na database
+            self.model_psp.insertRows(self.i_psp, 1)
+            self.model_psp.setData(self.model_psp.index(self.i_psp, 1), self.ui.input_titulo_jogo_psp.text())     # TITULO
+            self.model_psp.setData(self.model_psp.index(self.i_psp, 2), self.ui.input_descricao_jogo_psp.text())  # DESCRIÇÃO
+            self.model_psp.setData(self.model_psp.index(self.i_psp, 3), self.ui.input_contentid_psp.text())       # CONTENT_ID
+            self.model_psp.setData(self.model_psp.index(self.i_psp, 4), self.nome_imagem)                         # IMAGEM
+            self.model_psp.setData(self.model_psp.index(self.i_psp, 5), self.data_formatada)                      # CADASTRO
+            self.model_psp.setData(self.model_psp.index(self.i_psp, 6), self.ui.input_link_jogo_psp.text())       # LINK
+            self.model_psp.submitAll()
+            self.i_psp += 1
+        except Exception as e:
+            pass
 
 
 def updaterowpsp(self):

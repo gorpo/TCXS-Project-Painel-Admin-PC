@@ -13,17 +13,14 @@ from PyQt5 import QtSql  # pip install PyQT5==5.12
 import sqlite3
 import ftplib
 
-
 # conexao sqlite para uso do programa
 conexao_user = sqlite3.connect('database.db')
 cursor_user = conexao_user.cursor()
 try:
     cursor_user.execute("""  CREATE TABLE IF NOT EXISTS dados_mysql  (id integer not null primary key autoincrement, 
             nome_database varchar(5000), user_database varchar(5000), senha_database varchar(5000), host_database 
-            varchar(
-            500), endereco_ftp varchar(500), user_ftp varchar(500), senha_ftp varchar(500));  """)
+            varchar(500), endereco_ftp varchar(500), user_ftp varchar(500), senha_ftp varchar(500));  """)
     conexao_user.commit()
-
     cursor_user.execute(' SELECT * FROM dados_mysql; ')
     tabela_user = cursor_user.fetchall()
     databaseMysql_user = tabela_user[0][1]
@@ -38,8 +35,14 @@ try:
 except:
     pass
 
-ftp = ftplib.FTP(host=enderecoFtp_user, user=usuarioFtp_user, passwd=senhaFtp_user)
-ftp.encoding = "utf-8"
+
+#CONEXAO FTP ---------------------------
+try:
+    ftp = ftplib.FTP(host=enderecoFtp_user, user=usuarioFtp_user, passwd=senhaFtp_user)
+    ftp.encoding = "utf-8"
+except:
+    pass
+
 
 
 # conexao mysql Externa
