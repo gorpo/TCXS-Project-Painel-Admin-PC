@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>927</width>
+    <width>918</width>
     <height>710</height>
    </rect>
   </property>
@@ -1333,68 +1333,85 @@ font: 20px Segoe UI, bold;
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>64</height>
+                  <height>145</height>
                  </size>
                 </property>
                 <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
+                 <enum>QFrame::NoFrame</enum>
                 </property>
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                <layout class="QVBoxLayout" name="verticalLayout_27">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
-                  <widget class="QLineEdit" name="input_nome_database_home">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>40</height>
-                    </size>
-                   </property>
+                  <widget class="QLabel" name="titulo_topo_verifica_405">
                    <property name="styleSheet">
-                    <string notr="true">QLineEdit{
-border: 2px solid rgb(45,45,45);
-border-radius: 5px;
-padding: 10px;
-background-color: rgb(30,30,30);
-	color: rgb(203, 203, 203);
+                    <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
 font: 15px Segoe UI, bold;
-}
-QLineEdit:hover{
-border: 2px solid rgb(55,55,55);
-}
-QLineEdit:focus{
-border: 2px solid  rgb(170,0,0);
-	color: rgb(170,0,0);
 }</string>
                    </property>
                    <property name="text">
-                    <string>nome database</string>
+                    <string>CONEXAO MYSQL [database | user | senha | host]    |    CONEXAO FTP [endereço | user | senha]</string>
                    </property>
-                   <property name="echoMode">
-                    <enum>QLineEdit::Normal</enum>
-                   </property>
-                   <property name="clearButtonEnabled">
+                   <property name="scaledContents">
                     <bool>false</bool>
                    </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLineEdit" name="input_user_database_home">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>40</height>
-                    </size>
+                  <widget class="QFrame" name="frame_4">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
                    </property>
-                   <property name="styleSheet">
-                    <string notr="true">QLineEdit{
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_22">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLineEdit" name="input_nome_database_home">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
 border: 2px solid rgb(45,45,45);
 border-radius: 5px;
 padding: 10px;
@@ -1409,28 +1426,28 @@ QLineEdit:focus{
 border: 2px solid  rgb(170,0,0);
 	color: rgb(170,0,0);
 }</string>
-                   </property>
-                   <property name="text">
-                    <string>user database</string>
-                   </property>
-                   <property name="echoMode">
-                    <enum>QLineEdit::Normal</enum>
-                   </property>
-                   <property name="clearButtonEnabled">
-                    <bool>false</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLineEdit" name="input_senha_database_home">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QLineEdit{
+                      </property>
+                      <property name="text">
+                       <string>nome database</string>
+                      </property>
+                      <property name="echoMode">
+                       <enum>QLineEdit::Normal</enum>
+                      </property>
+                      <property name="clearButtonEnabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_user_database_home">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
 border: 2px solid rgb(45,45,45);
 border-radius: 5px;
 padding: 10px;
@@ -1445,22 +1462,28 @@ QLineEdit:focus{
 border: 2px solid  rgb(170,0,0);
 	color: rgb(170,0,0);
 }</string>
-                   </property>
-                   <property name="text">
-                    <string>senha database</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLineEdit" name="input_host_database_home">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QLineEdit{
+                      </property>
+                      <property name="text">
+                       <string>user database</string>
+                      </property>
+                      <property name="echoMode">
+                       <enum>QLineEdit::Normal</enum>
+                      </property>
+                      <property name="clearButtonEnabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_senha_database_home">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
 border: 2px solid rgb(45,45,45);
 border-radius: 5px;
 padding: 10px;
@@ -1475,31 +1498,190 @@ QLineEdit:focus{
 border: 2px solid  rgb(170,0,0);
 	color: rgb(170,0,0);
 }</string>
-                   </property>
-                   <property name="text">
-                    <string>host database</string>
-                   </property>
+                      </property>
+                      <property name="text">
+                       <string>senha database</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_host_database_home">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(170,0,0);
+	color: rgb(170,0,0);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>host database</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="btn_database_home">
-                   <property name="minimumSize">
-                    <size>
-                     <width>100</width>
-                     <height>45</height>
-                    </size>
+                  <widget class="QFrame" name="frame_5">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
                    </property>
-                   <property name="font">
-                    <font>
-                     <family>SegoeUIl,12</family>
-                     <pointsize>-1</pointsize>
-                     <weight>50</weight>
-                     <italic>false</italic>
-                     <bold>false</bold>
-                    </font>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
                    </property>
-                   <property name="styleSheet">
-                    <string notr="true">QPushButton {
+                   <layout class="QHBoxLayout" name="horizontalLayout_12">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLineEdit" name="input_endereco_ftp">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(170,0,0);
+	color: rgb(170,0,0);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>endereço ftp</string>
+                      </property>
+                      <property name="echoMode">
+                       <enum>QLineEdit::Normal</enum>
+                      </property>
+                      <property name="clearButtonEnabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_user_ftp">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(170,0,0);
+	color: rgb(170,0,0);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>user ftp</string>
+                      </property>
+                      <property name="echoMode">
+                       <enum>QLineEdit::Normal</enum>
+                      </property>
+                      <property name="clearButtonEnabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_senha_ftp">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(170,0,0);
+	color: rgb(170,0,0);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>senha ftp</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btn_database_home">
+                      <property name="minimumSize">
+                       <size>
+                        <width>210</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>SegoeUIl</family>
+                        <pointsize>-1</pointsize>
+                        <weight>50</weight>
+                        <italic>false</italic>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
 	background-color: rgb(30,30,30);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1514,10 +1696,16 @@ QPushButton:hover {
 QPushButton:pressed {
 	background-color: rgb(130,0,0);
 }</string>
-                   </property>
-                   <property name="text">
-                    <string>enviar</string>
-                   </property>
+                      </property>
+                      <property name="text">
+                       <string>enviar</string>
+                      </property>
+                      <property name="flat">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                 </layout>
@@ -3036,7 +3224,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3075,7 +3263,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3114,7 +3302,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3702,7 +3890,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3741,7 +3929,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3780,7 +3968,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -4359,7 +4547,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -4398,7 +4586,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -4437,7 +4625,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -7575,7 +7763,7 @@ border: 2px solid  rgb(170,0,0);
                       </property>
                       <property name="font">
                        <font>
-                        <family>SegoeUIl,12</family>
+                        <family>SegoeUIl</family>
                         <pointsize>-1</pointsize>
                         <weight>50</weight>
                         <italic>false</italic>
@@ -7614,7 +7802,7 @@ QPushButton:pressed {
                       </property>
                       <property name="font">
                        <font>
-                        <family>SegoeUIl,12</family>
+                        <family>SegoeUIl</family>
                         <pointsize>-1</pointsize>
                         <weight>50</weight>
                         <italic>false</italic>
@@ -7653,7 +7841,7 @@ QPushButton:pressed {
                       </property>
                       <property name="font">
                        <font>
-                        <family>SegoeUIl,12</family>
+                        <family>SegoeUIl</family>
                         <pointsize>-1</pointsize>
                         <weight>50</weight>
                         <italic>false</italic>
@@ -8157,7 +8345,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -8196,7 +8384,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -8235,7 +8423,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -8820,7 +9008,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -8859,7 +9047,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -8898,7 +9086,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl,12</family>
+                           <family>SegoeUIl</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>

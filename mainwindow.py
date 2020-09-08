@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(927, 710)
+        MainWindow.resize(918, 710)
         self.janela_pai = QtWidgets.QWidget(MainWindow)
         self.janela_pai.setObjectName("janela_pai")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.janela_pai)
@@ -691,14 +691,33 @@ class Ui_MainWindow(object):
         self.background.setObjectName("background")
         self.verticalLayout_6.addWidget(self.background)
         self.frame_inputs_gravar_database = QtWidgets.QFrame(self.pagina_home)
-        self.frame_inputs_gravar_database.setMinimumSize(QtCore.QSize(0, 0))
-        self.frame_inputs_gravar_database.setMaximumSize(QtCore.QSize(16777215, 64))
-        self.frame_inputs_gravar_database.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_inputs_gravar_database.setMinimumSize(QtCore.QSize(0, 145))
+        self.frame_inputs_gravar_database.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_inputs_gravar_database.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_inputs_gravar_database.setObjectName("frame_inputs_gravar_database")
-        self.horizontalLayout_12 = QtWidgets.QHBoxLayout(self.frame_inputs_gravar_database)
-        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
-        self.input_nome_database_home = QtWidgets.QLineEdit(self.frame_inputs_gravar_database)
+        self.verticalLayout_27 = QtWidgets.QVBoxLayout(self.frame_inputs_gravar_database)
+        self.verticalLayout_27.setContentsMargins(5, 0, 5, 0)
+        self.verticalLayout_27.setSpacing(0)
+        self.verticalLayout_27.setObjectName("verticalLayout_27")
+        self.titulo_topo_verifica_405 = QtWidgets.QLabel(self.frame_inputs_gravar_database)
+        self.titulo_topo_verifica_405.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.titulo_topo_verifica_405.setScaledContents(False)
+        self.titulo_topo_verifica_405.setAlignment(QtCore.Qt.AlignCenter)
+        self.titulo_topo_verifica_405.setObjectName("titulo_topo_verifica_405")
+        self.verticalLayout_27.addWidget(self.titulo_topo_verifica_405)
+        self.frame_4 = QtWidgets.QFrame(self.frame_inputs_gravar_database)
+        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_4.setObjectName("frame_4")
+        self.horizontalLayout_22 = QtWidgets.QHBoxLayout(self.frame_4)
+        self.horizontalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_22.setSpacing(5)
+        self.horizontalLayout_22.setObjectName("horizontalLayout_22")
+        self.input_nome_database_home = QtWidgets.QLineEdit(self.frame_4)
         self.input_nome_database_home.setMinimumSize(QtCore.QSize(0, 40))
         self.input_nome_database_home.setStyleSheet("QLineEdit{\n"
 "border: 2px solid rgb(45,45,45);\n"
@@ -718,8 +737,8 @@ class Ui_MainWindow(object):
         self.input_nome_database_home.setEchoMode(QtWidgets.QLineEdit.Normal)
         self.input_nome_database_home.setClearButtonEnabled(False)
         self.input_nome_database_home.setObjectName("input_nome_database_home")
-        self.horizontalLayout_12.addWidget(self.input_nome_database_home)
-        self.input_user_database_home = QtWidgets.QLineEdit(self.frame_inputs_gravar_database)
+        self.horizontalLayout_22.addWidget(self.input_nome_database_home)
+        self.input_user_database_home = QtWidgets.QLineEdit(self.frame_4)
         self.input_user_database_home.setMinimumSize(QtCore.QSize(0, 40))
         self.input_user_database_home.setStyleSheet("QLineEdit{\n"
 "border: 2px solid rgb(45,45,45);\n"
@@ -739,8 +758,8 @@ class Ui_MainWindow(object):
         self.input_user_database_home.setEchoMode(QtWidgets.QLineEdit.Normal)
         self.input_user_database_home.setClearButtonEnabled(False)
         self.input_user_database_home.setObjectName("input_user_database_home")
-        self.horizontalLayout_12.addWidget(self.input_user_database_home)
-        self.input_senha_database_home = QtWidgets.QLineEdit(self.frame_inputs_gravar_database)
+        self.horizontalLayout_22.addWidget(self.input_user_database_home)
+        self.input_senha_database_home = QtWidgets.QLineEdit(self.frame_4)
         self.input_senha_database_home.setMinimumSize(QtCore.QSize(0, 40))
         self.input_senha_database_home.setStyleSheet("QLineEdit{\n"
 "border: 2px solid rgb(45,45,45);\n"
@@ -758,8 +777,8 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.input_senha_database_home.setObjectName("input_senha_database_home")
-        self.horizontalLayout_12.addWidget(self.input_senha_database_home)
-        self.input_host_database_home = QtWidgets.QLineEdit(self.frame_inputs_gravar_database)
+        self.horizontalLayout_22.addWidget(self.input_senha_database_home)
+        self.input_host_database_home = QtWidgets.QLineEdit(self.frame_4)
         self.input_host_database_home.setMinimumSize(QtCore.QSize(0, 40))
         self.input_host_database_home.setStyleSheet("QLineEdit{\n"
 "border: 2px solid rgb(45,45,45);\n"
@@ -777,11 +796,81 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.input_host_database_home.setObjectName("input_host_database_home")
-        self.horizontalLayout_12.addWidget(self.input_host_database_home)
-        self.btn_database_home = QtWidgets.QPushButton(self.frame_inputs_gravar_database)
-        self.btn_database_home.setMinimumSize(QtCore.QSize(100, 45))
+        self.horizontalLayout_22.addWidget(self.input_host_database_home)
+        self.verticalLayout_27.addWidget(self.frame_4)
+        self.frame_5 = QtWidgets.QFrame(self.frame_inputs_gravar_database)
+        self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_5.setObjectName("frame_5")
+        self.horizontalLayout_12 = QtWidgets.QHBoxLayout(self.frame_5)
+        self.horizontalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_12.setSpacing(5)
+        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
+        self.input_endereco_ftp = QtWidgets.QLineEdit(self.frame_5)
+        self.input_endereco_ftp.setMinimumSize(QtCore.QSize(0, 40))
+        self.input_endereco_ftp.setStyleSheet("QLineEdit{\n"
+"border: 2px solid rgb(45,45,45);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"QLineEdit:hover{\n"
+"border: 2px solid rgb(55,55,55);\n"
+"}\n"
+"QLineEdit:focus{\n"
+"border: 2px solid  rgb(170,0,0);\n"
+"    color: rgb(170,0,0);\n"
+"}")
+        self.input_endereco_ftp.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.input_endereco_ftp.setClearButtonEnabled(False)
+        self.input_endereco_ftp.setObjectName("input_endereco_ftp")
+        self.horizontalLayout_12.addWidget(self.input_endereco_ftp)
+        self.input_user_ftp = QtWidgets.QLineEdit(self.frame_5)
+        self.input_user_ftp.setMinimumSize(QtCore.QSize(0, 40))
+        self.input_user_ftp.setStyleSheet("QLineEdit{\n"
+"border: 2px solid rgb(45,45,45);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"QLineEdit:hover{\n"
+"border: 2px solid rgb(55,55,55);\n"
+"}\n"
+"QLineEdit:focus{\n"
+"border: 2px solid  rgb(170,0,0);\n"
+"    color: rgb(170,0,0);\n"
+"}")
+        self.input_user_ftp.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.input_user_ftp.setClearButtonEnabled(False)
+        self.input_user_ftp.setObjectName("input_user_ftp")
+        self.horizontalLayout_12.addWidget(self.input_user_ftp)
+        self.input_senha_ftp = QtWidgets.QLineEdit(self.frame_5)
+        self.input_senha_ftp.setMinimumSize(QtCore.QSize(0, 40))
+        self.input_senha_ftp.setStyleSheet("QLineEdit{\n"
+"border: 2px solid rgb(45,45,45);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"QLineEdit:hover{\n"
+"border: 2px solid rgb(55,55,55);\n"
+"}\n"
+"QLineEdit:focus{\n"
+"border: 2px solid  rgb(170,0,0);\n"
+"    color: rgb(170,0,0);\n"
+"}")
+        self.input_senha_ftp.setObjectName("input_senha_ftp")
+        self.horizontalLayout_12.addWidget(self.input_senha_ftp)
+        self.btn_database_home = QtWidgets.QPushButton(self.frame_5)
+        self.btn_database_home.setMinimumSize(QtCore.QSize(210, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -802,8 +891,10 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: rgb(130,0,0);\n"
 "}")
+        self.btn_database_home.setFlat(False)
         self.btn_database_home.setObjectName("btn_database_home")
         self.horizontalLayout_12.addWidget(self.btn_database_home)
+        self.verticalLayout_27.addWidget(self.frame_5)
         self.verticalLayout_6.addWidget(self.frame_inputs_gravar_database)
         self.stackedWidget.addWidget(self.pagina_home)
         self.pagina_cadastro_user = QtWidgets.QWidget()
@@ -1591,7 +1682,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_psp = QtWidgets.QPushButton(self.frame_23)
         self.botao_db_adiciona_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1617,7 +1708,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_psp = QtWidgets.QPushButton(self.frame_23)
         self.botao_db_atualiza_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1643,7 +1734,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_psp = QtWidgets.QPushButton(self.frame_23)
         self.botao_db_deleta_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1939,7 +2030,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps1 = QtWidgets.QPushButton(self.frame_37)
         self.botao_db_adiciona_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1965,7 +2056,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps1 = QtWidgets.QPushButton(self.frame_37)
         self.botao_db_atualiza_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1991,7 +2082,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps1 = QtWidgets.QPushButton(self.frame_37)
         self.botao_db_deleta_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2284,7 +2375,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps2 = QtWidgets.QPushButton(self.frame_45)
         self.botao_db_adiciona_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2310,7 +2401,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps2 = QtWidgets.QPushButton(self.frame_45)
         self.botao_db_atualiza_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2336,7 +2427,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps2 = QtWidgets.QPushButton(self.frame_45)
         self.botao_db_deleta_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4093,7 +4184,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps3 = QtWidgets.QPushButton(self.frame_75_ps3)
         self.botao_db_adiciona_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4119,7 +4210,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps3 = QtWidgets.QPushButton(self.frame_75_ps3)
         self.botao_db_atualiza_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4145,7 +4236,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps3 = QtWidgets.QPushButton(self.frame_75_ps3)
         self.botao_db_deleta_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4384,7 +4475,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_retro = QtWidgets.QPushButton(self.frame_58_retro)
         self.botao_db_adiciona_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4410,7 +4501,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_retro = QtWidgets.QPushButton(self.frame_58_retro)
         self.botao_db_atualiza_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4436,7 +4527,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_retro = QtWidgets.QPushButton(self.frame_58_retro)
         self.botao_db_deleta_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4730,7 +4821,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_extras = QtWidgets.QPushButton(self.frame_btns_extras)
         self.botao_db_adiciona_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4756,7 +4847,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_extras = QtWidgets.QPushButton(self.frame_btns_extras)
         self.botao_db_atualiza_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4782,7 +4873,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_extras = QtWidgets.QPushButton(self.frame_btns_extras)
         self.botao_db_deleta_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -5335,10 +5426,14 @@ class Ui_MainWindow(object):
         self.texto_menu_bottelegram.setText(_translate("MainWindow", "bot TELEGRAM"))
         self.texto_menu_database.setText(_translate("MainWindow", "database TCXS"))
         self.texto_menu_404.setText(_translate("MainWindow", "VERIFICADOR 404"))
+        self.titulo_topo_verifica_405.setText(_translate("MainWindow", "CONEXAO MYSQL [database | user | senha | host]    |    CONEXAO FTP [endereço | user | senha]"))
         self.input_nome_database_home.setText(_translate("MainWindow", "nome database"))
         self.input_user_database_home.setText(_translate("MainWindow", "user database"))
         self.input_senha_database_home.setText(_translate("MainWindow", "senha database"))
         self.input_host_database_home.setText(_translate("MainWindow", "host database"))
+        self.input_endereco_ftp.setText(_translate("MainWindow", "endereço ftp"))
+        self.input_user_ftp.setText(_translate("MainWindow", "user ftp"))
+        self.input_senha_ftp.setText(_translate("MainWindow", "senha ftp"))
         self.btn_database_home.setText(_translate("MainWindow", "enviar"))
         self.explica1cadastro_users.setText(_translate("MainWindow", "- insira o nome de exibição que o usuário irá receber ao entrar na loja."))
         self.titulo_cadastro_users.setText(_translate("MainWindow", "CADASTRO DE USUÁRIOS"))

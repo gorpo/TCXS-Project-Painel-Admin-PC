@@ -62,6 +62,7 @@ import sys
 import time
 #importaçoes pessoais-------------->
 from mainwindow import Ui_MainWindow
+from funcoes.db_handler import criaDbLocal
 from funcoes import menus
 from funcoes import home
 from funcoes import cadastro_users
@@ -104,6 +105,12 @@ class MainWindow(QMainWindow):
         self.ui.input_senha_database_home.clear()
     def limpaHostdb(self,event):
         self.ui.input_host_database_home.clear()
+    def limpaEnderecoFtp(self,event):
+        self.ui.input_endereco_ftp.clear()
+    def limpaUserFtp(self,event):
+        self.ui.input_user_ftp.clear()
+    def limpaSenhaFtp(self,event):
+        self.ui.input_senha_ftp.clear()
 
     # limpa os campos da pagina Cadastro usuarios
     def limpaNomeCadastro(self, event):

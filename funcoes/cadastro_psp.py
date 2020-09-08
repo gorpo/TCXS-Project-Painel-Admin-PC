@@ -79,13 +79,14 @@ def selecionarImagempsp(self):
 
         #CONEXAO COM FTP PARA UPLOAD DA imagem
         # conecta ao ftp | força UTF-8 encoding
-        ftp = ftplib.FTP(host="192.168.0.3", user="gorpo", passwd="")
-        ftp.encoding = "utf-8"
+        #ftp = ftplib.FTP(host="192.168.0.3", user="gorpo", passwd="")
+        #ftp.encoding = "utf-8"
+
         # arquivo para ser enviado ao server
         file = open(f'images/{self.nome_imagem}', 'rb')  # file to send
-        ftp.storbinary(f'STOR assets/images/psp/{self.nome_imagem}', file)  # send the file
+        conexao.ftp.storbinary(f'STOR assets/images/psp/{self.nome_imagem}', file)  # send the file
         file.close()  # close file and FTP and remove image
-        ftp.quit()
+        conexao.ftp.quit()
         os.remove(f'images/{self.nome_imagem}')
     except:
         pass
