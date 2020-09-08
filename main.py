@@ -67,7 +67,7 @@ from funcoes import home
 from funcoes import cadastro_users
 from funcoes import consulta_users
 from funcoes import cadastro_infos
-
+from funcoes import cadastro_psp
 
 class MainWindow(QMainWindow):
     #funções de clicar e movimentar a tela com mouse
@@ -145,6 +145,7 @@ class MainWindow(QMainWindow):
         cadastro_users.funcoesCadastroUsers(self)
         consulta_users.funcoesConsultaUsers(self)
         cadastro_infos.funcoesCadastroInfos(self)
+        cadastro_psp.funcoesCadastroPsp(self)
 
 
 

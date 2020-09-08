@@ -33,12 +33,15 @@ pip install pyqtwebengine==5.12
 from PyQt5.QtSql import QSqlDatabase
 print(list(map(str, QSqlDatabase.drivers())))
 """
-db_mysql = QtSql.QSqlDatabase.addDatabase('QMYSQL')
-db_mysql.setHostName(hostMysql_user)
-db_mysql.setDatabaseName(databaseMysql_user)
-db_mysql.setUserName(usuarioMysql_user)
-db_mysql.setPassword(senhaMysql_user)
-ok = db_mysql.open()
-if not ok: print(db_mysql.lastError().text())
-# else: print("connected")
-db_mysql.close()
+try:
+    db_mysql = QtSql.QSqlDatabase.addDatabase('QMYSQL')
+    db_mysql.setHostName(hostMysql_user)
+    db_mysql.setDatabaseName(databaseMysql_user)
+    db_mysql.setUserName(usuarioMysql_user)
+    db_mysql.setPassword(senhaMysql_user)
+    ok = db_mysql.open()
+    if not ok: print(db_mysql.lastError().text())
+    # else: print("connected")
+    db_mysql.close()
+except:
+    pass
