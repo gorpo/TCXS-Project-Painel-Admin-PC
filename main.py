@@ -121,13 +121,13 @@ class MainWindow(QMainWindow):
         self.ui.input_playstation_infos.clear()
 
     # limpa campos input_playstation_psp
-    def limpaInputTituloPSp(self, event):
+    def limpaInputTitulopsp(self, event):
         self.ui.input_titulo_jogo_psp.clear()
-    def limpaInputDescricaoPSp(self, event):
+    def limpaInputDescricaopsp(self, event):
         self.ui.input_descricao_jogo_psp.clear()
-    def limpaInputContentidPSp(self, event):
+    def limpaInputContentidpsp(self, event):
         self.ui.input_contentid_psp.clear()
-    def limpaInputLinkPSp(self, event):
+    def limpaInputLinkpsp(self, event):
         self.ui.input_link_jogo_psp.clear()
 
 
