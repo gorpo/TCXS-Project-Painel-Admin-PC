@@ -44,7 +44,7 @@ def selecionarImagempsp(self):
         janela2.move(100, 200)
         janela2.setWindowTitle('TCXS Project | Imagem PSP')
         options = QFileDialog.Options()
-        fileName, _ = QFileDialog.getOpenFileName(janela2, "TCXS STORE | PSP | Escolha sua imagem", "", "All Files (*);;JPG (*.jpg);;PNG (*.png)", options=options)
+        fileName, _ = QFileDialog.getOpenFileName(janela2, "TCXS STORE | PSP | Escolha sua imagem", "", "JPG (*.jpg);;PNG (*.png)", options=options)
         if fileName:
             #faz uma verificaçao na imagem para limpar a lista acima
             if fileName in self.imagem_recebida:
@@ -134,6 +134,13 @@ def addToDbpsp(self):
         self.i_psp += 1
     except Exception as e:
         print(e)
+        QMessageBox.question(self, 'Mensagem',"""Para Adicionar Jogo de PlayStation PSP:
+Sempre adicione os dados em todos os campos e insira uma imagem depois clique em adicionar.
+Para Editar Jogo de  PlayStation PSP:
+Para editar, preencha todos os campos, envie uma imagem e clique na linha que quer atualizar e no botao atualizar.
+Para Deletar Jogo de PlayStation PSP:
+Caso queira deletar, clique na linha que quer deletar e no botão deletar!""",QMessageBox.Ok)
+        self.show()
         pass
 
 
