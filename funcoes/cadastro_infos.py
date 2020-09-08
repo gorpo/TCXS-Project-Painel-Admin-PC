@@ -19,6 +19,7 @@ from funcoes import conexao
 def funcoesCadastroInfos(self):
     # eventos para limpar os campos, que buscam funçoes no arquivo main
     self.ui.input_playstation_infos.mousePressEvent = self.limpaInputInfos
+    self.ui.input_playstation_infos.setToolTip('Insira a informação(aviso) que irá aparecer na homepage da loja.\nEste input aceita códigos html simples!')
     # botoes das açoes
     self.ui.btn_adiciona_infos.clicked.connect(lambda: addToDbInfos(self))
     self.ui.btn_atualiza_infos.clicked.connect(lambda: updaterowInfos(self))
@@ -37,6 +38,7 @@ def bancoDadosInfos(self):
     self.model_infos.setHeaderData(1, QtCore.Qt.Horizontal, "Informacao")
     # tabela de dados
     self.ui.tabela_dados_playstation_infos.setModel(self.model_infos)
+    self.ui.tabela_dados_playstation_infos.setToolTip('Tabela da dados:\nPara adicionar itens sempre preencha todos os campos.\nCaso queira editar clique sobre o numero de uma linha e clique em atualizar.\nCaso queira deletar clique sobre o numero de uma linha e delete.')
     self.i_infos = self.model_infos.rowCount()
 
 

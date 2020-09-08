@@ -148,6 +148,48 @@ class MainWindow(QMainWindow):
         #menus------------->
         self.movimentoMouse()
         menus.menusJanela(self)
+        #estilos --------->
+        self.setStyleSheet(""" QToolTip{ border: 1px solid rgb(45,45,45);
+                                        border-radius: 2px;
+                                        background-color: rgb(30,30,30);
+                                        color: rgb(203, 203, 203);}""")
+        #instruções
+        self.ui.titulo_programa.setToolTip("""PAINEL ADMINISTRADOR TCXS PROJECT STORE 
+
+versão: 1.0
+desenvolvedor: @GorpoOrko
+linguagem: Python
+
+1. Sobre a conexão com a Database MySql e sistema de FTP.
+    1.1 Necessário os dados da database: database | usuário | senha | host.
+    1.2 Necessário os dados sistema FTP: endereço | usuário | senha.
+    1.3 Caso estes dados sejam inseridos não será feita conexão e não será possivel edição.
+    1.4 Os dados são salvos em uma database local, sendo necessário inserir eles apenas uma vez.
+    1.5 Caso os dados do servidor atualizem, atualize os dados no inicio do programa.
+    1.6 Caso não conecte após atualizar os dados, feche e abra novamente o programa.
+
+2. Sobre o cadastro de usuários e consulta:
+    2.1 Necessário os dados: Nome | user | senha - [Permite] cadastrar | atualizar | deletar.
+    2.2 Necessário user que o usuário faz login - [Permite] apenas consultas (clean tables).
+
+3. Sobre o cadastro de jogos e extras:
+    3.1 Necessário os dados: Titulo | Descrição | Content ID | Imagem | Link 
+    3.2 [Permite] cadastrar | atualizar | deletar | upload imagem FTP(resize, borda automatica).
+    3.3 [ATENÇÃO] na descrição usar a tag <br> para pular linhas conforme exemplo:
+    3.4 [EXEMPLO] Idioma: Ingles<br>Legenda: Ingles<br>Plataforma: PlayStation3
+
+4. Sobre a conexão do Bot Telegram:
+    4.1 Necessário os dados do Telegram: token bot | id canal | sua id
+    4.2 O bot só funciona enquanto o programa estiver aberto e ele ativado pelo programa.
+
+5. Sobre o verificador da database:
+    5.1 Verifica todos os bancos de dados a procura de erros, apenas visualização e conferência.
+
+6. Sobre o verificador 404:
+    6.1 Crawler que busca todos os erros 404 e os apresenta para que possam ser alterados na loja.
+    6.2 Este processo é demorado e o programa deve estar sendo usado exclusivamente para ele.
+    6.3 Como este processo verifica link por link demora e podem ocorrer travas ou falhas.
+    6.4 Aconselho que links quebrados sejam arrumados para que não apareçam na proxima verificação.""")
         #funcoes------------>
         home.funcoesHome(self)
         cadastro_users.funcoesCadastroUsers(self)

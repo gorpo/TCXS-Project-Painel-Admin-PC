@@ -63,32 +63,46 @@ def janela_normal(self):
 #abre/fecha menu esquerda--------->
 def menuEsquerda(self):
     self.ui.botao_abrir_menu.clicked.connect(lambda: abreMenu(self))
+    self.ui.botao_abrir_menu.setToolTip('Clique para expandir\nClique para fechar')
     # botao homepage------------------------------------------>
     self.ui.botao_home.clicked.connect(lambda: paginaHome(self))
+    self.ui.botao_home.setToolTip('Inicio | MYSQL FTP')
     # botao botao_cadastro_user---------------------------------------->
     self.ui.botao_cadastro_user.clicked.connect(lambda: paginaCadastroUser(self)  )
+    self.ui.botao_cadastro_user.setToolTip('Cadastrar usuários | TCXS Store')
     #botao botao_verifica_user
     self.ui.botao_verifica_user.clicked.connect(lambda: paginaVerficaUser(self))
+    self.ui.botao_verifica_user.setToolTip('Verificar acessos | TCXS Store')
     #botao botao_infos_store---------------------------------------------->
     self.ui.botao_infos_store.clicked.connect(lambda: paginaInfos(self))
+    self.ui.botao_infos_store.setToolTip('PlayStation Homepage | TCXS Store')
     # botao botao_menu_psp------------------------------->
     self.ui.botao_menu_psp.clicked.connect(lambda: paginaPsp(self))
+    self.ui.botao_menu_psp.setToolTip('PlayStation PSP | TCXS Store')
     # botao botao_menu_ps1----------------------->
     self.ui.botao_menu_ps1.clicked.connect(lambda: paginaPs1(self))
+    self.ui.botao_menu_ps1.setToolTip('PlayStation PS1 | TCXS Store')
     #botao botao_menu_ps2---------------------------->
     self.ui.botao_menu_ps2.clicked.connect(lambda: paginaPs2(self))
+    self.ui.botao_menu_ps2.setToolTip('PlayStation PS2 | TCXS Store')
     # botao botao_menu_ps3---------------------------->
     self.ui.botao_menu_ps3.clicked.connect(lambda: paginaPs3(self))
+    self.ui.botao_menu_ps3.setToolTip('PlayStation PS3 | TCXS Store')
     # botao botao_menu_retro---------------------------->
     self.ui.botao_menu_retro.clicked.connect(lambda: paginaRetro(self))
+    self.ui.botao_menu_retro.setToolTip('PlayStation RETRO | TCXS Store')
     # botao botao_menu_extras---------------------------->
     self.ui.botao_menu_extras.clicked.connect(lambda: paginaExtras(self))
+    self.ui.botao_menu_extras.setToolTip('PlayStation EXTRAS | TCXS Store')
     # botao botao_menu_bottelegram---------------------------->
     self.ui.botao_menu_bottelegram.clicked.connect(lambda: paginaBot(self))
+    self.ui.botao_menu_bottelegram.setToolTip('Bot TELEGRAM | TCXS Store')
     # botao botao_menu_database---------------------------->
     self.ui.botao_menu_database.clicked.connect(lambda: paginaDatabase(self))
+    self.ui.botao_menu_database.setToolTip('PlayStation DATABASE | TCXS Store')
     # botao botao_menu_404---------------------------->
     self.ui.botao_menu_404.clicked.connect(lambda: pagina404(self))
+    self.ui.botao_menu_404.setToolTip('PlayStation 404 | TCXS Store')
 
 
 def abreMenu(self):

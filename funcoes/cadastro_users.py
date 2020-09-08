@@ -20,8 +20,11 @@ from funcoes import conexao
 def funcoesCadastroUsers(self):
     #eventos para limpar os campos, que buscam funçoes no arquivo main
     self.ui.input_nome_user.mousePressEvent = self.limpaNomeCadastro
+    self.ui.input_nome_user.setToolTip('Insira nome que será exibido na loja.')
     self.ui.input_username_user.mousePressEvent = self.limpaUserCadastro
+    self.ui.input_username_user.setToolTip('Insira o username que o usuário irá logar na loja.')
     self.ui.input_senha_user.mousePressEvent = self.limpaSenhaCadastro
+    self.ui.input_senha_user.setToolTip('Insira a senha que o usuário irá logar na loja.')
     #botoes de ação da pagina
     self.ui.btn_adiciona_user.clicked.connect(lambda: addToDbUser(self))
     self.ui.btn_atualiza_user.clicked.connect(lambda: updaterowUser(self))
@@ -46,6 +49,7 @@ def bancoDadosUsers(self):
     self.model_user.setHeaderData(5, QtCore.Qt.Horizontal, "Nivel")
     #tabela de dados
     self.ui.tabela_dados_usuarios.setModel(self.model_user)
+    self.ui.tabela_dados_usuarios.setToolTip('Tabela da dados:\nPara adicionar itens sempre preencha todos os campos.\nCaso queira editar clique sobre o numero de uma linha e clique em atualizar.\nCaso queira deletar clique sobre o numero de uma linha e delete.')
     self.i_user = self.model_user.rowCount()
 
 

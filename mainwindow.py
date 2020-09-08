@@ -60,15 +60,15 @@ class Ui_MainWindow(object):
         self.frame_informacoes.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_informacoes.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_informacoes.setObjectName("frame_informacoes")
-        self.label_6 = QtWidgets.QLabel(self.frame_informacoes)
-        self.label_6.setGeometry(QtCore.QRect(10, 0, 192, 41))
-        self.label_6.setMinimumSize(QtCore.QSize(192, 0))
-        self.label_6.setStyleSheet("QLabel{\n"
+        self.titulo_programa = QtWidgets.QLabel(self.frame_informacoes)
+        self.titulo_programa.setGeometry(QtCore.QRect(10, 0, 192, 41))
+        self.titulo_programa.setMinimumSize(QtCore.QSize(192, 0))
+        self.titulo_programa.setStyleSheet("QLabel{\n"
 "    background-color: transparent;\n"
 "    color: rgb(255, 255, 255);\n"
 "font: 20px Segoe UI, bold;\n"
 "}")
-        self.label_6.setObjectName("label_6")
+        self.titulo_programa.setObjectName("titulo_programa")
         self.horizontalLayout_2.addWidget(self.frame_informacoes)
         self.frame_minimizar = QtWidgets.QFrame(self.menuTopo)
         self.frame_minimizar.setMinimumSize(QtCore.QSize(50, 50))
@@ -5412,7 +5412,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_6.setText(_translate("MainWindow", "TCXS Project Store "))
+        self.titulo_programa.setText(_translate("MainWindow", "TCXS Project Store "))
         self.texto_menu_home.setText(_translate("MainWindow", "home"))
         self.texto_botao_cadastro_user.setText(_translate("MainWindow", "cadastro USERS"))
         self.texto_botao_verifica_user.setText(_translate("MainWindow", "verificar ACESSOS"))
@@ -5426,7 +5426,7 @@ class Ui_MainWindow(object):
         self.texto_menu_bottelegram.setText(_translate("MainWindow", "bot TELEGRAM"))
         self.texto_menu_database.setText(_translate("MainWindow", "database TCXS"))
         self.texto_menu_404.setText(_translate("MainWindow", "VERIFICADOR 404"))
-        self.titulo_topo_verifica_405.setText(_translate("MainWindow", "CONEXAO MYSQL [database | user | senha | host]    |    CONEXAO FTP [endereço | user | senha]"))
+        self.titulo_topo_verifica_405.setText(_translate("MainWindow", "MYSQL [database | user | senha | host]    |    FTP [endereço | user | senha]"))
         self.input_nome_database_home.setText(_translate("MainWindow", "nome database"))
         self.input_user_database_home.setText(_translate("MainWindow", "user database"))
         self.input_senha_database_home.setText(_translate("MainWindow", "senha database"))

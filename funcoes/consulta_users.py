@@ -18,6 +18,7 @@ from funcoes import conexao
 def funcoesConsultaUsers(self):
     #eventos para limpar os campos, que buscam funçoes no arquivo main
     self.ui.input_pesquisa_acessos_usuarios.mousePressEvent = self.limpaPesquisaAcessoUsers
+    self.ui.input_pesquisa_acessos_usuarios.setToolTip('Insira o user que o usuário loga\nna loja para consultar seus acessos.')
     self.ui.btn_pesquisa_acessos_usuarios.clicked.connect(lambda: consultaUser(self))
 
 
@@ -53,6 +54,7 @@ def consultaUser(self):
         self.model_user.setHeaderData(3, QtCore.Qt.Horizontal, "Cadastrado")
         #tabela de dados
         self.ui.tabela_pesquisa_acessos_usuarios.setModel(self.model_user)
+        self.ui.tabela_pesquisa_acessos_usuarios.setToolTip('Informações sobre os acessos do usuário.\nCaso note algum IP suspeito delete o login do usuário.')
         self.i_user = self.model_user.rowCount()
 
     #se nao achou a tabela do user_usuario e ele nao esta na lista de cadastrados deleta a tabela para nao ficar lixo

@@ -138,7 +138,7 @@ QPushButton:pressed {
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <widget class="QLabel" name="label_6">
+         <widget class="QLabel" name="titulo_programa">
           <property name="geometry">
            <rect>
             <x>10</x>
@@ -1368,7 +1368,7 @@ font: 15px Segoe UI, bold;
 }</string>
                    </property>
                    <property name="text">
-                    <string>CONEXAO MYSQL [database | user | senha | host]    |    CONEXAO FTP [endereço | user | senha]</string>
+                    <string>MYSQL [database | user | senha | host]    |    FTP [endereço | user | senha]</string>
                    </property>
                    <property name="scaledContents">
                     <bool>false</bool>
