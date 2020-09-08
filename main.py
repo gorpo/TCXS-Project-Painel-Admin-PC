@@ -70,6 +70,7 @@ from funcoes import cadastro_infos
 
 
 class MainWindow(QMainWindow):
+    #funções de clicar e movimentar a tela com mouse
     def movimentoMouse(self):
         self.mwidget = QMainWindow(self)
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint)  # remove a barra
