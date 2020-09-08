@@ -8,13 +8,11 @@
 #╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 from main import *
-import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QTableView
+
 from PyQt5 import QtSql
 from PyQt5 import QtCore
-from PyQt5.QtSql import QSqlDatabase, QSqlQuery, QSqlTableModel
-from PyQt5.QtWidgets import QTableView, QApplication, QMessageBox
-import sqlite3
+from PyQt5.QtSql import QSqlQuery
+from PyQt5.QtWidgets import QMessageBox
 from datetime import datetime
 from funcoes import conexao
 
@@ -24,38 +22,22 @@ def funcoesCadastroUsers(self):
     self.ui.input_nome_user.mousePressEvent = self.limpaNomeCadastro
     self.ui.input_username_user.mousePressEvent = self.limpaUserCadastro
     self.ui.input_senha_user.mousePressEvent = self.limpaSenhaCadastro
+    #botoes de ação da pagina
     self.ui.btn_adiciona_user.clicked.connect(lambda: addToDbUser(self))
     self.ui.btn_atualiza_user.clicked.connect(lambda: updaterowUser(self))
     self.ui.btn_deleta_user.clicked.connect(lambda: delrowUser(self))
 
 
-
-
 def bancoDadosUsers(self):
     self.i_user = 0
-
-    """self.db_user = QtSql.QSqlDatabase.addDatabase('QMYSQL')
-    self.db_user.setHostName(conexao.hostMysql_user)
-    self.db_user.setDatabaseName(conexao.databaseMysql_user)
-    self.db_user.setUserName(conexao.usuarioMysql_user)
-    self.db_user.setPassword(conexao.senhaMysql_user)
-    self.ok = self.db_user.open()
-    if not self.ok: print(self.db_user.lastError().text())
-    # else: print("connected")"""
-
-
-    self.query_user = QSqlQuery(conexao.db_user)
-    """#executar uma query na tabela caso preciso
-    #self.b = query.exec_('SELECT * FROM playstation_users')"""
+    # usa o arquivo de conexao
+    self.query_user = QSqlQuery(conexao.db_mysql)
     self.model_user = QtSql.QSqlTableModel()
+    # seleciona a tabela
     self.model_user.setTable('playstation_users')
-    """#sistema para uso com sqlite
-    #self.db = QtSql.QSqlDatabase.addDatabase('QSQLITE')
-    #self.db.setDatabaseName('database.db')
-    #self.model = QtSql.QSqlTableModel()
-    #self.model.setTable('dados_mysql')"""
     self.model_user.setEditStrategy(QtSql.QSqlTableModel.OnFieldChange)
     self.model_user.select()
+    # popula as tabelas
     self.model_user.setHeaderData(0, QtCore.Qt.Horizontal, "Id")
     self.model_user.setHeaderData(1, QtCore.Qt.Horizontal, "Usuario")
     self.model_user.setHeaderData(2, QtCore.Qt.Horizontal, "Senha")
@@ -65,17 +47,10 @@ def bancoDadosUsers(self):
     #tabela de dados
     self.ui.tabela_dados_usuarios.setModel(self.model_user)
     self.i_user = self.model_user.rowCount()
-    print(self.i_user)
-    # botoes das açoes
-    #self.ui.btn_adiciona_user.clicked.connect(lambda: addToDbUser(self))
-    #self.ui.btn_atualiza_user.clicked.connect(lambda: updaterowUser(self))
-    #self.ui.btn_deleta_user.clicked.connect(lambda: delrowUser(self))
-
-
-
 
 
 def addToDbUser(self):
+    # chama a função de conexao e popula a tabela
     bancoDadosUsers(self)
     #print(self.i)
     self.hoje_user = datetime.now()
@@ -101,6 +76,8 @@ def delrowUser(self):
     else:
         QMessageBox.question(self,'Mensagem', "Selecione uma linha para deletar, clique sobre o numero a esquerda na tabela correspondente a linha.", QMessageBox.Ok)
         self.show()
+
+
 
 def updaterowUser(self):
     self.hoje_user = datetime.now()

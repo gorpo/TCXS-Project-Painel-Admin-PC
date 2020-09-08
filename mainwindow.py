@@ -1640,16 +1640,16 @@ class Ui_MainWindow(object):
 "}")
         self.botao_db_atualiza_psp.setObjectName("botao_db_atualiza_psp")
         self.horizontalLayout_14.addWidget(self.botao_db_atualiza_psp)
-        self.botao_db_deleta_3 = QtWidgets.QPushButton(self.frame_23)
-        self.botao_db_deleta_3.setMinimumSize(QtCore.QSize(0, 40))
+        self.botao_db_deleta_psp = QtWidgets.QPushButton(self.frame_23)
+        self.botao_db_deleta_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
-        self.botao_db_deleta_3.setFont(font)
-        self.botao_db_deleta_3.setStyleSheet("QPushButton {\n"
+        self.botao_db_deleta_psp.setFont(font)
+        self.botao_db_deleta_psp.setStyleSheet("QPushButton {\n"
 "    background-color:transparent;\n"
 "    background-repeat: no-repeat;\n"
 "    background-position: center;\n"
@@ -1664,8 +1664,8 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: rgb(130,0,0);\n"
 "}")
-        self.botao_db_deleta_3.setObjectName("botao_db_deleta_3")
-        self.horizontalLayout_14.addWidget(self.botao_db_deleta_3)
+        self.botao_db_deleta_psp.setObjectName("botao_db_deleta_psp")
+        self.horizontalLayout_14.addWidget(self.botao_db_deleta_psp)
         self.verticalLayout_23.addWidget(self.frame_23)
         self.horizontalLayout_3.addWidget(self.frame_botoes_db_psp)
         self.verticalLayout_12.addWidget(self.frame_geral_psp_dados)
@@ -5374,7 +5374,7 @@ class Ui_MainWindow(object):
         self.btn_upload_imagem_psp.setText(_translate("MainWindow", "upload de imagem"))
         self.botao_db_adiciona_psp.setText(_translate("MainWindow", "adicionar"))
         self.botao_db_atualiza_psp.setText(_translate("MainWindow", "atualizar"))
-        self.botao_db_deleta_3.setText(_translate("MainWindow", "deletar"))
+        self.botao_db_deleta_psp.setText(_translate("MainWindow", "deletar"))
         self.ex3_ps1.setText(_translate("MainWindow", "- insira a content id, caso não tenha digite qualquer coisa jamais deixe o campo vazio."))
         self.ex1_ps1.setText(_translate("MainWindow", "- insira o titulo do jogo de PlayStation PS1."))
         self.ex2_ps1.setText(_translate("MainWindow", "<html><head/><body><p>- insira a descrição, atenção: para pular linhas use a tag html.<br/></p></body></html>"))

@@ -66,7 +66,7 @@ from funcoes import menus
 from funcoes import home
 from funcoes import cadastro_users
 from funcoes import consulta_users
-#from funcoes import cadastro_infos
+from funcoes import cadastro_infos
 
 
 class MainWindow(QMainWindow):
@@ -112,12 +112,23 @@ class MainWindow(QMainWindow):
     def limpaSenhaCadastro(self, event):
         self.ui.input_senha_user.clear()
 
- #limpa campos input_pesquisa_acessos_usuarios
+    #limpa campos input_pesquisa_acessos_usuarios
     def limpaPesquisaAcessoUsers(self, event):
         self.ui.input_pesquisa_acessos_usuarios.clear()
-#limpa campos input_playstation_infos
+    #limpa campos input_playstation_infos
     def limpaInputInfos(self, event):
         self.ui.input_playstation_infos.clear()
+
+    # limpa campos input_playstation_psp
+    def limpaInputTituloPSp(self, event):
+        self.ui.input_titulo_jogo_psp.clear()
+    def limpaInputDescricaoPSp(self, event):
+        self.ui.input_descricao_jogo_psp.clear()
+    def limpaInputContentidPSp(self, event):
+        self.ui.input_contentid_psp.clear()
+    def limpaInputLinkPSp(self, event):
+        self.ui.input_link_jogo_psp.clear()
+
 
 
     def __init__(self):
@@ -132,7 +143,7 @@ class MainWindow(QMainWindow):
         home.funcoesHome(self)
         cadastro_users.funcoesCadastroUsers(self)
         consulta_users.funcoesConsultaUsers(self)
-        #cadastro_infos.funcoesCadastroInfos(self)
+        cadastro_infos.funcoesCadastroInfos(self)
 
 
 

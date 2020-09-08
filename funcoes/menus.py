@@ -108,8 +108,6 @@ def paginaCadastroUser(self):
 
 #pagina python--------------------->
 def paginaVerficaUser(self):
-    #from funcoes import conexao
-    #a = conexao.fechar_conexao
     self.ui.stackedWidget.setCurrentIndex(2)
 #pagina infos------------------->
 def paginaInfos(self):
