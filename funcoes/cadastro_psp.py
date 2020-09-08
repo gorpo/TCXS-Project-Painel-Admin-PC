@@ -20,7 +20,7 @@ import os
 from datetime import datetime
 
 
-def funcoesCadastroPsp(self):
+def funcoesCadastroPSP(self):
     # eventos para limpar os campos, que buscam funçoes no arquivo main | informações com o mouse sobre o item
     self.ui.imagem_psp.setToolTip('Clique no botão e envie uma imagem.\nFormatos aceitos apenas .jpg e .png\nFormatos como .jpeg ou outros não são aceitos.\nSua imagem será enviada automáticamente redimensionada\naplicada a borda e enviada por ftp.\nCaso ocorra algum erro confira os dados de ftp.')
     self.ui.input_titulo_jogo_psp.mousePressEvent = self.limpaInputTitulopsp
@@ -42,7 +42,7 @@ def funcoesCadastroPsp(self):
 
 
 def selecionarImagempsp(self):
-    self.imagem_recebida = []
+    self.imagem_recebida_psp = []
     try:
         janela2 = QWidget()
         janela2.resize(800, 600)
@@ -53,13 +53,13 @@ def selecionarImagempsp(self):
                                                   "JPG (*.jpg);;PNG (*.png)", options=options)
         if fileName:
             # faz uma verificaçao na imagem para limpar a lista acima
-            if fileName in self.imagem_recebida:
-                self.imagem_recebida.clear()
+            if fileName in self.imagem_recebida_psp:
+                self.imagem_recebida_psp.clear()
             else:
-                self.imagem_recebida.clear()
-                self.imagem_recebida.append(fileName)
+                self.imagem_recebida_psp.clear()
+                self.imagem_recebida_psp.append(fileName)
         # carrega na variavel do Image do pilow (PIL) a imagem aberta
-        imagem_recebida = Image.open(self.imagem_recebida[0])
+        imagem_recebida = Image.open(self.imagem_recebida_psp[0])
         # salva a imagem usando a extensao que quisermos
         # imagem_recebida = imagem_recebida.save("images/file.jpg")
         # TRATAMENTO DA IMAGEM RECEBIDA PONDO MARCA DAGUA E REDIMENSIONANDO
@@ -75,20 +75,20 @@ def selecionarImagempsp(self):
         # mescla as imagens de entrada e marca dagua na imagem da memoria
         imagem_final.paste(imagem_entrada, (0, 0))
         imagem_final.paste(watermark, (0, 0), mask=watermark)
-        self.nome_imagem = fileName.split('/')[-1]
+        self.nome_imagem_psp = fileName.split('/')[-1]
         # salva a imagem
-        imagem_final.save(f'images/{self.nome_imagem}')
+        imagem_final.save(f'images/{self.nome_imagem_psp}')
         # exibe a imagem
         # imagem_final.show()
         self.ui.imagem_psp.setPixmap(
-            QtGui.QPixmap(f'images/{self.nome_imagem}').scaled(250, 250, QtCore.Qt.KeepAspectRatio))
+            QtGui.QPixmap(f'images/{self.nome_imagem_psp}').scaled(250, 250, QtCore.Qt.KeepAspectRatio))
         # CONEXAO COM FTP PARA UPLOAD DA imagem
         # arquivo para ser enviado ao server
-        file = open(f'images/{self.nome_imagem}', 'rb')  # file to send
-        conexao.ftp.storbinary(f'STOR assets/images/psp/{self.nome_imagem}', file)  # send the file
+        file = open(f'images/{self.nome_imagem_psp}', 'rb')  # file to send
+        conexao.ftp.storbinary(f'STOR assets/images/psp/{self.nome_imagem_psp}', file)  # send the file
         file.close()  # close file and FTP and remove image
-        conexao.ftp.quit()
-        os.remove(f'images/{self.nome_imagem}')
+        #conexao.ftp.quit()
+        os.remove(f'images/{self.nome_imagem_psp}')
     except:
         pass
 
@@ -131,8 +131,8 @@ Caso queira deletar, clique na linha que quer deletar e no botão deletar!""", Q
     else:
 
         try:
-            self.nome_imagem = self.nome_imagem
-            if self.nome_imagem:
+            self.nome_imagem_psp = self.nome_imagem_psp
+            if self.nome_imagem_psp:
                 # hora e data para ser insidas no servidor
                 self.hoje = datetime.now()
                 self.data_formatada = self.hoje.strftime('%Y-%m-%d %H:%M:%S')
@@ -144,11 +144,14 @@ Caso queira deletar, clique na linha que quer deletar e no botão deletar!""", Q
                                        self.ui.input_descricao_jogo_psp.text())  # DESCRIÇÃO
                 self.model_psp.setData(self.model_psp.index(self.i_psp, 3),
                                        self.ui.input_contentid_psp.text())  # CONTENT_ID
-                self.model_psp.setData(self.model_psp.index(self.i_psp, 4), self.nome_imagem)  # IMAGEM
+                self.model_psp.setData(self.model_psp.index(self.i_psp, 4), self.nome_imagem_psp)  # IMAGEM
                 self.model_psp.setData(self.model_psp.index(self.i_psp, 5), self.data_formatada)  # CADASTRO
                 self.model_psp.setData(self.model_psp.index(self.i_psp, 6), self.ui.input_link_jogo_psp.text())  # LINK
                 self.model_psp.submitAll()
                 self.i_psp += 1
+                QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados inseridos, confira na tabela!""",
+                                     QMessageBox.Ok)
+                self.show()
         except AttributeError:
             QMessageBox.question(self, 'TCXS Project | AVISO!', """Faça o envio da imagem antes de adicionar!""",
                                  QMessageBox.Ok)
@@ -167,10 +170,12 @@ def updaterowpsp(self):
         record.setValue("titulo", self.ui.input_titulo_jogo_psp.text())  # TITULO
         record.setValue("descricao", self.ui.input_descricao_jogo_psp.text())  # DESCRIÇÃO
         record.setValue("content_id", self.ui.input_contentid_psp.text())  # CONTENT_ID
-        record.setValue("imagem", self.nome_imagem)  # IMAGEM
+        record.setValue("imagem", self.nome_imagem_psp)  # IMAGEM
         record.setValue("cadastro", self.data_formatada)  # CADASTRO
         record.setValue("link", self.ui.input_descricao_jogo_psp.text())  # LINK
         self.model_psp.setRecord(self.ui.tabela_dados_db_psp.currentIndex().row(), record)
+        QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados atualizados, confira na tabela!""", QMessageBox.Ok)
+        self.show()
     else:
         QMessageBox.question(self, 'TCXS Project | Atualizar PSP',
                              "Selecione uma linha para atualizar, clique sobre o numero a esquerda na tabela correspondente a linha.",
@@ -184,6 +189,8 @@ def delrowpsp(self):
         self.model_psp.removeRow(self.ui.tabela_dados_db_psp.currentIndex().row())
         self.i_psp -= 1
         self.model_psp.select()
+        QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados deletados, confira na tabela!""", QMessageBox.Ok)
+        self.show()
     else:
         QMessageBox.question(self, 'TCXS Project | Deletar PSP',
                              "Selecione uma linha para deletar, clique sobre o numero a esquerda na tabela correspondente a linha.",

@@ -77,6 +77,9 @@ Clique sobre a linha do usuário e depois clique em deletar.""", QMessageBox.Ok)
         self.model_user.setData(self.model_user.index(self.i_user, 5), 'user')
         self.model_user.submitAll()
         self.i_user += 1
+        QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados inseridos, confira na tabela!""", QMessageBox.Ok)
+        self.show()
+
 
 
 
@@ -86,6 +89,8 @@ def delrowUser(self):
         self.model_user.removeRow(self.ui.tabela_dados_usuarios.currentIndex().row())
         self.i_user -= 1
         self.model_user.select()
+        QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados deletados, confira na tabela!""", QMessageBox.Ok)
+        self.show()
     else:
         QMessageBox.question(self,'Mensagem', "Selecione uma linha para deletar, clique sobre o numero a esquerda na tabela correspondente a linha.", QMessageBox.Ok)
         self.show()
@@ -103,6 +108,8 @@ def updaterowUser(self):
         record.setValue("cadastro", self.data_formatada_user)
         record.setValue("nivel", 'user')
         self.model_user.setRecord(self.ui.tabela_dados_usuarios.currentIndex().row(), record)
+        QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados atualizados, confira na tabela!""", QMessageBox.Ok)
+        self.show()
     else:
         QMessageBox.question(self,'Mensagem', "Selecione uma linha para atualizar, clique sobre o numero a esquerda na tabela correspondente a linha.", QMessageBox.Ok)
         self.show()

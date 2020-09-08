@@ -2114,8 +2114,8 @@ class Ui_MainWindow(object):
         self.frame_38_ps1.setObjectName("frame_38_ps1")
         self.verticalLayout_33 = QtWidgets.QVBoxLayout(self.frame_38_ps1)
         self.verticalLayout_33.setObjectName("verticalLayout_33")
-        self.tabela_dados_db__ps1 = QtWidgets.QTableView(self.frame_38_ps1)
-        self.tabela_dados_db__ps1.setStyleSheet("QHeaderView {\n"
+        self.tabela_dados_db_ps1 = QtWidgets.QTableView(self.frame_38_ps1)
+        self.tabela_dados_db_ps1.setStyleSheet("QHeaderView {\n"
 "background: rgb(30, 30, 30);\n"
 "}\n"
 "QHeaderView::section{\n"
@@ -2150,11 +2150,11 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}\n"
 "* { gridline-color: gray }")
-        self.tabela_dados_db__ps1.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.tabela_dados_db__ps1.setGridStyle(QtCore.Qt.SolidLine)
-        self.tabela_dados_db__ps1.setObjectName("tabela_dados_db__ps1")
-        self.tabela_dados_db__ps1.horizontalHeader().setDefaultSectionSize(200)
-        self.verticalLayout_33.addWidget(self.tabela_dados_db__ps1)
+        self.tabela_dados_db_ps1.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.tabela_dados_db_ps1.setGridStyle(QtCore.Qt.SolidLine)
+        self.tabela_dados_db_ps1.setObjectName("tabela_dados_db_ps1")
+        self.tabela_dados_db_ps1.horizontalHeader().setDefaultSectionSize(200)
+        self.verticalLayout_33.addWidget(self.tabela_dados_db_ps1)
         self.frame_39_ps1 = QtWidgets.QFrame(self.frame_38_ps1)
         self.frame_39_ps1.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_39_ps1.setFrameShadow(QtWidgets.QFrame.Raised)

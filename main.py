@@ -69,6 +69,12 @@ from funcoes import cadastro_users
 from funcoes import consulta_users
 from funcoes import cadastro_infos
 from funcoes import cadastro_psp
+from funcoes import cadastro_ps1
+from funcoes import cadastro_ps2
+from funcoes import cadastro_retro
+from funcoes import cadastro_extras
+
+
 
 class MainWindow(QMainWindow):
     #funções de clicar e movimentar a tela com mouse
@@ -137,6 +143,45 @@ class MainWindow(QMainWindow):
     def limpaInputLinkpsp(self, event):
         self.ui.input_link_jogo_psp.clear()
 
+    # limpa campos input_playstation_ps1
+    def limpaInputTitulops1(self, event):
+        self.ui.input_titulo_ps1.clear()
+    def limpaInputDescricaops1(self, event):
+        self.ui.input_descricao_ps1.clear()
+    def limpaInputContentidps1(self, event):
+        self.ui.input_contentid_ps1.clear()
+    def limpaInputLinkps1(self, event):
+        self.ui.input_link_ps1.clear()
+    # limpa campos input_playstation_ps2
+    def limpaInputTitulops2(self, event):
+        self.ui.input_titulo_ps2.clear()
+    def limpaInputDescricaops2(self, event):
+        self.ui.input_descricao_ps2.clear()
+    def limpaInputContentidps2(self, event):
+        self.ui.input_contentid_ps2.clear()
+    def limpaInputLinkps2(self, event):
+        self.ui.input_link_ps2.clear()
+
+    # limpa campos input_playstation_retro
+    def limpaInputTituloretro(self, event):
+        self.ui.input_titulo_retro.clear()
+    def limpaInputDescricaoretro(self, event):
+        self.ui.input_descricao_retro.clear()
+    def limpaInputContentidretro(self, event):
+        self.ui.input_contentid_retro.clear()
+    def limpaInputLinkretro(self, event):
+        self.ui.input_link_retro.clear()
+    # limpa campos input_playstation_extras
+    def limpaInputTituloextras(self, event):
+        self.ui.input_titulo_extras.clear()
+    def limpaInputDescricaoextras(self, event):
+        self.ui.input_descricao_extras.clear()
+    def limpaInputContentidextras(self, event):
+        self.ui.input_contentid_extras.clear()
+    def limpaInputLinkextras(self, event):
+        self.ui.input_link_extras.clear()
+
+
 
 
 
@@ -195,7 +240,11 @@ linguagem: Python
         cadastro_users.funcoesCadastroUsers(self)
         consulta_users.funcoesConsultaUsers(self)
         cadastro_infos.funcoesCadastroInfos(self)
-        cadastro_psp.funcoesCadastroPsp(self)
+        cadastro_psp.funcoesCadastroPSP(self)
+        cadastro_ps1.funcoesCadastroPS1(self)
+        cadastro_ps2.funcoesCadastroPS2(self)
+        cadastro_retro.funcoesCadastroRETRO(self)
+        cadastro_extras.funcoesCadastroEXTRAS(self)
 
 
 

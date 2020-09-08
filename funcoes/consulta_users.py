@@ -57,6 +57,7 @@ def consultaUser(self):
         self.ui.tabela_pesquisa_acessos_usuarios.setToolTip('Informações sobre os acessos do usuário.\nCaso note algum IP suspeito delete o login do usuário.')
         self.i_user = self.model_user.rowCount()
 
+
     #se nao achou a tabela do user_usuario e ele nao esta na lista de cadastrados deleta a tabela para nao ficar lixo
     if self.achou_user and self.ui.input_pesquisa_acessos_usuarios.text() not in lista_users:
         self.query_user.exec(f"""DROP TABLE IF EXISTS user_{self.ui.input_pesquisa_acessos_usuarios.text()} """)

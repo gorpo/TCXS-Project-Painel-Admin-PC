@@ -4016,7 +4016,7 @@ QPushButton:pressed {
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_33">
                  <item>
-                  <widget class="QTableView" name="tabela_dados_db__ps1">
+                  <widget class="QTableView" name="tabela_dados_db_ps1">
                    <property name="styleSheet">
                     <string notr="true">QHeaderView {
 background: rgb(30, 30, 30);
