@@ -1918,7 +1918,7 @@ border: 2px solid  rgb(170,0,0);
                     <enum>Qt::SolidLine</enum>
                    </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>200</number>
                    </attribute>
                   </widget>
                  </item>
@@ -2198,7 +2198,7 @@ border: 2px solid  rgb(170,0,0);
                     <enum>Qt::SolidLine</enum>
                    </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>200</number>
                    </attribute>
                   </widget>
                  </item>
@@ -2550,7 +2550,7 @@ border: 2px solid  rgb(170,0,0);
                     <enum>Qt::SolidLine</enum>
                    </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>200</number>
                    </attribute>
                   </widget>
                  </item>
@@ -3203,11 +3203,20 @@ border: 2px solid  rgb(170,0,0);
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
                    </property>
+                   <property name="sizeAdjustPolicy">
+                    <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                   </property>
+                   <property name="dragEnabled">
+                    <bool>true</bool>
+                   </property>
                    <property name="gridStyle">
                     <enum>Qt::SolidLine</enum>
                    </property>
+                   <property name="wordWrap">
+                    <bool>false</bool>
+                   </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>200</number>
                    </attribute>
                   </widget>
                  </item>
@@ -3864,7 +3873,7 @@ border: 2px solid  rgb(170,0,0);
                     <enum>Qt::SolidLine</enum>
                    </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>200</number>
                    </attribute>
                   </widget>
                  </item>
@@ -4521,7 +4530,7 @@ border: 2px solid  rgb(170,0,0);
                     <enum>Qt::SolidLine</enum>
                    </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>200</number>
                    </attribute>
                   </widget>
                  </item>
@@ -7518,7 +7527,7 @@ border: 2px solid  rgb(170,0,0);
                         <enum>Qt::SolidLine</enum>
                        </property>
                        <attribute name="horizontalHeaderDefaultSectionSize">
-                        <number>150</number>
+                        <number>200</number>
                        </attribute>
                       </widget>
                      </item>
@@ -8319,7 +8328,7 @@ border: 2px solid  rgb(170,0,0);
                     <enum>Qt::SolidLine</enum>
                    </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>200</number>
                    </attribute>
                   </widget>
                  </item>
@@ -8982,7 +8991,7 @@ border: 2px solid  rgb(170,0,0);
                     <enum>Qt::SolidLine</enum>
                    </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>200</number>
                    </attribute>
                   </widget>
                  </item>
@@ -9663,7 +9672,7 @@ border: 2px solid  rgb(170,0,0);
                     <enum>Qt::SolidLine</enum>
                    </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
-                    <number>150</number>
+                    <number>200</number>
                    </attribute>
                   </widget>
                  </item>
@@ -9923,6 +9932,9 @@ QPushButton:pressed {
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                      <property name="openExternalLinks">
+                       <bool>true</bool>
                       </property>
                      </widget>
                     </item>
