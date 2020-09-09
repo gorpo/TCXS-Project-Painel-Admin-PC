@@ -9,10 +9,6 @@
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
 from main import *
-from PyQt5 import QtSql
-from PyQt5 import QtCore
-from PyQt5.QtSql import QSqlQuery
-from funcoes import conexao
 
 
 def funcoesConsultaUsers(self):

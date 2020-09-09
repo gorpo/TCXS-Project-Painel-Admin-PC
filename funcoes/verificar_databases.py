@@ -9,11 +9,7 @@
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
 from main import *
-from funcoes import conexao
-from PyQt5 import QtSql
-from PyQt5 import QtCore
-from PyQt5.QtSql import QSqlQuery
-from PyQt5.QtWidgets import QMessageBox
+
 
 
 def verificarDatabase(self):

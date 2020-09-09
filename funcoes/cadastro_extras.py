@@ -9,16 +9,6 @@
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
 from main import *
-from funcoes import conexao
-from PyQt5 import QtSql
-from PyQt5 import QtCore
-from PyQt5.QtSql import QSqlQuery
-from PyQt5.QtWidgets import QMessageBox
-from PIL import Image
-import ftplib
-import os
-from datetime import datetime
-
 
 def funcoesCadastroEXTRAS(self):
     # eventos para limpar os campos, que buscam funçoes no arquivo main | informações com o mouse sobre o item
@@ -109,8 +99,8 @@ def bancoDadosextras(self):
     self.model_extras.setHeaderData(5, QtCore.Qt.Horizontal, "Cadastro")
     self.model_extras.setHeaderData(6, QtCore.Qt.Horizontal, "Link")
     # tabela de dados
-    self.ui.tabela_dados_db_extras.setModel(self.model_extras)
-    self.ui.tabela_dados_db_extras.setToolTip(
+    self.ui.tabela_database_extras.setModel(self.model_extras)
+    self.ui.tabela_database_extras.setToolTip(
         'Tabela da dados:\nPara adicionar itens sempre preencha todos os campos.\nCaso queira editar clique sobre o numero de uma linha e clique em atualizar.\nCaso queira deletar clique sobre o numero de uma linha e delete.')
     self.i_extras = self.model_extras.rowCount()
 
@@ -161,19 +151,19 @@ Caso queira deletar, clique na linha que quer deletar e no botão deletar!""", Q
 
 # ATUALIZA AS CHAVES
 def updaterowextras(self):
-    if self.ui.tabela_dados_db_extras.currentIndex().row() > -1:
+    if self.ui.tabela_database_extras.currentIndex().row() > -1:
         # hora e data para ser insidas no servidor
         self.hoje = datetime.now()
         self.data_formatada = self.hoje.strftime('%Y-%m-%d %H:%M:%S')
         # atualiza os dados baseado no nome das row's
-        record = self.model_extras.record(self.ui.tabela_dados_db_extras.currentIndex().row())
+        record = self.model_extras.record(self.ui.tabela_database_extras.currentIndex().row())
         record.setValue("titulo", self.ui.input_titulo_extras.text())  # TITULO
         record.setValue("descricao", self.ui.input_descricao_extras.text())  # DESCRIÇÃO
         record.setValue("content_id", self.ui.input_contentid_extras.text())  # CONTENT_ID
         record.setValue("imagem", self.nome_imagem_extras)  # IMAGEM
         record.setValue("cadastro", self.data_formatada)  # CADASTRO
         record.setValue("link", self.ui.input_link_extras.text())  # LINK
-        self.model_extras.setRecord(self.ui.tabela_dados_db_extras.currentIndex().row(), record)
+        self.model_extras.setRecord(self.ui.tabela_database_extras.currentIndex().row(), record)
         QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados atualizados, confira na tabela!""", QMessageBox.Ok)
         self.show()
     else:
@@ -185,8 +175,8 @@ def updaterowextras(self):
 
 # DELETA AS CHAVES
 def delrowextras(self):
-    if self.ui.tabela_dados_db_extras.currentIndex().row() > -1:
-        self.model_extras.removeRow(self.ui.tabela_dados_db_extras.currentIndex().row())
+    if self.ui.tabela_database_extras.currentIndex().row() > -1:
+        self.model_extras.removeRow(self.ui.tabela_database_extras.currentIndex().row())
         self.i_extras -= 1
         self.model_extras.select()
         QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados deletados, confira na tabela!""", QMessageBox.Ok)

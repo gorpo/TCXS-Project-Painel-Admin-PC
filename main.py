@@ -57,14 +57,39 @@ from PyQt5 import QtCore, QtGui, QtWidgets,QtWebEngineWidgets
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
-from PyQt5.QtMultimedia import *
-from PyQt5.QtMultimediaWidgets import *
-import cvlib as cv
-import cv2
 from PIL import Image, ImageQt
 import subprocess
 import sys
 import time
+import sqlite3
+import sys
+import os
+from funcoes import conexao
+from PyQt5 import QtSql
+from PyQt5 import QtCore
+from PyQt5.QtSql import QSqlQuery
+from PyQt5.QtWidgets import QMessageBox
+import sys
+import time
+from PyQt5.QtWidgets import QApplication, QDialog,  QProgressBar, QPushButton
+from funcoes import conexao
+from PyQt5 import QtSql
+from PyQt5 import QtCore
+from PyQt5.QtSql import QSqlQuery
+from PyQt5.QtWidgets import QMessageBox
+import requests
+from bs4 import BeautifulSoup
+from funcoes import conexao
+from PyQt5 import QtSql
+from PyQt5 import QtCore
+from PyQt5.QtSql import QSqlQuery
+from PyQt5.QtWidgets import QMessageBox
+from PIL import Image
+import ftplib
+import os
+from datetime import datetime
+
+
 #importaçoes pessoais-------------->
 from mainwindow import Ui_MainWindow
 from funcoes.db_handler import criaDbLocal

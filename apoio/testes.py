@@ -1,43 +1,37 @@
-import sys
-import time
-
-from PyQt5.QtWidgets import (QApplication, QDialog,
-                             QProgressBar, QPushButton)
-
-TIME_LIMIT = 100
 
 
-class Actions(QDialog):
-    """
-    Simple dialog that consists of a Progress Bar and a Button.
-    Clicking on the button results in the start of a timer and
-    updates the progress bar.
-    """
-
-    def __init__(self):
-        super().__init__()
-        self.initUI()
-
-    def initUI(self):
-        self.setWindowTitle('Progress Bar')
-        self.progress = QProgressBar(self)
-        self.progress.setGeometry(0, 0, 300, 25)
-        self.progress.setMaximum(100)
-        self.button = QPushButton('Start', self)
-        self.button.move(0, 30)
-        self.show()
-
-        self.button.clicked.connect(self.onButtonClick)
-
-    def onButtonClick(self):
-        count = 0
-        while count < TIME_LIMIT:
-            count += 1
-            time.sleep(1)
-            self.progress.setValue(count)
 
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = Actions()
-    sys.exit(app.exec_())
+for i in range(30):
+
+    texto = ''' 
+           while query.next(): #TESTA LINK PLAYSTATION3
+            self.ui.progressBar404.setValue(contador_progress)
+            contador_progress += 1
+            titulo = query.value(1)
+            data = query.value(5).toPyDateTime().strftime('%d/%m/%Y')
+            try:  #TESTA LINK PLAYSTATION3
+                link = query.value(6)
+                if link == '---' or link == '':
+                    pass
+                else:
+                    pagina = requests.get(link.replace('=1', '=0'))
+                    # passa a pagina para o BeautifulSoup verificar o texto no titulo <title>Dropbox - Error</title>
+                    soup = BeautifulSoup(pagina.text, 'html.parser')
+                    erro404 = soup.find_all('title')[0]
+                    if str(erro404) == '<title>Dropbox - Error</title>':
+                        texto_html = f""" <h3 style='color: #fff;'>Jogo: {titulo} | Cadastro: {data} | Erro: 404</h3>"""
+                        link_html = f"""<a style='color: #fff;' href='{link}'>Link: {link}</a> """
+                        self.ui.textBrowser_verifica404.append(texto_html)
+                        self.ui.textBrowser_verifica404.append(link_html)
+                        contador_erros += 1
+            except Exception as e:
+                pass
+        '''
+
+    texto = texto.replace('link',f'link{i+1}')
+    texto = texto.replace('Link',f'Link{i+1}')
+    texto = texto.replace('LINK',f'LINK{i+1}')
+    texto = texto.replace('6',f'{i+6}')
+
+    print(texto)

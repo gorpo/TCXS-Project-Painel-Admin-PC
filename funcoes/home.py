@@ -9,9 +9,7 @@
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
 from main import *
-import sqlite3
-import sys
-import os
+
 
 
 def funcoesHome(self):

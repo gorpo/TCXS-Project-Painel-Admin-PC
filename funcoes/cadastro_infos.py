@@ -9,12 +9,6 @@
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
 from main import *
-from PyQt5 import QtSql
-from PyQt5 import QtCore
-from PyQt5.QtSql import QSqlQuery
-from PyQt5.QtWidgets import  QMessageBox
-from funcoes import conexao
-
 
 def funcoesCadastroInfos(self):
     # eventos para limpar os campos, que buscam funçoes no arquivo main
