@@ -15,19 +15,38 @@ from PyQt5 import QtCore
 from PyQt5.QtSql import QSqlQuery
 from PyQt5.QtWidgets import QMessageBox
 
+import requests
+from bs4 import BeautifulSoup
 
 def verificar404(self):
     self.ui.comboBox_verifica404.currentIndexChanged.connect(lambda: selecionaVerifica404(self))
 
 
 def selecionaVerifica404(self):
+    #armazena o valor retornado pela ComboBox
     self.verifica404_selecionada = self.ui.comboBox_verifica404.currentText()
-    print(self.verifica404_selecionada)
 
+    # verificaPSP
     if self.verifica404_selecionada == 'playstation_psp':
-        self.query_404 = QSqlQuery(conexao.db_mysql)
-        self.model_404 = QtSql.QSqlTableModel()
-        self.query_404.exec(f"""SELECT * FROM {self.verifica404_selecionada}""")
-        while self.query_404.next():
-            self.link_404 = self.query_404.value(6)
-            print(self.link_404)
+        query = QSqlQuery(conexao.db_mysql)
+        model = QtSql.QSqlTableModel()
+        query.exec(f"""SELECT * FROM playstation_ps1""")
+        while query.next():
+            titulo = query.value(1)
+            data = query.value(5).toPyDateTime().strftime('%d/%m/%Y')
+            link = query.value(6)
+            try:#faz tras a pagina do Dropbox com requests | print(titulo, pagina.status_code)
+                pagina = requests.get(link.replace('=1', '=0'))
+                # passa a pagina para o BeautifulSoup verificar o texto no titulo <title>Dropbox - Error</title>
+                soup = BeautifulSoup(pagina.text, 'html.parser')
+                erro404 = soup.find_all('title')[0]
+                if str(erro404) == '<title>Dropbox - Error</title>':
+                    texto_html = f""" <h2 style='color: #fff;'>Jogo: {titulo} | Cadastro: {data} | Erro: 404</h2>"""
+                    link_html = f"""<a style='color: #fff;' href='{link}'>Link: {link}</a> """
+                    self.ui.textBrowser_verifica404.append(texto_html)
+                    self.ui.textBrowser_verifica404.append(link_html)
+            except Exception as e:
+                print(e)
+                pass
+
+
