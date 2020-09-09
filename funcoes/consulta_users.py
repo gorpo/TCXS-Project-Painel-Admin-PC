@@ -43,6 +43,7 @@ def consultaUser(self):
         #retorna o nome dos usuarios cadastrados
         self.verifica_users_cadastrados = self.query_verifica_user.value(1)
         lista_users.append(self.verifica_users_cadastrados)
+
         #print(lista_users)
 
     #se achou a tabela do usuario user_usuario e ele esta cadastrado e ja na lista_users-->

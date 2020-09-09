@@ -5108,11 +5108,13 @@ class Ui_MainWindow(object):
         self.verticalLayout_14.setSpacing(0)
         self.verticalLayout_14.setObjectName("verticalLayout_14")
         self.frame_3_databases = QtWidgets.QFrame(self.pagina_databases)
-        self.frame_3_databases.setMinimumSize(QtCore.QSize(0, 120))
+        self.frame_3_databases.setMinimumSize(QtCore.QSize(0, 90))
         self.frame_3_databases.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_3_databases.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_3_databases.setObjectName("frame_3_databases")
         self.horizontalLayout_24 = QtWidgets.QHBoxLayout(self.frame_3_databases)
+        self.horizontalLayout_24.setContentsMargins(-1, -1, -1, 0)
+        self.horizontalLayout_24.setSpacing(0)
         self.horizontalLayout_24.setObjectName("horizontalLayout_24")
         self.frame_67_databases = QtWidgets.QFrame(self.frame_3_databases)
         self.frame_67_databases.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -5170,25 +5172,6 @@ class Ui_MainWindow(object):
         self.comboBox_databases.addItem("")
         self.comboBox_databases.addItem("")
         self.comboBox_databases.addItem("")
-        self.btn_verificar_databases = QtWidgets.QPushButton(self.frame_67_databases)
-        self.btn_verificar_databases.setGeometry(QtCore.QRect(480, 60, 258, 40))
-        self.btn_verificar_databases.setMinimumSize(QtCore.QSize(0, 40))
-        self.btn_verificar_databases.setStyleSheet("QPushButton {\n"
-"    background-color:transparent;\n"
-"    background-repeat: no-repeat;\n"
-"    background-position: center;\n"
-"    border: 2px solid rgb(45,45,45);\n"
-"border-radius: 5px;\n"
-"    color: rgb(255, 255, 255);\n"
-"    font: 20px SegoeUIl, bold;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(173,0,0);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"    background-color: rgb(130,0,0);\n"
-"}")
-        self.btn_verificar_databases.setObjectName("btn_verificar_databases")
         self.horizontalLayout_24.addWidget(self.frame_67_databases)
         self.verticalLayout_14.addWidget(self.frame_3_databases)
         self.frame_71_databases = QtWidgets.QFrame(self.pagina_databases)
@@ -5196,6 +5179,8 @@ class Ui_MainWindow(object):
         self.frame_71_databases.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_71_databases.setObjectName("frame_71_databases")
         self.verticalLayout_47 = QtWidgets.QVBoxLayout(self.frame_71_databases)
+        self.verticalLayout_47.setContentsMargins(-1, 0, -1, 0)
+        self.verticalLayout_47.setSpacing(0)
         self.verticalLayout_47.setObjectName("verticalLayout_47")
         self.tabela_dados_db_databases = QtWidgets.QTableView(self.frame_71_databases)
         self.tabela_dados_db_databases.setStyleSheet("QHeaderView {\n"
@@ -5252,7 +5237,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_70.setSpacing(0)
         self.verticalLayout_70.setObjectName("verticalLayout_70")
         self.frame_94_verifica_404 = QtWidgets.QFrame(self.pagina_verifica_404)
-        self.frame_94_verifica_404.setMinimumSize(QtCore.QSize(0, 140))
+        self.frame_94_verifica_404.setMinimumSize(QtCore.QSize(0, 70))
         self.frame_94_verifica_404.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_94_verifica_404.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_94_verifica_404.setObjectName("frame_94_verifica_404")
@@ -5287,10 +5272,10 @@ class Ui_MainWindow(object):
 "font: 20px Segoe UI, bold;\n"
 "}")
         self.titulo_topo_verifica_404.setObjectName("titulo_topo_verifica_404")
-        self.comboBox_2_verifica_404 = QtWidgets.QComboBox(self.frame_96_verifica_404)
-        self.comboBox_2_verifica_404.setGeometry(QtCore.QRect(20, 70, 331, 40))
-        self.comboBox_2_verifica_404.setMinimumSize(QtCore.QSize(0, 40))
-        self.comboBox_2_verifica_404.setStyleSheet("QComboBox{\n"
+        self.comboBox_verifica404 = QtWidgets.QComboBox(self.frame_96_verifica_404)
+        self.comboBox_verifica404.setGeometry(QtCore.QRect(160, 70, 331, 40))
+        self.comboBox_verifica404.setMinimumSize(QtCore.QSize(0, 40))
+        self.comboBox_verifica404.setStyleSheet("QComboBox{\n"
 "border: 2px solid rgb(45,45,45);\n"
 "border-radius: 5px;\n"
 "padding: 10px;\n"
@@ -5305,33 +5290,14 @@ class Ui_MainWindow(object):
 "border: 2px solid  rgb(170,0,0);\n"
 "    color: rgb(170,0,0);\n"
 "}")
-        self.comboBox_2_verifica_404.setObjectName("comboBox_2_verifica_404")
-        self.comboBox_2_verifica_404.addItem("")
-        self.comboBox_2_verifica_404.addItem("")
-        self.comboBox_2_verifica_404.addItem("")
-        self.comboBox_2_verifica_404.addItem("")
-        self.comboBox_2_verifica_404.addItem("")
-        self.comboBox_2_verifica_404.addItem("")
-        self.comboBox_2_verifica_404.addItem("")
-        self.btn_verifica_404 = QtWidgets.QPushButton(self.frame_96_verifica_404)
-        self.btn_verifica_404.setGeometry(QtCore.QRect(360, 70, 258, 40))
-        self.btn_verifica_404.setMinimumSize(QtCore.QSize(0, 40))
-        self.btn_verifica_404.setStyleSheet("QPushButton {\n"
-"    background-color:transparent;\n"
-"    background-repeat: no-repeat;\n"
-"    background-position: center;\n"
-"    border: 2px solid rgb(45,45,45);\n"
-"border-radius: 5px;\n"
-"    color: rgb(255, 255, 255);\n"
-"    font: 20px SegoeUIl, bold;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(173,0,0);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"    background-color: rgb(130,0,0);\n"
-"}")
-        self.btn_verifica_404.setObjectName("btn_verifica_404")
+        self.comboBox_verifica404.setObjectName("comboBox_verifica404")
+        self.comboBox_verifica404.addItem("")
+        self.comboBox_verifica404.addItem("")
+        self.comboBox_verifica404.addItem("")
+        self.comboBox_verifica404.addItem("")
+        self.comboBox_verifica404.addItem("")
+        self.comboBox_verifica404.addItem("")
+        self.comboBox_verifica404.addItem("")
         self.horizontalLayout_31.addWidget(self.frame_96_verifica_404)
         self.verticalLayout_70.addWidget(self.frame_94_verifica_404)
         self.frame_97_verifica_404 = QtWidgets.QFrame(self.pagina_verifica_404)
@@ -5339,6 +5305,8 @@ class Ui_MainWindow(object):
         self.frame_97_verifica_404.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_97_verifica_404.setObjectName("frame_97_verifica_404")
         self.verticalLayout_69 = QtWidgets.QVBoxLayout(self.frame_97_verifica_404)
+        self.verticalLayout_69.setContentsMargins(-1, 0, -1, 0)
+        self.verticalLayout_69.setSpacing(0)
         self.verticalLayout_69.setObjectName("verticalLayout_69")
         self.frame_98_verifica_404 = QtWidgets.QFrame(self.frame_97_verifica_404)
         self.frame_98_verifica_404.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -5346,10 +5314,10 @@ class Ui_MainWindow(object):
         self.frame_98_verifica_404.setObjectName("frame_98_verifica_404")
         self.verticalLayout_26 = QtWidgets.QVBoxLayout(self.frame_98_verifica_404)
         self.verticalLayout_26.setObjectName("verticalLayout_26")
-        self.textBrowser_verifica_404 = QtWidgets.QTextBrowser(self.frame_98_verifica_404)
-        self.textBrowser_verifica_404.setOpenExternalLinks(True)
-        self.textBrowser_verifica_404.setObjectName("textBrowser_verifica_404")
-        self.verticalLayout_26.addWidget(self.textBrowser_verifica_404)
+        self.textBrowser_verifica404 = QtWidgets.QTextBrowser(self.frame_98_verifica_404)
+        self.textBrowser_verifica404.setOpenExternalLinks(True)
+        self.textBrowser_verifica404.setObjectName("textBrowser_verifica404")
+        self.verticalLayout_26.addWidget(self.textBrowser_verifica404)
         self.verticalLayout_69.addWidget(self.frame_98_verifica_404)
         self.verticalLayout_70.addWidget(self.frame_97_verifica_404)
         self.stackedWidget.addWidget(self.pagina_verifica_404)
@@ -5718,27 +5686,25 @@ class Ui_MainWindow(object):
         self.ex2_databases.setText(_translate("MainWindow", "<html><head/><body><p>- <span style=\" font-weight:600;\">[ATENÇÃO]</span> não edite nada por aqui!</p></body></html>"))
         self.titulo_topo_databases.setText(_translate("MainWindow", "VERIFICADOR DO BANCO DE DADOS "))
         self.comboBox_databases.setItemText(0, _translate("MainWindow", "selecione"))
-        self.comboBox_databases.setItemText(1, _translate("MainWindow", "users cadastrados"))
-        self.comboBox_databases.setItemText(2, _translate("MainWindow", "infos da homepage"))
-        self.comboBox_databases.setItemText(3, _translate("MainWindow", "playstation psp"))
-        self.comboBox_databases.setItemText(4, _translate("MainWindow", "playstation1"))
-        self.comboBox_databases.setItemText(5, _translate("MainWindow", "playstation2"))
-        self.comboBox_databases.setItemText(6, _translate("MainWindow", "playstation3"))
-        self.comboBox_databases.setItemText(7, _translate("MainWindow", "playstation retro"))
-        self.comboBox_databases.setItemText(8, _translate("MainWindow", "playstation extras"))
-        self.btn_verificar_databases.setText(_translate("MainWindow", "verificar"))
+        self.comboBox_databases.setItemText(1, _translate("MainWindow", "playstation_users"))
+        self.comboBox_databases.setItemText(2, _translate("MainWindow", "playstation_infos"))
+        self.comboBox_databases.setItemText(3, _translate("MainWindow", "playstation_psp"))
+        self.comboBox_databases.setItemText(4, _translate("MainWindow", "playstation_ps1"))
+        self.comboBox_databases.setItemText(5, _translate("MainWindow", "playstation_ps2"))
+        self.comboBox_databases.setItemText(6, _translate("MainWindow", "playstation_ps3"))
+        self.comboBox_databases.setItemText(7, _translate("MainWindow", "playstation_emuladores"))
+        self.comboBox_databases.setItemText(8, _translate("MainWindow", "playstation_extras"))
         self.ex1_verifica_404.setText(_translate("MainWindow", "- basta selecionar uma das tabelas para fazer uma análise."))
         self.ex2_verifica_404.setText(_translate("MainWindow", "<html><head/><body><p>- <span style=\" font-weight:600;\">[ATENÇÃO]</span> este processo demora pois verifica link por link o visitando.</p></body></html>"))
         self.titulo_topo_verifica_404.setText(_translate("MainWindow", "VERIFICADOR LINK QUEBRADOS | 404 ERROR"))
-        self.comboBox_2_verifica_404.setItemText(0, _translate("MainWindow", "Selecione"))
-        self.comboBox_2_verifica_404.setItemText(1, _translate("MainWindow", "playstation psp"))
-        self.comboBox_2_verifica_404.setItemText(2, _translate("MainWindow", "playstation1"))
-        self.comboBox_2_verifica_404.setItemText(3, _translate("MainWindow", "playstation2"))
-        self.comboBox_2_verifica_404.setItemText(4, _translate("MainWindow", "playstation3"))
-        self.comboBox_2_verifica_404.setItemText(5, _translate("MainWindow", "playstation retro"))
-        self.comboBox_2_verifica_404.setItemText(6, _translate("MainWindow", "playstation extras"))
-        self.btn_verifica_404.setText(_translate("MainWindow", "verificar"))
-        self.textBrowser_verifica_404.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.comboBox_verifica404.setItemText(0, _translate("MainWindow", "Selecione"))
+        self.comboBox_verifica404.setItemText(1, _translate("MainWindow", "playstation_psp"))
+        self.comboBox_verifica404.setItemText(2, _translate("MainWindow", "playstation_ps1"))
+        self.comboBox_verifica404.setItemText(3, _translate("MainWindow", "playstation_ps2"))
+        self.comboBox_verifica404.setItemText(4, _translate("MainWindow", "playstation_ps3"))
+        self.comboBox_verifica404.setItemText(5, _translate("MainWindow", "playstation_emuladores"))
+        self.comboBox_verifica404.setItemText(6, _translate("MainWindow", "playstation_extras"))
+        self.textBrowser_verifica404.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"

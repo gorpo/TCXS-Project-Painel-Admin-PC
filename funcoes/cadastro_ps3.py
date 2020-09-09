@@ -231,7 +231,7 @@ def bancoDadosps3(self):
     # tabela de dados
     self.ui.tabela_database_ps3.setModel(self.model_ps3)
     self.ui.tabela_database_ps3.setToolTip(
-        'Tabela da dados:\nPara adicionar itens sempre preencha todos os campos.\nCaso queira editar clique sobre o numero de uma linha e clique em atualizar.\nCaso queira deletar clique sobre o numero de uma linha e delete.')
+        'Tabela de dados:\nPara adicionar itens sempre preencha todos os campos.\nCaso queira editar clique sobre o numero de uma linha e clique em atualizar.\nCaso queira deletar clique sobre o numero de uma linha e delete.')
     self.i_ps3 = self.model_ps3.rowCount()
 
 

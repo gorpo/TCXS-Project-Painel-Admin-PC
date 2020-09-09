@@ -74,8 +74,8 @@ from funcoes import cadastro_ps2
 from funcoes import cadastro_ps3
 from funcoes import cadastro_retro
 from funcoes import cadastro_extras
-
-
+from funcoes import verificar_databases
+from funcoes import verificador404
 
 class MainWindow(QMainWindow):
     #funções de clicar e movimentar a tela com mouse
@@ -347,7 +347,8 @@ linguagem: Python
         cadastro_ps3.funcoesCadastroPS3(self)
         cadastro_retro.funcoesCadastroRETRO(self)
         cadastro_extras.funcoesCadastroEXTRAS(self)
-
+        verificar_databases.verificarDatabase(self)
+        verificador404.verificar404(self)
 
 
 if __name__ == "__main__":
