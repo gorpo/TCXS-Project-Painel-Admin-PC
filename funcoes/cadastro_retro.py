@@ -172,7 +172,7 @@ def updaterowretro(self):
         record.setValue("content_id", self.ui.input_contentid_retro.text())  # CONTENT_ID
         record.setValue("imagem", self.nome_imagem_retro)  # IMAGEM
         record.setValue("cadastro", self.data_formatada)  # CADASTRO
-        record.setValue("link", self.ui.input_descricao_retro.text())  # LINK
+        record.setValue("link", self.ui.input_link_retro.text())  # LINK
         self.model_retro.setRecord(self.ui.tabela_database_retro.currentIndex().row(), record)
         QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados atualizados, confira na tabela!""", QMessageBox.Ok)
         self.show()

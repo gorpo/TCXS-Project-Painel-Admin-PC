@@ -172,7 +172,7 @@ def updaterowpsp(self):
         record.setValue("content_id", self.ui.input_contentid_psp.text())  # CONTENT_ID
         record.setValue("imagem", self.nome_imagem_psp)  # IMAGEM
         record.setValue("cadastro", self.data_formatada)  # CADASTRO
-        record.setValue("link", self.ui.input_descricao_jogo_psp.text())  # LINK
+        record.setValue("link", self.ui.input_link_jogo_psp.text())  # LINK
         self.model_psp.setRecord(self.ui.tabela_dados_db_psp.currentIndex().row(), record)
         QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados atualizados, confira na tabela!""", QMessageBox.Ok)
         self.show()

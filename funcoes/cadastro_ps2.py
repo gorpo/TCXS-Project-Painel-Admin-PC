@@ -173,7 +173,7 @@ def updaterowps2(self):
         record.setValue("content_id", self.ui.input_contentid_ps2.text())  # CONTENT_ID
         record.setValue("imagem", self.nome_imagem_ps2)  # IMAGEM
         record.setValue("cadastro", self.data_formatada)  # CADASTRO
-        record.setValue("link", self.ui.input_descricao_ps2.text())  # LINK
+        record.setValue("link", self.ui.input_link_ps2.text())  # LINK
         self.model_ps2.setRecord(self.ui.tabela_dados_db_ps2.currentIndex().row(), record)
         QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados atualizados, confira na tabela!""", QMessageBox.Ok)
         self.show()

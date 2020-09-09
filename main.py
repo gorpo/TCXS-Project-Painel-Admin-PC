@@ -71,6 +71,7 @@ from funcoes import cadastro_infos
 from funcoes import cadastro_psp
 from funcoes import cadastro_ps1
 from funcoes import cadastro_ps2
+from funcoes import cadastro_ps3
 from funcoes import cadastro_retro
 from funcoes import cadastro_extras
 
@@ -162,6 +163,105 @@ class MainWindow(QMainWindow):
     def limpaInputLinkps2(self, event):
         self.ui.input_link_ps2.clear()
 
+    # limpa campos input_playstation_ps3
+    def limpaInputTitulops3(self, event):
+        self.ui.input_titulo_ps3.clear()
+    def limpaInputDescricaops3(self, event):
+        self.ui.input_descricao_ps3.clear()
+    def limpaInputContentidps3(self, event):
+        self.ui.input_content_id_ps3.clear()
+
+    def limpaInputLink1ps3(self, event):
+        self.ui.input_link1_ps3.clear()
+
+    def limpaInputLink2ps3(self, event):
+        self.ui.input_link2_ps3.clear()
+
+    def limpaInputLink3ps3(self, event):
+        self.ui.input_link3_ps3.clear()
+
+    def limpaInputLink4ps3(self, event):
+        self.ui.input_link4_ps3.clear()
+
+    def limpaInputLink5ps3(self, event):
+        self.ui.input_link5_ps3.clear()
+
+    def limpaInputLink6ps3(self, event):
+        self.ui.input_link6_ps3.clear()
+
+    def limpaInputLink7ps3(self, event):
+        self.ui.input_link7_ps3.clear()
+
+    def limpaInputLink8ps3(self, event):
+        self.ui.input_link8_ps3.clear()
+
+    def limpaInputLink9ps3(self, event):
+        self.ui.input_link9_ps3.clear()
+
+    def limpaInputLink10ps3(self, event):
+        self.ui.input_link10_ps3.clear()
+
+    def limpaInputLink11ps3(self, event):
+        self.ui.input_link11_ps3.clear()
+
+    def limpaInputLink12ps3(self, event):
+        self.ui.input_link12_ps3.clear()
+
+    def limpaInputLink13ps3(self, event):
+        self.ui.input_link13_ps3.clear()
+
+    def limpaInputLink14ps3(self, event):
+        self.ui.input_link14_ps3.clear()
+
+    def limpaInputLink15ps3(self, event):
+        self.ui.input_link15_ps3.clear()
+
+    def limpaInputLink16ps3(self, event):
+        self.ui.input_link16_ps3.clear()
+
+    def limpaInputLink17ps3(self, event):
+        self.ui.input_link17_ps3.clear()
+
+    def limpaInputLink18ps3(self, event):
+        self.ui.input_link18_ps3.clear()
+
+    def limpaInputLink19ps3(self, event):
+        self.ui.input_link19_ps3.clear()
+
+    def limpaInputLink20ps3(self, event):
+        self.ui.input_link20_ps3.clear()
+
+    def limpaInputLink21ps3(self, event):
+        self.ui.input_link21_ps3.clear()
+
+    def limpaInputLink22ps3(self, event):
+        self.ui.input_link22_ps3.clear()
+
+    def limpaInputLink23ps3(self, event):
+        self.ui.input_link23_ps3.clear()
+
+    def limpaInputLink24ps3(self, event):
+        self.ui.input_link24_ps3.clear()
+
+    def limpaInputLink25ps3(self, event):
+        self.ui.input_link25_ps3.clear()
+
+    def limpaInputLink26ps3(self, event):
+        self.ui.input_link26_ps3.clear()
+
+    def limpaInputLink27ps3(self, event):
+        self.ui.input_link27_ps3.clear()
+
+    def limpaInputLink28ps3(self, event):
+        self.ui.input_link28_ps3.clear()
+
+    def limpaInputLink29ps3(self, event):
+        self.ui.input_link29_ps3.clear()
+
+    def limpaInputLink30ps3(self, event):
+        self.ui.input_link30_ps3.clear()
+
+
     # limpa campos input_playstation_retro
     def limpaInputTituloretro(self, event):
         self.ui.input_titulo_retro.clear()
@@ -171,6 +271,7 @@ class MainWindow(QMainWindow):
         self.ui.input_contentid_retro.clear()
     def limpaInputLinkretro(self, event):
         self.ui.input_link_retro.clear()
+
     # limpa campos input_playstation_extras
     def limpaInputTituloextras(self, event):
         self.ui.input_titulo_extras.clear()
@@ -243,15 +344,9 @@ linguagem: Python
         cadastro_psp.funcoesCadastroPSP(self)
         cadastro_ps1.funcoesCadastroPS1(self)
         cadastro_ps2.funcoesCadastroPS2(self)
+        cadastro_ps3.funcoesCadastroPS3(self)
         cadastro_retro.funcoesCadastroRETRO(self)
         cadastro_extras.funcoesCadastroEXTRAS(self)
-
-
-
-
-
-
-
 
 
 

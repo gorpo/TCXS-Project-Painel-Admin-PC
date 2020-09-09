@@ -172,7 +172,7 @@ def updaterowextras(self):
         record.setValue("content_id", self.ui.input_contentid_extras.text())  # CONTENT_ID
         record.setValue("imagem", self.nome_imagem_extras)  # IMAGEM
         record.setValue("cadastro", self.data_formatada)  # CADASTRO
-        record.setValue("link", self.ui.input_descricao_extras.text())  # LINK
+        record.setValue("link", self.ui.input_link_extras.text())  # LINK
         self.model_extras.setRecord(self.ui.tabela_dados_db_extras.currentIndex().row(), record)
         QMessageBox.question(self, 'TCXS Project | AVISO!', """Dados atualizados, confira na tabela!""", QMessageBox.Ok)
         self.show()

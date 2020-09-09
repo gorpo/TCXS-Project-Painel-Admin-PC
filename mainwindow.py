@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(918, 710)
+        MainWindow.resize(897, 710)
         self.janela_pai = QtWidgets.QWidget(MainWindow)
         self.janela_pai.setObjectName("janela_pai")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.janela_pai)
@@ -2674,8 +2674,9 @@ class Ui_MainWindow(object):
         self.frame_73.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_73.setObjectName("frame_73")
         self.btn_upload_imagem_ps3 = QtWidgets.QPushButton(self.frame_73)
-        self.btn_upload_imagem_ps3.setGeometry(QtCore.QRect(0, 270, 251, 61))
+        self.btn_upload_imagem_ps3.setGeometry(QtCore.QRect(0, 265, 251, 40))
         self.btn_upload_imagem_ps3.setMinimumSize(QtCore.QSize(0, 40))
+        self.btn_upload_imagem_ps3.setMaximumSize(QtCore.QSize(16777215, 40))
         self.btn_upload_imagem_ps3.setStyleSheet("QPushButton {\n"
 "    background-color:transparent;\n"
 "    background-repeat: no-repeat;\n"
@@ -5107,7 +5108,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_14.setSpacing(0)
         self.verticalLayout_14.setObjectName("verticalLayout_14")
         self.frame_3_databases = QtWidgets.QFrame(self.pagina_databases)
-        self.frame_3_databases.setMinimumSize(QtCore.QSize(0, 190))
+        self.frame_3_databases.setMinimumSize(QtCore.QSize(0, 120))
         self.frame_3_databases.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_3_databases.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_3_databases.setObjectName("frame_3_databases")
@@ -5142,7 +5143,7 @@ class Ui_MainWindow(object):
 "}")
         self.titulo_topo_databases.setObjectName("titulo_topo_databases")
         self.comboBox_databases = QtWidgets.QComboBox(self.frame_67_databases)
-        self.comboBox_databases.setGeometry(QtCore.QRect(20, 70, 341, 40))
+        self.comboBox_databases.setGeometry(QtCore.QRect(400, 10, 341, 40))
         self.comboBox_databases.setMinimumSize(QtCore.QSize(0, 40))
         self.comboBox_databases.setStyleSheet("QComboBox{\n"
 "border: 2px solid rgb(45,45,45);\n"
@@ -5170,7 +5171,7 @@ class Ui_MainWindow(object):
         self.comboBox_databases.addItem("")
         self.comboBox_databases.addItem("")
         self.btn_verificar_databases = QtWidgets.QPushButton(self.frame_67_databases)
-        self.btn_verificar_databases.setGeometry(QtCore.QRect(20, 120, 258, 40))
+        self.btn_verificar_databases.setGeometry(QtCore.QRect(480, 60, 258, 40))
         self.btn_verificar_databases.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_verificar_databases.setStyleSheet("QPushButton {\n"
 "    background-color:transparent;\n"
@@ -5258,7 +5259,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_31 = QtWidgets.QHBoxLayout(self.frame_94_verifica_404)
         self.horizontalLayout_31.setObjectName("horizontalLayout_31")
         self.frame_96_verifica_404 = QtWidgets.QFrame(self.frame_94_verifica_404)
-        self.frame_96_verifica_404.setMinimumSize(QtCore.QSize(0, 160))
+        self.frame_96_verifica_404.setMinimumSize(QtCore.QSize(0, 110))
         self.frame_96_verifica_404.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_96_verifica_404.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_96_verifica_404.setObjectName("frame_96_verifica_404")
@@ -5313,7 +5314,7 @@ class Ui_MainWindow(object):
         self.comboBox_2_verifica_404.addItem("")
         self.comboBox_2_verifica_404.addItem("")
         self.btn_verifica_404 = QtWidgets.QPushButton(self.frame_96_verifica_404)
-        self.btn_verifica_404.setGeometry(QtCore.QRect(20, 120, 258, 40))
+        self.btn_verifica_404.setGeometry(QtCore.QRect(360, 70, 258, 40))
         self.btn_verifica_404.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_verifica_404.setStyleSheet("QPushButton {\n"
 "    background-color:transparent;\n"
