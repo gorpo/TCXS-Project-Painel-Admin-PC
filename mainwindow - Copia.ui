@@ -9446,44 +9446,6 @@ background-color: rgb(170,0,0);
                      </widget>
                     </item>
                     <item>
-                     <widget class="QLabel" name="t_backup_2">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel{
-	background-color: transparent;
-	color: rgb(255, 255, 255);
-font: 15px Segoe UI, bold;
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>backup informações</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QProgressBar" name="progressBar_backup_infos">
-                      <property name="styleSheet">
-                       <string notr="true">QProgressBar{
-border: 2px solid rgba(45,45,45,0);
-border-radius: 5px;
-padding: 10px;
-background-color: rgb(30,30,30);
-	color: rgb(203, 203, 203);
-font: 15px Segoe UI, bold;
-}
-
-QProgressBar::chunk{
-background-color: rgb(170,0,0);
-}</string>
-                      </property>
-                      <property name="value">
-                       <number>0</number>
-                      </property>
-                      <property name="textVisible">
-                       <bool>false</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
                      <widget class="QLabel" name="explica1cadastro_users_4">
                       <property name="styleSheet">
                        <string notr="true">QLabel{

@@ -9,17 +9,6 @@
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
 from main import *
-from funcoes import conexao
-from PyQt5 import QtSql
-from PyQt5 import QtCore
-from PyQt5.QtSql import QSqlQuery
-from PyQt5.QtWidgets import QMessageBox
-import sys
-import time
-from PyQt5.QtWidgets import QApplication, QDialog,  QProgressBar, QPushButton
-
-import requests
-from bs4 import BeautifulSoup
 
 def verificar404(self):
     self.ui.comboBox_verifica404.currentIndexChanged.connect(lambda: selecionaVerifica404(self))
@@ -203,7 +192,7 @@ def selecionaVerifica404(self):
         contador_progress = 0
         contador_erros = 0
 
-        self.ui.progressBar404.setMaximum(query.size()*30)
+        self.ui.progressBar404.setMaximum(query.size())
 
 
         while query.next():
@@ -211,20 +200,40 @@ def selecionaVerifica404(self):
             contador_progress += 1
             titulo = query.value(1)
             data = query.value(5).toPyDateTime().strftime('%d/%m/%Y')
-            try:  #TESTA LINK PLAYSTATION3
-                link = query.value(6)
-                pagina = requests.get(link.replace('=1', '=0'))
-                # passa a pagina para o BeautifulSoup verificar o texto no titulo <title>Dropbox - Error</title>
-                soup = BeautifulSoup(pagina.text, 'html.parser')
-                erro404 = soup.find_all('title')[0]
-                if str(erro404) == '<title>Dropbox - Error</title>':
-                    texto_html = f""" <h3 style='color: #fff;'>Jogo: {titulo} | Cadastro: {data} | Erro: 404</h3>"""
-                    link_html = f"""<a style='color: #fff;' href='{link}'>Link: {link}</a> """
-                    self.ui.textBrowser_verifica404.append(texto_html)
-                    self.ui.textBrowser_verifica404.append(link_html)
-                    contador_erros += 1
-            except Exception as e:
+            link = query.value(6)
+            if link == '---':
                 pass
+            else:
+                try:  # TESTA LINK PLAYSTATION3
+                    pagina = requests.get(link.replace('=1', '=0'))
+                    # passa a pagina para o BeautifulSoup verificar o texto no titulo <title>Dropbox - Error</title>
+                    soup = BeautifulSoup(pagina.text, 'html.parser')
+                    erro404 = soup.find_all('title')[0]
+                    if str(erro404) == '<title>Dropbox - Error</title>':
+                        texto_html = f""" <h3 style='color: #fff;'>Jogo: {titulo} | Link: 01 | Cadastro: {data} | Erro: 404</h3>"""
+                        link_html = f"""<a style='color: #fff;' href='{link}'>Link: {link}</a> """
+                        self.ui.textBrowser_verifica404.append(texto_html)
+                        self.ui.textBrowser_verifica404.append(link_html)
+                        #contador_erros += 1
+                except Exception as e:
+                    pass
+            link = query.value(8)
+            if link == '---':
+                pass
+            else:
+                try:  # TESTA LINK PLAYSTATION3
+                    pagina = requests.get(link.replace('=1', '=0'))
+                    # passa a pagina para o BeautifulSoup verificar o texto no titulo <title>Dropbox - Error</title>
+                    soup = BeautifulSoup(pagina.text, 'html.parser')
+                    erro404 = soup.find_all('title')[0]
+                    if str(erro404) == '<title>Dropbox - Error</title>':
+                        texto_html = f""" <h3 style='color: #fff;'>Jogo: {titulo} | Link: 03 | Cadastro: {data} | Erro: 404</h3>"""
+                        link_html = f"""<a style='color: #fff;' href='{link}'>Link: {link}</a> """
+                        self.ui.textBrowser_verifica404.append(texto_html)
+                        self.ui.textBrowser_verifica404.append(link_html)
+                        contador_erros += 1
+                except Exception as e:
+                    pass
 
 
 

@@ -11,6 +11,7 @@
 
 from PyQt5 import QtSql  # pip install PyQT5==5.12
 import sqlite3
+import pymysql.cursors
 import ftplib
 
 # conexao sqlite para uso do programa
@@ -34,6 +35,9 @@ try:
     conexao_user.close()
 except:
     pass
+
+#CONEXAO PYMYSQL PARA BACKUP DA DATABASE ONLINE
+conexao_pymysql = pymysql.connect(host=hostMysql_user, user='root', password=senhaMysql_user, db=databaseMysql_user, charset='utf8mb4',cursorclass=pymysql.cursors.DictCursor)
 
 
 #CONEXAO FTP ---------------------------

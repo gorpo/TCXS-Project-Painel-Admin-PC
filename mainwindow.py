@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(897, 710)
+        MainWindow.resize(897, 700)
         self.janela_pai = QtWidgets.QWidget(MainWindow)
         self.janela_pai.setObjectName("janela_pai")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.janela_pai)
@@ -545,44 +545,6 @@ class Ui_MainWindow(object):
 "}")
         self.texto_menu_extras.setObjectName("texto_menu_extras")
         self.verticalLayout_7.addWidget(self.menu_extras)
-        self.menu_bottelegram = QtWidgets.QFrame(self.menu_esquerda)
-        self.menu_bottelegram.setStyleSheet("QFrame {\n"
-"    border: none;\n"
-"}\n"
-"QFrame:hover {\n"
-"    background-color: rgb(173,0,0);\n"
-"}\n"
-"QFrame:pressed {\n"
-"    background-color: rgb(130,0,0);\n"
-"}")
-        self.menu_bottelegram.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.menu_bottelegram.setObjectName("menu_bottelegram")
-        self.botao_menu_bottelegram = QtWidgets.QPushButton(self.menu_bottelegram)
-        self.botao_menu_bottelegram.setGeometry(QtCore.QRect(0, 0, 50, 50))
-        self.botao_menu_bottelegram.setStyleSheet("QPushButton {\n"
-"background-image: url(:/bot/images/telegram.png);\n"
-"    background-color: transparent;\n"
-"    background-repeat: no-repeat;\n"
-"    background-position: center;\n"
-"    border: none;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(173,0,0);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"    background-color: rgb(130,0,0);\n"
-"}")
-        self.botao_menu_bottelegram.setText("")
-        self.botao_menu_bottelegram.setObjectName("botao_menu_bottelegram")
-        self.texto_menu_bottelegram = QtWidgets.QLabel(self.menu_bottelegram)
-        self.texto_menu_bottelegram.setGeometry(QtCore.QRect(60, -1, 191, 51))
-        self.texto_menu_bottelegram.setStyleSheet("QLabel{\n"
-"    background-color: transparent;\n"
-"    color: rgb(255, 255, 255);\n"
-"font: 20px Segoe UI, bold;\n"
-"}")
-        self.texto_menu_bottelegram.setObjectName("texto_menu_bottelegram")
-        self.verticalLayout_7.addWidget(self.menu_bottelegram)
         self.menu_database = QtWidgets.QFrame(self.menu_esquerda)
         self.menu_database.setStyleSheet("QFrame {\n"
 "    border: none;\n"
@@ -659,6 +621,44 @@ class Ui_MainWindow(object):
 "}")
         self.texto_menu_404.setObjectName("texto_menu_404")
         self.verticalLayout_7.addWidget(self.menu_404)
+        self.menu_bottelegram = QtWidgets.QFrame(self.menu_esquerda)
+        self.menu_bottelegram.setStyleSheet("QFrame {\n"
+"    border: none;\n"
+"}\n"
+"QFrame:hover {\n"
+"    background-color: rgb(173,0,0);\n"
+"}\n"
+"QFrame:pressed {\n"
+"    background-color: rgb(130,0,0);\n"
+"}")
+        self.menu_bottelegram.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.menu_bottelegram.setObjectName("menu_bottelegram")
+        self.botao_menu_bottelegram = QtWidgets.QPushButton(self.menu_bottelegram)
+        self.botao_menu_bottelegram.setGeometry(QtCore.QRect(0, 0, 50, 50))
+        self.botao_menu_bottelegram.setStyleSheet("QPushButton {\n"
+"background-image: url(:/configuracoes/images/services-24.png);\n"
+"    background-color: transparent;\n"
+"    background-repeat: no-repeat;\n"
+"    background-position: center;\n"
+"    border: none;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(173,0,0);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(130,0,0);\n"
+"}")
+        self.botao_menu_bottelegram.setText("")
+        self.botao_menu_bottelegram.setObjectName("botao_menu_bottelegram")
+        self.texto_menu_bottelegram = QtWidgets.QLabel(self.menu_bottelegram)
+        self.texto_menu_bottelegram.setGeometry(QtCore.QRect(60, -1, 191, 51))
+        self.texto_menu_bottelegram.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 20px Segoe UI, bold;\n"
+"}")
+        self.texto_menu_bottelegram.setObjectName("texto_menu_bottelegram")
+        self.verticalLayout_7.addWidget(self.menu_bottelegram)
         self.horizontalLayout.addWidget(self.menu_esquerda)
         self.janela_central = QtWidgets.QFrame(self.conteiner_central)
         self.janela_central.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -870,7 +870,7 @@ class Ui_MainWindow(object):
         self.btn_database_home = QtWidgets.QPushButton(self.frame_5)
         self.btn_database_home.setMinimumSize(QtCore.QSize(210, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1682,7 +1682,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_psp = QtWidgets.QPushButton(self.frame_23)
         self.botao_db_adiciona_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1708,7 +1708,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_psp = QtWidgets.QPushButton(self.frame_23)
         self.botao_db_atualiza_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1734,7 +1734,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_psp = QtWidgets.QPushButton(self.frame_23)
         self.botao_db_deleta_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2030,7 +2030,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps1 = QtWidgets.QPushButton(self.frame_37)
         self.botao_db_adiciona_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2056,7 +2056,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps1 = QtWidgets.QPushButton(self.frame_37)
         self.botao_db_atualiza_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2082,7 +2082,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps1 = QtWidgets.QPushButton(self.frame_37)
         self.botao_db_deleta_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2375,7 +2375,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps2 = QtWidgets.QPushButton(self.frame_45)
         self.botao_db_adiciona_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2401,7 +2401,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps2 = QtWidgets.QPushButton(self.frame_45)
         self.botao_db_atualiza_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2427,7 +2427,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps2 = QtWidgets.QPushButton(self.frame_45)
         self.botao_db_deleta_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4185,7 +4185,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps3 = QtWidgets.QPushButton(self.frame_75_ps3)
         self.botao_db_adiciona_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4211,7 +4211,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps3 = QtWidgets.QPushButton(self.frame_75_ps3)
         self.botao_db_atualiza_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4237,7 +4237,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps3 = QtWidgets.QPushButton(self.frame_75_ps3)
         self.botao_db_deleta_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4476,7 +4476,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_retro = QtWidgets.QPushButton(self.frame_58_retro)
         self.botao_db_adiciona_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4502,7 +4502,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_retro = QtWidgets.QPushButton(self.frame_58_retro)
         self.botao_db_atualiza_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4528,7 +4528,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_retro = QtWidgets.QPushButton(self.frame_58_retro)
         self.botao_db_deleta_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4822,7 +4822,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_extras = QtWidgets.QPushButton(self.frame_btns_extras)
         self.botao_db_adiciona_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4848,7 +4848,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_extras = QtWidgets.QPushButton(self.frame_btns_extras)
         self.botao_db_atualiza_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4874,7 +4874,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_extras = QtWidgets.QPushButton(self.frame_btns_extras)
         self.botao_db_deleta_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl,12")
+        font.setFamily("SegoeUIl")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4954,136 +4954,61 @@ class Ui_MainWindow(object):
         self.verticalLayout_44.addWidget(self.frame_64_extras)
         self.verticalLayout_13.addWidget(self.frame_63_extras)
         self.stackedWidget.addWidget(self.pagina_jogos_extras)
-        self.pagina_tcxs_bot = QtWidgets.QWidget()
-        self.pagina_tcxs_bot.setObjectName("pagina_tcxs_bot")
-        self.verticalLayout_16 = QtWidgets.QVBoxLayout(self.pagina_tcxs_bot)
+        self.pagina_backup = QtWidgets.QWidget()
+        self.pagina_backup.setObjectName("pagina_backup")
+        self.verticalLayout_16 = QtWidgets.QVBoxLayout(self.pagina_backup)
         self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_16.setSpacing(0)
         self.verticalLayout_16.setObjectName("verticalLayout_16")
-        self.conteiner_topo_bot = QtWidgets.QFrame(self.pagina_tcxs_bot)
-        self.conteiner_topo_bot.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.conteiner_topo_bot.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.conteiner_topo_bot.setObjectName("conteiner_topo_bot")
-        self.verticalLayout_15 = QtWidgets.QVBoxLayout(self.conteiner_topo_bot)
+        self.conteiner_topo_backup = QtWidgets.QFrame(self.pagina_backup)
+        self.conteiner_topo_backup.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.conteiner_topo_backup.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.conteiner_topo_backup.setObjectName("conteiner_topo_backup")
+        self.verticalLayout_15 = QtWidgets.QVBoxLayout(self.conteiner_topo_backup)
+        self.verticalLayout_15.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_15.setSpacing(0)
         self.verticalLayout_15.setObjectName("verticalLayout_15")
-        self.frame_65 = QtWidgets.QFrame(self.conteiner_topo_bot)
-        self.frame_65.setMinimumSize(QtCore.QSize(0, 100))
-        self.frame_65.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_65.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_65.setObjectName("frame_65")
-        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_65)
-        self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.frame = QtWidgets.QFrame(self.frame_65)
-        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame.setObjectName("frame")
-        self.horizontalLayout_4.addWidget(self.frame)
-        self.frame_3 = QtWidgets.QFrame(self.frame_65)
-        self.frame_3.setMinimumSize(QtCore.QSize(0, 0))
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.frame_3)
-        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
-        self.logo_bot = QtWidgets.QLabel(self.frame_3)
-        self.logo_bot.setText("")
-        self.logo_bot.setPixmap(QtGui.QPixmap("images/logotcxstelegrambot.png"))
-        self.logo_bot.setScaledContents(True)
-        self.logo_bot.setObjectName("logo_bot")
-        self.horizontalLayout_8.addWidget(self.logo_bot)
-        self.horizontalLayout_4.addWidget(self.frame_3)
-        self.frame_2 = QtWidgets.QFrame(self.frame_65)
-        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_2.setObjectName("frame_2")
-        self.horizontalLayout_4.addWidget(self.frame_2)
-        self.verticalLayout_15.addWidget(self.frame_65)
-        self.frame_66 = QtWidgets.QFrame(self.conteiner_topo_bot)
-        self.frame_66.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_66.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_66.setObjectName("frame_66")
-        self.verticalLayout_45 = QtWidgets.QVBoxLayout(self.frame_66)
-        self.verticalLayout_45.setObjectName("verticalLayout_45")
-        self.textBrowser_bot = QtWidgets.QTextBrowser(self.frame_66)
-        self.textBrowser_bot.setStyleSheet("background-color: rgb(235, 235, 235);")
-        self.textBrowser_bot.setObjectName("textBrowser_bot")
-        self.verticalLayout_45.addWidget(self.textBrowser_bot)
-        self.verticalLayout_15.addWidget(self.frame_66)
-        self.verticalLayout_16.addWidget(self.conteiner_topo_bot)
-        self.rodape_bot = QtWidgets.QFrame(self.pagina_tcxs_bot)
-        self.rodape_bot.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.rodape_bot.setFrameShape(QtWidgets.QFrame.Panel)
-        self.rodape_bot.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.rodape_bot.setObjectName("rodape_bot")
-        self.horizontalLayout_19 = QtWidgets.QHBoxLayout(self.rodape_bot)
-        self.horizontalLayout_19.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_19.setSpacing(0)
-        self.horizontalLayout_19.setObjectName("horizontalLayout_19")
-        self.bot_token = QtWidgets.QLineEdit(self.rodape_bot)
-        self.bot_token.setMinimumSize(QtCore.QSize(0, 40))
-        self.bot_token.setStyleSheet("QLineEdit{\n"
-"border: 2px solid rgb(45,45,45);\n"
-"border-radius: 5px;\n"
-"padding: 10px;\n"
-"background-color: rgb(30,30,30);\n"
-"    color: rgb(203, 203, 203);\n"
+        self.frame_65backup = QtWidgets.QFrame(self.conteiner_topo_backup)
+        self.frame_65backup.setMinimumSize(QtCore.QSize(0, 50))
+        self.frame_65backup.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_65backup.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_65backup.setObjectName("frame_65backup")
+        self.ex3_backup = QtWidgets.QLabel(self.frame_65backup)
+        self.ex3_backup.setGeometry(QtCore.QRect(10, 70, 561, 31))
+        self.ex3_backup.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
 "font: 15px Segoe UI, bold;\n"
-"}\n"
-"QLineEdit:hover{\n"
-"border: 2px solid rgb(55,55,55);\n"
-"}\n"
-"QLineEdit:focus{\n"
-"border: 2px solid  rgb(170,0,0);\n"
-"    color: rgb(170,0,0);\n"
 "}")
-        self.bot_token.setClearButtonEnabled(False)
-        self.bot_token.setObjectName("bot_token")
-        self.horizontalLayout_19.addWidget(self.bot_token)
-        self.bot_canalid = QtWidgets.QLineEdit(self.rodape_bot)
-        self.bot_canalid.setMinimumSize(QtCore.QSize(0, 40))
-        self.bot_canalid.setStyleSheet("QLineEdit{\n"
-"border: 2px solid rgb(45,45,45);\n"
-"border-radius: 5px;\n"
-"padding: 10px;\n"
-"background-color: rgb(30,30,30);\n"
-"    color: rgb(203, 203, 203);\n"
+        self.ex3_backup.setObjectName("ex3_backup")
+        self.ex2_backup = QtWidgets.QLabel(self.frame_65backup)
+        self.ex2_backup.setGeometry(QtCore.QRect(10, 50, 511, 31))
+        self.ex2_backup.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
 "font: 15px Segoe UI, bold;\n"
-"}\n"
-"QLineEdit:hover{\n"
-"border: 2px solid rgb(55,55,55);\n"
-"}\n"
-"QLineEdit:focus{\n"
-"border: 2px solid  rgb(170,0,0);\n"
-"    color: rgb(170,0,0);\n"
 "}")
-        self.bot_canalid.setClearButtonEnabled(False)
-        self.bot_canalid.setObjectName("bot_canalid")
-        self.horizontalLayout_19.addWidget(self.bot_canalid)
-        self.bot_idpessoal = QtWidgets.QLineEdit(self.rodape_bot)
-        self.bot_idpessoal.setMinimumSize(QtCore.QSize(0, 40))
-        self.bot_idpessoal.setStyleSheet("QLineEdit{\n"
-"border: 2px solid rgb(45,45,45);\n"
-"border-radius: 5px;\n"
-"padding: 10px;\n"
-"background-color: rgb(30,30,30);\n"
-"    color: rgb(203, 203, 203);\n"
+        self.ex2_backup.setObjectName("ex2_backup")
+        self.titulo_backup = QtWidgets.QLabel(self.frame_65backup)
+        self.titulo_backup.setGeometry(QtCore.QRect(10, 10, 491, 21))
+        self.titulo_backup.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 20px Segoe UI, bold;\n"
+"}")
+        self.titulo_backup.setObjectName("titulo_backup")
+        self.ex1_backup = QtWidgets.QLabel(self.frame_65backup)
+        self.ex1_backup.setGeometry(QtCore.QRect(10, 30, 601, 31))
+        self.ex1_backup.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
 "font: 15px Segoe UI, bold;\n"
-"}\n"
-"QLineEdit:hover{\n"
-"border: 2px solid rgb(55,55,55);\n"
-"}\n"
-"QLineEdit:focus{\n"
-"border: 2px solid  rgb(170,0,0);\n"
-"    color: rgb(170,0,0);\n"
 "}")
-        self.bot_idpessoal.setClearButtonEnabled(False)
-        self.bot_idpessoal.setObjectName("bot_idpessoal")
-        self.horizontalLayout_19.addWidget(self.bot_idpessoal)
-        self.verticalLayout_16.addWidget(self.rodape_bot)
-        self.botao_inicia_bot = QtWidgets.QPushButton(self.pagina_tcxs_bot)
-        self.botao_inicia_bot.setMinimumSize(QtCore.QSize(10, 42))
-        self.botao_inicia_bot.setStyleSheet("QPushButton {\n"
+        self.ex1_backup.setObjectName("ex1_backup")
+        self.btn_iniciar_backup = QtWidgets.QPushButton(self.frame_65backup)
+        self.btn_iniciar_backup.setGeometry(QtCore.QRect(150, 100, 371, 42))
+        self.btn_iniciar_backup.setMinimumSize(QtCore.QSize(10, 42))
+        self.btn_iniciar_backup.setStyleSheet("QPushButton {\n"
 "    background-color:transparent;\n"
 "    background-repeat: no-repeat;\n"
 "    background-position: center;\n"
@@ -5098,9 +5023,221 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "    background-color: rgb(130,0,0);\n"
 "}")
-        self.botao_inicia_bot.setObjectName("botao_inicia_bot")
-        self.verticalLayout_16.addWidget(self.botao_inicia_bot)
-        self.stackedWidget.addWidget(self.pagina_tcxs_bot)
+        self.btn_iniciar_backup.setObjectName("btn_iniciar_backup")
+        self.verticalLayout_15.addWidget(self.frame_65backup)
+        self.frame_66_backup = QtWidgets.QFrame(self.conteiner_topo_backup)
+        self.frame_66_backup.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_66_backup.setMaximumSize(QtCore.QSize(16777215, 450))
+        self.frame_66_backup.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_66_backup.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_66_backup.setObjectName("frame_66_backup")
+        self.verticalLayout_28 = QtWidgets.QVBoxLayout(self.frame_66_backup)
+        self.verticalLayout_28.setContentsMargins(-1, 0, -1, 0)
+        self.verticalLayout_28.setSpacing(4)
+        self.verticalLayout_28.setObjectName("verticalLayout_28")
+        self.t_backup = QtWidgets.QLabel(self.frame_66_backup)
+        self.t_backup.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.t_backup.setObjectName("t_backup")
+        self.verticalLayout_28.addWidget(self.t_backup)
+        self.progressBar_backup_users = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_users.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_users.setProperty("value", 0)
+        self.progressBar_backup_users.setTextVisible(False)
+        self.progressBar_backup_users.setObjectName("progressBar_backup_users")
+        self.verticalLayout_28.addWidget(self.progressBar_backup_users)
+        self.t_backup_2 = QtWidgets.QLabel(self.frame_66_backup)
+        self.t_backup_2.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.t_backup_2.setObjectName("t_backup_2")
+        self.verticalLayout_28.addWidget(self.t_backup_2)
+        self.progressBar_backup_infos = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_infos.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_infos.setProperty("value", 0)
+        self.progressBar_backup_infos.setTextVisible(False)
+        self.progressBar_backup_infos.setObjectName("progressBar_backup_infos")
+        self.verticalLayout_28.addWidget(self.progressBar_backup_infos)
+        self.explica1cadastro_users_4 = QtWidgets.QLabel(self.frame_66_backup)
+        self.explica1cadastro_users_4.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.explica1cadastro_users_4.setObjectName("explica1cadastro_users_4")
+        self.verticalLayout_28.addWidget(self.explica1cadastro_users_4)
+        self.progressBar_backup_psp = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_psp.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_psp.setProperty("value", 0)
+        self.progressBar_backup_psp.setTextVisible(False)
+        self.progressBar_backup_psp.setObjectName("progressBar_backup_psp")
+        self.verticalLayout_28.addWidget(self.progressBar_backup_psp)
+        self.explica1cadastro_users_5 = QtWidgets.QLabel(self.frame_66_backup)
+        self.explica1cadastro_users_5.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.explica1cadastro_users_5.setObjectName("explica1cadastro_users_5")
+        self.verticalLayout_28.addWidget(self.explica1cadastro_users_5)
+        self.progressBar_backup_ps1 = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_ps1.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_ps1.setProperty("value", 0)
+        self.progressBar_backup_ps1.setTextVisible(False)
+        self.progressBar_backup_ps1.setObjectName("progressBar_backup_ps1")
+        self.verticalLayout_28.addWidget(self.progressBar_backup_ps1)
+        self.explica1cadastro_users_6 = QtWidgets.QLabel(self.frame_66_backup)
+        self.explica1cadastro_users_6.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.explica1cadastro_users_6.setObjectName("explica1cadastro_users_6")
+        self.verticalLayout_28.addWidget(self.explica1cadastro_users_6)
+        self.progressBar_backup_ps2 = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_ps2.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_ps2.setProperty("value", 0)
+        self.progressBar_backup_ps2.setTextVisible(False)
+        self.progressBar_backup_ps2.setObjectName("progressBar_backup_ps2")
+        self.verticalLayout_28.addWidget(self.progressBar_backup_ps2)
+        self.explica1cadastro_users_8 = QtWidgets.QLabel(self.frame_66_backup)
+        self.explica1cadastro_users_8.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.explica1cadastro_users_8.setObjectName("explica1cadastro_users_8")
+        self.verticalLayout_28.addWidget(self.explica1cadastro_users_8)
+        self.progressBar_backup_ps3 = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_ps3.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_ps3.setProperty("value", 0)
+        self.progressBar_backup_ps3.setTextVisible(False)
+        self.progressBar_backup_ps3.setObjectName("progressBar_backup_ps3")
+        self.verticalLayout_28.addWidget(self.progressBar_backup_ps3)
+        self.explica1cadastro_users_7 = QtWidgets.QLabel(self.frame_66_backup)
+        self.explica1cadastro_users_7.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.explica1cadastro_users_7.setObjectName("explica1cadastro_users_7")
+        self.verticalLayout_28.addWidget(self.explica1cadastro_users_7)
+        self.progressBar_backup_emuladores = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_emuladores.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_emuladores.setProperty("value", 0)
+        self.progressBar_backup_emuladores.setTextVisible(False)
+        self.progressBar_backup_emuladores.setObjectName("progressBar_backup_emuladores")
+        self.verticalLayout_28.addWidget(self.progressBar_backup_emuladores)
+        self.explica1cadastro_users_9 = QtWidgets.QLabel(self.frame_66_backup)
+        self.explica1cadastro_users_9.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.explica1cadastro_users_9.setObjectName("explica1cadastro_users_9")
+        self.verticalLayout_28.addWidget(self.explica1cadastro_users_9)
+        self.progressBar_backup_extras = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_extras.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_extras.setProperty("value", 0)
+        self.progressBar_backup_extras.setTextVisible(False)
+        self.progressBar_backup_extras.setObjectName("progressBar_backup_extras")
+        self.verticalLayout_28.addWidget(self.progressBar_backup_extras)
+        self.verticalLayout_15.addWidget(self.frame_66_backup)
+        self.verticalLayout_16.addWidget(self.conteiner_topo_backup)
+        self.stackedWidget.addWidget(self.pagina_backup)
         self.pagina_databases = QtWidgets.QWidget()
         self.pagina_databases.setObjectName("pagina_databases")
         self.verticalLayout_14 = QtWidgets.QVBoxLayout(self.pagina_databases)
@@ -5409,9 +5546,9 @@ class Ui_MainWindow(object):
         self.texto_menu_ps3.setText(_translate("MainWindow", "jogos PS3"))
         self.texto_menu_retro.setText(_translate("MainWindow", "jogos RETRO"))
         self.texto_menu_extras.setText(_translate("MainWindow", "links EXTRAS"))
-        self.texto_menu_bottelegram.setText(_translate("MainWindow", "bot TELEGRAM"))
         self.texto_menu_database.setText(_translate("MainWindow", "database TCXS"))
-        self.texto_menu_404.setText(_translate("MainWindow", "VERIFICADOR 404"))
+        self.texto_menu_404.setText(_translate("MainWindow", "verificador 404"))
+        self.texto_menu_bottelegram.setText(_translate("MainWindow", "backup DATABASE"))
         self.titulo_topo_verifica_405.setText(_translate("MainWindow", "MYSQL [database | user | senha | host]    |    FTP [endereço | user | senha]"))
         self.input_nome_database_home.setText(_translate("MainWindow", "nome database"))
         self.input_user_database_home.setText(_translate("MainWindow", "user database"))
@@ -5602,103 +5739,19 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_extras.setText(_translate("MainWindow", "adicionar"))
         self.botao_db_atualiza_extras.setText(_translate("MainWindow", "atualizar"))
         self.botao_db_deleta_extras.setText(_translate("MainWindow", "deletar"))
-        self.textBrowser_bot.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">TCXS PROJECT BOT TELEGRAM</span><br /><span style=\" font-size:16pt; vertical-align:super;\">desenvolvido para plataforma telegram</span><br /><span style=\" font-size:10pt; font-weight:600;\">comandos</span><span style=\" font-size:10pt;\"> - mostra todos comandos</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">start </span><span style=\" font-size:10pt;\">- inicia o bot</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">pin </span><span style=\" font-size:10pt;\">- Fixa uma mensagem no grupo(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">unpin </span><span style=\" font-size:10pt;\">- Desfixa a mensagem fixada no grupo(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">title</span><span style=\" font-size:10pt;\"> - Define o titulo do grupo(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">defregras</span><span style=\" font-size:10pt;\"> - define regras(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">ban</span><span style=\" font-size:10pt;\">- bane usuario(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">unban</span><span style=\" font-size:10pt;\"> - Desbane um usuario(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">mute </span><span style=\" font-size:10pt;\">- muta usuario(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">unmute</span><span style=\" font-size:10pt;\"> - Desrestringe um usuario(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">warn </span><span style=\" font-size:10pt;\">- Adverte um usuario(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">welcome </span><span style=\" font-size:10pt;\">- Define a mensagem de welcome(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">unwarn </span><span style=\" font-size:10pt;\">- Remove as advertencias do usuario(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">kick</span><span style=\" font-size:10pt;\"> - kicka usuario(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">regras</span><span style=\" font-size:10pt;\"> - ve as regras</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">config </span><span style=\" font-size:10pt;\">- informacoes serao enviadas no privado</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">admdebu</span><span style=\" font-size:10pt;\">g -  debug do admin</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">tr </span><span style=\" font-size:10pt;\">- Traduz um texto</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">yt </span><span style=\" font-size:10pt;\">- Pesquisa videos no YouTube</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">ytdl</span><span style=\" font-size:10pt;\"> - Baixa o audio de um video no YouTube</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">r</span><span style=\" font-size:10pt;\"> - pesquisa um termo no redit</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">coub</span><span style=\" font-size:10pt;\"> - Pesquisa de pequenas animacoes</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">dados</span><span style=\" font-size:10pt;\"> - jogo de dados</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">gif</span><span style=\" font-size:10pt;\"> - gif do giphy</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">git</span><span style=\" font-size:10pt;\"> - usuario do github</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">id</span><span style=\" font-size:10pt;\"> - id do usuario</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">ip</span><span style=\" font-size:10pt;\"> - informa dados de um ip</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">jsondump</span><span style=\" font-size:10pt;\"> - retorna dados formatados</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">stickerid</span><span style=\" font-size:10pt;\"> - pega id de um sticker</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">getsticker</span><span style=\" font-size:10pt;\"> - baixa um sticker(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">criar_sticker </span><span style=\" font-size:10pt;\">- cria um pacote de stickers(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">kibar  </span><span style=\" font-size:10pt;\">- copia um sticker para o pacote de stickers(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">pypi</span><span style=\" font-size:10pt;\"> - pesquisa libs python</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">rextester</span><span style=\" font-size:10pt;\"> - interpretador de varias linguagens de programa??o</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">mark</span><span style=\" font-size:10pt;\"> - Repete o texto informado usando Markdown</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">html </span><span style=\" font-size:10pt;\">- Repete o texto informado usando HTML</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">request </span><span style=\" font-size:10pt;\">- Faz uma requisicao a um site</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">site </span><span style=\" font-size:10pt;\">- exibe o site da equipe</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">facebook</span><span style=\" font-size:10pt;\"> - exibe o facebook da equipe, cadastre-se</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">netflix </span><span style=\" font-size:10pt;\">- exibe nosso site de netflix gratis</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">iptv </span><span style=\" font-size:10pt;\">- exibe nosso site de iptv gratis</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">anime</span><span style=\" font-size:10pt;\"> - exibe nosso site de anime gratis</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">pkg </span><span style=\" font-size:10pt;\">- exibe nosso site de pkg\'s para ps3 gratis</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">biblioteca</span><span style=\" font-size:10pt;\"> - exibe nossa biblioteca hacker</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">curso</span><span style=\" font-size:10pt;\"> - exibe nosso site de  cursos</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">doadores</span><span style=\" font-size:10pt;\"> - exibe instruces completas para doadores</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">painel </span><span style=\" font-size:10pt;\">- exibe nosso painel hacker</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">ban</span><span style=\" font-size:10pt;\"> - Bane um usuario(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">config</span><span style=\" font-size:10pt;\"> - Envia um menu de configuracoes(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">defregras</span><span style=\" font-size:10pt;\"> - Define as regras do grupo(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">kick </span><span style=\" font-size:10pt;\">- Kicka um inscrito(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">mute</span><span style=\" font-size:10pt;\"> - Restringe um usuario(apenas admins)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">coub</span><span style=\" font-size:10pt;\"> - Pesquisa de pequenas animacoes</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">echo</span><span style=\" font-size:10pt;\"> - Repete o texto informado</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">gif </span><span style=\" font-size:10pt;\">- Pesquisa de GIFs</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">git </span><span style=\" font-size:10pt;\">- Envia informaces de um user do GitHub</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">html</span><span style=\" font-size:10pt;\"> - Repete o texto informado usando HTML</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">ip </span><span style=\" font-size:10pt;\">- Exibe informaces sobre um IPdominio</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">jsondump</span><span style=\" font-size:10pt;\"> - Envia o json da mensagem</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">mark </span><span style=\" font-size:10pt;\">- Repete o texto informado usando Markdown</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">print</span><span style=\" font-size:10pt;\"> - Envia uma print de um site</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">pypi</span><span style=\" font-size:10pt;\"> - Pesquisa de modulos no PyPI</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">r</span><span style=\" font-size:10pt;\"> - Pesquisa de topicos no Reddit</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">request</span><span style=\" font-size:10pt;\"> - Faz uma requisicao a um site</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">shorten </span><span style=\" font-size:10pt;\">- Encurta uma URL</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">token</span><span style=\" font-size:10pt;\"> - Exibe informaces de um token de bot</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">tr </span><span style=\" font-size:10pt;\">- Traduz um texto</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">yt </span><span style=\" font-size:10pt;\">- Pesquisa v?deos no YouTube</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">ytdl </span><span style=\" font-size:10pt;\">- Baixa o ?udio de um v?deo no YouTube</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">admins </span><span style=\" font-size:10pt;\">- Mostra a lista de admins do chat</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">dados </span><span style=\" font-size:10pt;\">- Envia um numero aleatorio de 1 a 6</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">bug</span><span style=\" font-size:10pt;\"> - Reporta um bug ao meu desenvolvedor</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">id</span><span style=\" font-size:10pt;\"> - Exibe suas informaces ou de um usuario</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">ping </span><span style=\" font-size:10pt;\">- Responde com uma mensagem de ping</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">regras</span><span style=\" font-size:10pt;\"> - Exibe as regras do grupo</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">roleta</span><span style=\" font-size:10pt;\"> - Para jogar a Roleta Russa</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">backup</span><span style=\" font-size:10pt;\"> - Faz backup do bot(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">cmd</span><span style=\" font-size:10pt;\"> - Executa um comando(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">chat</span><span style=\" font-size:10pt;\"> - Obtem infos de um chat(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">del</span><span style=\" font-size:10pt;\"> - Deleta a mensagem respondida(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">doc</span><span style=\" font-size:10pt;\"> - Envia um documento do server(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">eval</span><span style=\" font-size:10pt;\"> - Executa uma função Python(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">exec </span><span style=\" font-size:10pt;\">- Executa um código Python(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">leave</span><span style=\" font-size:10pt;\"> - O bot sai do chat(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">plist </span><span style=\" font-size:10pt;\">- Lista os plugins ativos(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">promote</span><span style=\" font-size:10pt;\"> - Promove alguém a admin(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">restart</span><span style=\" font-size:10pt;\"> - Reinicia o bot(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">upgrade</span><span style=\" font-size:10pt;\"> - Atualiza a base do bot(apenas dev)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">upload</span><span style=\" font-size:10pt;\"> - Envia um arquivo para o servidor(apenas dev)</span></p></body></html>"))
-        self.bot_token.setText(_translate("MainWindow", "insira o token do bot"))
-        self.bot_canalid.setText(_translate("MainWindow", "insira id do canal do bot"))
-        self.bot_idpessoal.setText(_translate("MainWindow", "insira sua id do telegram"))
-        self.botao_inicia_bot.setText(_translate("MainWindow", "start"))
+        self.ex3_backup.setText(_translate("MainWindow", "- guarde este backup caso preciso, ele precisa de conversão para ser reupado."))
+        self.ex2_backup.setText(_translate("MainWindow", "- backup salvo no formato SqLite3 para usar no servidor o formato é Mysql."))
+        self.titulo_backup.setText(_translate("MainWindow", "BACKUP DA DATABASE TCXS PROJECT STORE"))
+        self.ex1_backup.setText(_translate("MainWindow", "- clique em iniciar e o backup será feito."))
+        self.btn_iniciar_backup.setText(_translate("MainWindow", "iniciar"))
+        self.t_backup.setText(_translate("MainWindow", "backup usuários"))
+        self.t_backup_2.setText(_translate("MainWindow", "backup informações"))
+        self.explica1cadastro_users_4.setText(_translate("MainWindow", "backup playstation psp"))
+        self.explica1cadastro_users_5.setText(_translate("MainWindow", "backup playstation ps1"))
+        self.explica1cadastro_users_6.setText(_translate("MainWindow", "backup playstation ps2"))
+        self.explica1cadastro_users_8.setText(_translate("MainWindow", "backup playstation ps3"))
+        self.explica1cadastro_users_7.setText(_translate("MainWindow", "backup playstation emuladores"))
+        self.explica1cadastro_users_9.setText(_translate("MainWindow", "backup playstation extras"))
         self.ex1_databases.setText(_translate("MainWindow", "- basta selecionar uma das tabelas para ver seus dados."))
         self.ex2_databases.setText(_translate("MainWindow", "<html><head/><body><p>- <span style=\" font-weight:600;\">[ATENÇÃO]</span> não edite nada por aqui!</p></body></html>"))
         self.titulo_topo_databases.setText(_translate("MainWindow", "VERIFICADOR DO BANCO DE DADOS "))

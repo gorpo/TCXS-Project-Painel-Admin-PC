@@ -59,15 +59,14 @@ from PyQt5.QtGui import *
 from PyQt5.QtSql import QSqlQuery
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
-
 from PIL import Image, ImageQt
 from bs4 import BeautifulSoup
 from funcoes import conexao
+import sqlite3
+import pymysql.cursors
 import ftplib
 import subprocess
-import sys
 import time
-import sqlite3
 import sys
 import os
 from datetime import datetime
@@ -93,6 +92,9 @@ from funcoes import cadastro_retro
 from funcoes import cadastro_extras
 from funcoes import verificar_databases
 from funcoes import verificador404
+from funcoes import backup_mysql
+
+
 
 class MainWindow(QMainWindow):
     #funções de clicar e movimentar a tela com mouse
@@ -366,6 +368,7 @@ linguagem: Python
         cadastro_extras.funcoesCadastroEXTRAS(self)
         verificar_databases.verificarDatabase(self)
         verificador404.verificar404(self)
+        backup_mysql.backupDatabaseMysql(self)
 
 
 if __name__ == "__main__":
