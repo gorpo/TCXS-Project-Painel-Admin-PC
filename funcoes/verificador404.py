@@ -21,13 +21,13 @@ def verificar404(self):
 
 
 def selecionaVerifica404(self):
-    verifica404_selecionada = self.ui.comboBox_verifica404.currentText()
-    print(verifica404_selecionada)
-    self.a = QSqlQuery(conexao.db_mysql)
-    self.c = self.a.exec("""SELECT * FROM `playstation_ps1` """)
-    print(self.a)
-    print(self.c)
-    while self.a.next():
-        # retorna o nome dos usuarios cadastrados
-        self.b = self.a.value(1)
-        print(self.b)
+    self.verifica404_selecionada = self.ui.comboBox_verifica404.currentText()
+    print(self.verifica404_selecionada)
+
+    if self.verifica404_selecionada == 'playstation_psp':
+        self.query_404 = QSqlQuery(conexao.db_mysql)
+        self.model_404 = QtSql.QSqlTableModel()
+        self.query_404.exec(f"""SELECT * FROM {self.verifica404_selecionada}""")
+        while self.query_404.next():
+            self.link_404 = self.query_404.value(6)
+            print(self.link_404)
