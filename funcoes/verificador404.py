@@ -14,6 +14,9 @@ from PyQt5 import QtSql
 from PyQt5 import QtCore
 from PyQt5.QtSql import QSqlQuery
 from PyQt5.QtWidgets import QMessageBox
+import sys
+import time
+from PyQt5.QtWidgets import QApplication, QDialog,  QProgressBar, QPushButton
 
 import requests
 from bs4 import BeautifulSoup
@@ -26,12 +29,23 @@ def selecionaVerifica404(self):
     #armazena o valor retornado pela ComboBox
     self.verifica404_selecionada = self.ui.comboBox_verifica404.currentText()
 
+
+    #progress bar
+    self.progress = QProgressBar(self)
+    self.progress.setGeometry(0, 0, 300, 25)
+    self.progress.setMaximum(100)
+    self.show()
+
     # verificaPSP
     if self.verifica404_selecionada == 'playstation_psp':
         query = QSqlQuery(conexao.db_mysql)
         model = QtSql.QSqlTableModel()
-        query.exec(f"""SELECT * FROM playstation_ps1""")
+        tamanho_lista = query.exec(f"""SELECT * FROM playstation_ps1""")
+        contador_progress = 0
+        self.ui.progressBar404.setMaximum(query.size())
         while query.next():
+            self.ui.progressBar404.setValue(contador_progress)
+            contador_progress += 1
             titulo = query.value(1)
             data = query.value(5).toPyDateTime().strftime('%d/%m/%Y')
             link = query.value(6)

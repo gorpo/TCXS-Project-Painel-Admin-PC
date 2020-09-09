@@ -19,6 +19,11 @@ criar arquivo files_rc_rc.py
 #necessario para rodar o QMysql do Pyqt5 versao | PyQT5==5.12  | pyqtwebengine==5.12
 
 
+usando uma progress bar  (crie um contador)
+self.ui.progressBar404.setValue(contador_progress)
+contador_progress += 1
+
+
 sempre que quisermos chamar um stackedWidget usamos o comando abaixo e mudar sua "indexação"
     self.ui.stackedWidget.setCurrentIndex(1)
 
