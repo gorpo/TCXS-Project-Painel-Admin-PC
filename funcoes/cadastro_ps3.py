@@ -11,7 +11,6 @@
 from main import *
 
 
-
 def funcoesCadastroPS3(self):
     # eventos para limpar os campos, que buscam funçoes no arquivo main | informações com o mouse sobre o item
     self.ui.imagem_ps3.setToolTip('Clique no botão e envie uma imagem.\nFormatos aceitos apenas .jpg e .png\nFormatos como .jpeg ou outros não são aceitos.\nSua imagem será enviada automáticamente redimensionada\naplicada a borda e enviada por ftp.\nCaso ocorra algum erro confira os dados de ftp.')
