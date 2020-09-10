@@ -13,6 +13,9 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 700)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/ICONE DO PROGRAMA/images/icon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         self.janela_pai = QtWidgets.QWidget(MainWindow)
         self.janela_pai.setObjectName("janela_pai")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.janela_pai)

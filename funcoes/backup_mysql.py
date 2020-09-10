@@ -20,17 +20,21 @@ def backupdb(self):
     QMessageBox.question(self, 'Backup Database TCXS Store', """Este sistema irá fazer o backup de toda Database de jogos e usuários!
 O Backup será feito no formato de Banco de dados SqLite3, necessária conversão para dump.
 Será feito um backup no formato de Dump Mysql para upload no servidor.
-O arquivo será salvo junto ao programa, verifique após conclusão do backup.
+Será criada uma pasta com nome "backupDb", verifique-a após conclusão do backup.
 Aguarde até que todo processo acabe, para garantia de successo impossibilitaremos o uso do programa.
 Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
     self.show()
 
+    #CRIA A PASTA DE BACKUPS CASO ELA NÃO EXISTA OU TENHA SIDO DELETADA
+    if not os.path.exists('backupDb'):
+        os.makedirs('backupDb')
+
     # CONEXAO MYSQL
     cursor_pymysql = conexao.conexao_pymysql.cursor()
     # CRIA O BACKUP EM SQLITE E DUMP MYSQL--->
-    conexao_sqlite = sqlite3.connect(f'backups/{datetime.now().strftime("%d_%m_%Y_%Y-%H_%M")}dump_SQLITE3.db')
+    conexao_sqlite = sqlite3.connect(f'backupDb/{datetime.now().strftime("%d_%m_%Y_%Y-%H_%M")}dump_SQLITE3.db')
     cursor_sqlite = conexao_sqlite.cursor()
-    dump_mysql = open(f'backups/{datetime.now().strftime("%d_%m_%Y-%H_%M")}dump_MYSQL.sql','a')
+    dump_mysql = open(f'backupDb/{datetime.now().strftime("%d_%m_%Y-%H_%M")}dump_MYSQL.sql','a')
     texto1psp_mysql = f"""-- phpMyAdmin SQL Dump
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
@@ -678,4 +682,4 @@ COMMIT;
     #mensagem final de confirmação do backup
     QMessageBox.question(self, 'Backup Database TCXS Store', f"""Backup concluido com sucesso.\n Seu arquivo foi salvo com o nome: {datetime.now().strftime("%d_%m_%Y_")}dump_MYSQL.db""", QMessageBox.Ok)
     #abre a pasta
-    os.startfile(os.path.realpath('backups'))
+    os.startfile(os.path.realpath('backupDb'))

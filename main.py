@@ -355,18 +355,22 @@ linguagem: Python
     3.3 [ATENÇÃO] na descrição usar a tag <br> para pular linhas conforme exemplo:
     3.4 [EXEMPLO] Idioma: Ingles<br>Legenda: Ingles<br>Plataforma: PlayStation3
 
-4. Sobre a conexão do Bot Telegram:
-    4.1 Necessário os dados do Telegram: token bot | id canal | sua id
-    4.2 O bot só funciona enquanto o programa estiver aberto e ele ativado pelo programa.
+4. Sobre o verificador da database:
+    4.1 Verifica todos os bancos de dados a procura de erros, apenas visualização e conferência.
 
-5. Sobre o verificador da database:
-    5.1 Verifica todos os bancos de dados a procura de erros, apenas visualização e conferência.
-
-6. Sobre o verificador 404:
-    6.1 Crawler que busca todos os erros 404 e os apresenta para que possam ser alterados na loja.
-    6.2 Este processo é demorado e o programa deve estar sendo usado exclusivamente para ele.
-    6.3 Como este processo verifica link por link demora e podem ocorrer travas ou falhas.
-    6.4 Aconselho que links quebrados sejam arrumados para que não apareçam na proxima verificação.""")
+5. Sobre o verificador 404:
+    5.1 Crawler que busca todos os erros 404 e os apresenta para que possam ser alterados na loja.
+    5.2 Este processo é demorado e o programa deve estar sendo usado exclusivamente para ele.
+    5.3 Como este processo verifica link por link demora e podem ocorrer travas ou falhas.
+    5.4 Aconselho que links quebrados sejam arrumados para que não apareçam na proxima verificação.
+    
+6. Sobre o sistema de Backup:
+    6.1 Este programa conta com um sistema automático de backup de toda loja.
+    6.2 Para executar o backup basta apenas clicar no botão e aguardar.    
+    6.3 Será criada uma pasta com nome "backupDb", seus arquivos estarão lá.
+    6.4 Serão criados dois arquivos, um dump sql para upload no server e uma database SqLite3.
+    6.5 Após salvar seu backup se quiser pode deletar a pasta "backupDb".
+    """)
         #funcoes------------>
         home.funcoesHome(self)
         cadastro_users.funcoesCadastroUsers(self)

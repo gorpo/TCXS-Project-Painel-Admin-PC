@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="files_rc.qrc">
+    <normaloff>:/ICONE DO PROGRAMA/images/icon.ico</normaloff>:/ICONE DO PROGRAMA/images/icon.ico</iconset>
+  </property>
   <widget class="QWidget" name="janela_pai">
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">
