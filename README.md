@@ -40,41 +40,6 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <code>pip install urllib3==1.25.10</code><br>
 <br>
 
-<b>Problemas com o PyInstaller:</b><br>
-- Primeiramente adicione o caminho via CMD: set PATH=%PATH%;C:\Windows\System32\downlevel;<br>
-- O caminho acima adicionado pegará as dll's da pasta do windows!<br>
-- Foi usada a instalação padrão do pyinstaller (pip install pyinstaller)<br>
-- Caso necessário a comunidade diz para usar a versão do git instalando com comando abaixo<br>
-- Confira a lista de comandos para arrumar problemas no python<br>
-- O arquivo SPEC é o arquivo de configuração responsável pela criação do arquivo executavel(.exe) pelo pysintaller.<br>
-
-<b>Atualizar o setuptools:</b><br>
-<code>pip install -U setuptools</code><br>
-<b>Somente em caso de erros com pytest remover o pacote e o resintalar novamente:</b><br>
-<code>pip uninstall pytest</code><br>
-<code>pip install pytest</code><br>
-<b>Caso ainda não instale:</b><br>
-<code>pip install pyinstaller==4.0 --no-build-isolation</code><br>
-<b>Comando utilizado para compilar este programa:</b><br>
-<code>pyinstaller --onefile --noconsole main.py  --hidden-import PyQt5.sip</code><br>
-<b>Comando para remover o console e por um icone:<br>
-<code>pyinstaller -F --noconsole  -i favicon.ico</code><br>
-<b>Instalação do pyinstaller direto da fonte, como comunidade recomenda:</b><br>
-<code>pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip</code><br>
-<b>Comando extraido do py-quto-gui</b><br>	
-<code>pyinstaller --noconfirm --onefile --windowed --icon "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images/icon.ico" --add-data "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images;images/"  "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/main.py"</code><br>	
-<b>Py Auto GUI | funciona somente com o pyinstaller ja rodando</b><br>	
-<code>pip install auto-py-to-exe</code><br>	
-<b>Outros comandos que podem auxiliar futuramente com o pyinstaller:</b><br>
-<code>pyinstaller --onefile --hidden-import theMissingModule main.py</code><br>
-<code>pyinstaller --onefile --windowed</code><br><br>
-<b>Mais informações sobre o arquivo spec:</b><br>
-1. Insira todos os arquivos py necessários para que seu código seja executado na primeira lista dentro do Analysis<br>
-por exemplo: Analysis(['file1.py', 'file2.py', 'file3.py'],<br>
-2. Insira todos os arquivos de dados necessários na lista de dados (dentro do Analysis) no arquivo spec. Cada entrada será uma tupla. O primeiro elemento na tupla será o caminho para o recurso e a segunda entrada será o nome da pasta na saída.<br>
-Por exemplo: datas=[('csv\\', 'csv'), ('plotly-latest.min.js', '.')],<br>
-<br>
-
 <b>TELA INICIAL:</b><br>
 - Sistema de menu Abre e Fecha com icones para identificação.<br>
 - Sistema "MOUSE OVER" que quando mouse está sobre o botão ou item exibe informações.<br> 
@@ -156,6 +121,43 @@ Por exemplo: datas=[('csv\\', 'csv'), ('plotly-latest.min.js', '.')],<br>
 <img src="https://i.imgur.com/7qmteHR.png" width="20%"></img>
 <img src="https://i.imgur.com/8cI4rvm.png" width="20%"></img>
 <img src="https://i.imgur.com/6wdkq4V.png" width="20%"></img><br>
+<br>
+
+<b>Problemas com o PyInstaller:</b><br>
+- Primeiramente adicione o caminho via CMD: set PATH=%PATH%;C:\Windows\System32\downlevel;<br>
+- O caminho acima adicionado pegará as dll's da pasta do windows!<br>
+- Foi usada a instalação padrão do pyinstaller (pip install pyinstaller)<br>
+- Caso necessário a comunidade diz para usar a versão do git instalando com comando abaixo<br>
+- Confira a lista de comandos para arrumar problemas no python<br>
+- O arquivo SPEC é o arquivo de configuração responsável pela criação do arquivo executavel(.exe) pelo pysintaller.<br>
+
+<b>Atualizar o setuptools:</b><br>
+<code>pip install -U setuptools</code><br>
+<b>Somente em caso de erros com pytest remover o pacote e o resintalar novamente:</b><br>
+<code>pip uninstall pytest</code><br>
+<code>pip install pytest</code><br>
+<b>Caso ainda não instale:</b><br>
+<code>pip install pyinstaller==4.0 --no-build-isolation</code><br>
+<b>Comando utilizado para compilar este programa:</b><br>
+<code>pyinstaller --onefile --noconsole main.py  --hidden-import PyQt5.sip</code><br>
+<b>Comando para remover o console e por um icone:<br>
+<code>pyinstaller -F --noconsole  -i favicon.ico</code><br>
+<b>Instalação do pyinstaller direto da fonte, como comunidade recomenda:</b><br>
+<code>pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip</code><br>
+<b>Comando extraido do py-quto-gui</b><br>	
+<code>pyinstaller --noconfirm --onefile --windowed --icon "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images/icon.ico" --add-data "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images;images/"  "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/main.py"</code><br>	
+<b>Py Auto GUI | funciona somente com o pyinstaller ja rodando</b><br>	
+<code>pip install auto-py-to-exe</code><br>	
+<b>Outros comandos que podem auxiliar futuramente com o pyinstaller:</b><br>
+<code>pyinstaller --onefile --hidden-import theMissingModule main.py</code><br>
+<code>pyinstaller --onefile --windowed</code><br><br>
+<b>Mais informações sobre o arquivo spec:</b><br>
+1. Insira todos os arquivos py necessários para que seu código seja executado na primeira lista dentro do Analysis<br>
+por exemplo: Analysis(['file1.py', 'file2.py', 'file3.py'],<br>
+2. Insira todos os arquivos de dados necessários na lista de dados (dentro do Analysis) no arquivo spec. Cada entrada será uma tupla. O primeiro elemento na tupla será o caminho para o recurso e a segunda entrada será o nome da pasta na saída.<br>
+Por exemplo: datas=[('csv\\', 'csv'), ('plotly-latest.min.js', '.')],<br>
+<br>
+
 <br><br><br>
 Nosso site: <a href="https://tcxsproject.com.br">Manicomio TCXS Project</a> | Developers: <a href="https://github.com/gorpo">GorpoOrko</a> | Partnerships:» <a href="https://t.me/tcxsproject2">telegram</a> | ©2020 | <a href="https://t.me/tcxsproject2">TCXS Project Hacker Team™</a><br>
 <img src="https://raw.githubusercontent.com/gorpo/Manicomio-Boot-Theme/master/manicomio/boot.png" width="50%"></img>
