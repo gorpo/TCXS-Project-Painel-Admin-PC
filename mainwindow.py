@@ -684,7 +684,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_6.setObjectName("verticalLayout_6")
         self.background = QtWidgets.QLabel(self.pagina_home)
         self.background.setText("")
-        self.background.setPixmap(QtGui.QPixmap("images/bg_home.jpg"))
+        self.background.setPixmap(QtGui.QPixmap(":/BACKGROUND_HOME/images/bg_home.jpg"))
         self.background.setScaledContents(True)
         self.background.setAlignment(QtCore.Qt.AlignCenter)
         self.background.setWordWrap(False)
@@ -692,6 +692,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_6.addWidget(self.background)
         self.frame_inputs_gravar_database = QtWidgets.QFrame(self.pagina_home)
         self.frame_inputs_gravar_database.setMinimumSize(QtCore.QSize(0, 145))
+        self.frame_inputs_gravar_database.setMaximumSize(QtCore.QSize(16777215, 145))
         self.frame_inputs_gravar_database.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_inputs_gravar_database.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_inputs_gravar_database.setObjectName("frame_inputs_gravar_database")
@@ -5508,6 +5509,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "")
+        self.rodape_desenvolvedor.setScaledContents(False)
         self.rodape_desenvolvedor.setObjectName("rodape_desenvolvedor")
         self.horizontalLayout_7.addWidget(self.rodape_desenvolvedor)
         self.rodape_versao = QtWidgets.QLabel(self.rodape)

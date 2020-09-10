@@ -16,8 +16,13 @@ criar arquivo mainwindow.py:
 criar arquivo files_rc_rc.py
     pyrcc5 -o files_rc_rc.py files_rc.qrc
 
-#necessario para rodar o QMysql do Pyqt5 versao | PyQT5==5.12  | pyqtwebengine==5.12
 
+
+
+
+
+
+#necessario para rodar o QMysql do Pyqt5 versao | PyQT5==5.12  | pyqtwebengine==5.12
 #requirements:
 PyQT5==5.12
 pyqtwebengine==5.12
@@ -27,12 +32,9 @@ pymysql
 requests
 PyQt5-stubs==5.14.2.2
 
-
-
 usando uma progress bar  (crie um contador)
 self.ui.progressBar404.setValue(contador_progress)
 contador_progress += 1
-
 
 sempre que quisermos chamar um stackedWidget usamos o comando abaixo e mudar sua "indexação"
     self.ui.stackedWidget.setCurrentIndex(1)

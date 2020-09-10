@@ -2,6 +2,9 @@
   <qresource prefix="abre_menu">
     <file>images/menu-4-24.png</file>
   </qresource>
+  <qresource prefix="BACKGROUND_HOME">
+    <file>images/bg_home.jpg</file>
+  </qresource>
   <qresource prefix="icone_tcxsgame">
     <file>images/icone_tcxsgame.jpg</file>
   </qresource>
