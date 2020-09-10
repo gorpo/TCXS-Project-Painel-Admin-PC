@@ -27,9 +27,8 @@ Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
     # CONEXAO MYSQL
     cursor_pymysql = conexao.conexao_pymysql.cursor()
     # CONEXAO SQLITE
-    conexao_sqlite = sqlite3.connect('dump_MYSQL.db')
+    conexao_sqlite = sqlite3.connect(f'{datetime.now().strftime("%d_%m_%Y_")}dump_MYSQL.db')
     cursor_sqlite = conexao_sqlite.cursor()
-    print('iniciou')
     cursor_pymysql.execute(f"SELECT * FROM playstation_users")
     cursor_sqlite.execute(
         """CREATE TABLE IF NOT EXISTS `playstation_users` ( id integer not null primary key autoincrement, `usuario` varchar(200) NOT NULL, `senha` varchar(329) NOT NULL, `nome` varchar(999) NOT NULL, `cadastro` datetime NOT NULL, `nivel` varchar(999)) """)
@@ -50,9 +49,7 @@ Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
             cursor_sqlite.execute(
                 f"""INSERT INTO playstation_users ( `usuario`, `senha`, `nome`, `cadastro`,`nivel`) VALUES ('{usuario}','{senha}','{nome}','{cadastro}','{nivel}')""")
             conexao_sqlite.commit()
-            # print(dados_user)
         except Exception as e:
-            print(f'erro ps users: {e}')
             pass
 
     cursor_pymysql.execute(f"SELECT * FROM playstation_infos")
@@ -70,9 +67,7 @@ Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
             info = dados_info['informacao']
             cursor_sqlite.execute(f"""INSERT INTO playstation_infos (`informacao`) VALUES ('{info}')""")
             conexao_sqlite.commit()
-            # print(dados_info)
         except Exception as e:
-            print(f'erro ps infos: {e}')
             pass
 
     cursor_pymysql.execute(f"SELECT * FROM playstation_psp")
@@ -97,9 +92,7 @@ Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
             cursor_sqlite.execute(
                 f"""INSERT INTO playstation_psp (titulo, descricao, content_id, imagem, cadastro, link) VALUES ('{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}')""")
             conexao_sqlite.commit()
-            # print(dados_user)
         except Exception as e:
-            print(f'erro ps psp: {e}')
             pass
 
     cursor_pymysql.execute(f"SELECT * FROM playstation_ps1")
@@ -123,9 +116,7 @@ Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
             cursor_sqlite.execute(
                 f"""INSERT INTO playstation_ps1 (titulo, descricao, content_id, imagem, cadastro, link) VALUES ('{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}')""")
             conexao_sqlite.commit()
-            # print(dados_user)
         except Exception as e:
-            print(f'erro ps ps1: {e}')
             pass
 
     cursor_pymysql.execute(f"SELECT * FROM playstation_ps2")
@@ -149,9 +140,7 @@ Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
             cursor_sqlite.execute(
                 f"""INSERT INTO playstation_ps2 (titulo, descricao, content_id, imagem, cadastro, link) VALUES ('{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}')""")
             conexao_sqlite.commit()
-            # print(dados_user)
         except Exception as e:
-            print(f'erro ps ps2: {e}')
             pass
 
     cursor_pymysql.execute(f"SELECT * FROM playstation_ps3")
@@ -219,9 +208,7 @@ Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
         '{link14}','{link15}','{link16}','{link17}','{link18}','{link19}','{link20}','{link21}','{link22}','{link23}','{link24}','{link25}',
         '{link26}','{link27}','{link28}','{link29}','{link30}')""")
             conexao_sqlite.commit()
-            # print(dados_user)
         except Exception as e:
-            print(f'erro ps ps3: {e}')
             pass
 
 
@@ -246,9 +233,7 @@ Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
             cursor_sqlite.execute(
                 f"""INSERT INTO playstation_emuladores (titulo, descricao, content_id, imagem, cadastro, link) VALUES ('{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}')""")
             conexao_sqlite.commit()
-            # print(dados_user)
         except Exception as e:
-            print(f'erro ps users: {e}')
             pass
 
     cursor_pymysql.execute(f"SELECT * FROM playstation_extras")
@@ -272,13 +257,9 @@ Ao terminar o backup uma mensagem será exibida.""", QMessageBox.Ok)
             cursor_sqlite.execute(
                 f"""INSERT INTO playstation_extras (titulo, descricao, content_id, imagem, cadastro, link) VALUES ('{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}')""")
             conexao_sqlite.commit()
-            # print(dados_user)
         except Exception as e:
-            print(f'erro ps users: {e}')
-
-
-
-
-
-
-    QMessageBox.question(self, 'Backup Database TCXS Store', """Backup concluido com sucesso.""", QMessageBox.Ok)
+            pass
+    #mensagem final de confirmação do backup
+    QMessageBox.question(self, 'Backup Database TCXS Store', f"""Backup concluido com sucesso.\n Seu arquivo foi salvo com o nome: {datetime.now().strftime("%d_%m_%Y_")}dump_MYSQL.db""", QMessageBox.Ok)
+    #abre a pasta
+    os.startfile(os.path.realpath(''))
