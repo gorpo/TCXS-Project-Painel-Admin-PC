@@ -61,6 +61,9 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <code>pyinstaller -F --noconsole  -i favicon.ico</code><br>
 <b>Instalação do pyinstaller direto da fonte, como comunidade recomenda:</b><br>
 <code>pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip</code><br>
+<b>Comando extraido do py-quto-gui</b><br>	
+<code>pyinstaller --noconfirm --onefile --windowed --icon "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images/icon.ico" --add-data "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images;images/"  "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/main.py"</code><br>	
+	
 <b>Outros comandos que podem auxiliar futuramente com o pyinstaller:</b><br>
 <code>pyinstaller --onefile --hidden-import theMissingModule main.py</code><br>
 <code>pyinstaller --onefile --windowed</code><br><br>
