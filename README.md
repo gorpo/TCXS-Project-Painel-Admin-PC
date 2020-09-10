@@ -48,21 +48,21 @@ Pacotes necessários encontram-se no requirements.txt<br>
 - Confira a lista de comandos para arrumar problemas no python<br>
 - O arquivo SPEC é o arquivo de configuração responsável pela criação do arquivo executavel(.exe) pelo pysintaller.<br>
 
-Atualizar o setuptools:<br>
+<b>Atualizar o setuptools:</b><br>
 <code>pip install -U setuptools</code><br>
-Somente em caso de erros com pytest remover o pacote e o resintalar novamente:<br>
+<b>Somente em caso de erros com pytest remover o pacote e o resintalar novamente:</b><br>
 <code>pip uninstall pytest</code><br>
 <code>pip install pytest</code><br>
 <b>Comando utilizado para compilar este programa:</b><br>
-<code>pyinstaller --onefile main.py  --hidden-import PyQt5.sip</code><br>
-Comando para remover o console e por um icone:<br>
+<code>pyinstaller --onefile --noconsole main.py  --hidden-import PyQt5.sip</code><br>
+<b>Comando para remover o console e por um icone:<br>
 <code>pyinstaller -F --noconsole  -i favicon.ico</code><br>
-Instalação do pyinstaller direto da fonte, como comunidade recomenda:<br>
+<b>Instalação do pyinstaller direto da fonte, como comunidade recomenda:</b><br>
 <code>pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip</code><br>
-Outros comandos que podem auxiliar futuramente com o pyinstaller:<br>
+<b>Outros comandos que podem auxiliar futuramente com o pyinstaller:</b><br>
 <code>pyinstaller --onefile --hidden-import theMissingModule main.py</code><br>
-<code>pyinstaller --onefile --windowed</code><br>
-
+<code>pyinstaller --onefile --windowed</code><br><br>
+<b>Mais informações sobre o arquivo spec:</b><br>
 1. Insira todos os arquivos py necessários para que seu código seja executado na primeira lista dentro do Analysis<br>
 por exemplo: Analysis(['file1.py', 'file2.py', 'file3.py'],<br>
 2. Insira todos os arquivos de dados necessários na lista de dados (dentro do Analysis) no arquivo spec. Cada entrada será uma tupla. O primeiro elemento na tupla será o caminho para o recurso e a segunda entrada será o nome da pasta na saída.<br>
