@@ -4,93 +4,127 @@
 [![Build](https://img.shields.io/badge/windows-7%208%2010-blue.svg)]()
 [![Build](https://img.shields.io/badge/Linux-Ubuntu%20Debian-orange.svg)]()
 [![Build](https://img.shields.io/badge/arquiterura-64bits-blue.svg)]()
-<h2 align="center">TCXS PROJECT STORE PHP MYSQL WITH APP ANDROID E PAINEL ADMIN</h2>
+<h2 align="center">TCXS PROJECT STORE PAINEL ADMINISTRADOR PC</h2>
 <h1 align="center">PlayStation3 Store | HAN | HEN | CFW</h1>
 <img src="https://i.imgur.com/3Gmp3Ze.jpg" width="100%"></img><br>
-
-<b>Databases:</b><br>
-- Editar os arquivos "database.php" e "conexao.php" com os dados do host.<br>
-- Dump SQL limpo junto ao código apenas com admins cadastrados.
-- Dump de testes adicionado.<br>
-
-- Toda e qualquer alteraçao deve ser informada no changelog, favor informar sempre no documento que estiver editando que id parou de usar para quem for atualizar a proxima vez saiba de que id começar, se possivel informe neste documento a id que parou para melhor visualização, mantenha um backup desde mesmo material no dropbox, versionando sempre sua versão passada.<br>
-- Fixes, patches e outros arquivos como o apk devem ficar em um branch separado neste git, manter apenas a versão MASTER intacta pronta para upload<br>
-- Os dados de banco de dados desta versão são da minha maquina local, para hospedar é necessário trocar usuario, senha e nome do banco de dados nas configurações PHP<br>
-- Para rodar em outra maquina local é necessário ter Apache e Mysql instalados, soluçoes como XAMPP para computador ou algum aplicativo android facilmente podem ser usados<br>
-- Em caso de uso com o XAMPP basta jogar todos arquivos na pasta htdocs, criar um banco de dados e importar o dump.sql<br>
-- O dump.sql contido na programaçao já contem os administradores cadastrados com uma data de assinatura infinita<br>
-- O gerenciamento de usuarios pode ser feito via navegador ou via APK Android<br>
-- Sistema de banimento automático ainda será desenvolvido, creio eu que vou gostar sentar de manha dar uma cagada, pegar o meu café, minha maconha e dando uma cagada sentar o ban em alguns users... @GorpoOrko<br>
-- Todas e qualquer informaçoes adicionais devem ser inseridas neste documento e versionada neste git.<br>
-- 09 de Agosto de 2020 <br>
-
-
-<h1> Changelog:</h1><br>
-<b>Sistema de proteção:</b><br>
-- sistema com login e senha para usuários armazenando sua data de entrada<br>
-- sistema que permite o download dos jogos somente via console PLAYSTATION3<br>
-- controle de acesso dos usuários que cria uma tabela para cada usuário e armazena seu ip e data de ACESSOS<br>
-- sistema para cadastro e banimento de usuários<br>
-- sistema para consulta de visitas e conferência dos IP's dos usuários<br>
-- aplicativo Android para facilitar o gerenciamento<br>
-- sistema de proteção inserido em todas as paginas, por este motivo tivemos que mudar para PHP <br>
-- sistema de login reconhece usuario, ip e aparelho conectado<br>
-- caso links tentem ser acessados sem estar logado o usuario é levado para uma pagina de aviso<br>
-- somente usuarios logados conseguem acessar os links da loja<br>
-- somente pode ser feito download via console PLAYSTATION3, safa exceção do plugin gorpo.js desabilitado<br>
-- sistema de banimento automatico apos 30 dias incluso no codigo<br>
 <br>
-<b>Parte para usuários:</b><br>
-- pagina de login com login e senha que cria uma tabela para cada usuario armazenando a data de acesso e IP<br>
-- pagina home informando o nome do usuário, IP e aparelho conectado<br>
-- pagina home recebe o usuário mostrando menu do topo e em forma de banner<br>
-- pagina de PlayStation PSP alimentada usando até id:34<br>
-- pagina de PlayStation1 alimentada usando até id:1149<br>
-- pagina de PlayStation2 alimentada usando até id:2147<br>
-- pagina de PlayStation3 alimentada usando até id:3192<br>
-- pagina de PlayStation Emuladores alimentada usando até id:emu7<br>
-- pagina de PlayStation PSN Stuff alimentada usando até id:stuff_650<br>
-<p>OBS: As id's seguem uma ordem lógica, elas devem ser inseridas sempre em ordem crescente 0,1,2,3.....23,2,25...., estas ids fazem ligação com o arquivo gorpo.js o qual habilita e desabilita os botões de download não permitindo download em outra plataforma que não seja o console PlayStation3.</p><br>
+<b>Programa Windows [PC]:</b><br>
+<p>Sistema de administração para controle da TCXS Store PlayStation3, desenvolvido em python conta com sistema independente de arrasto, redimensionamento, minimização, ampliação e para fechar. Interface grafica(GUI) criada com auxilio do programa QtDesigner incluso no pacote PyQt5. Este programa necessita exclusivamente das versões PyQT5==5.12 pyqtwebengine==5.12. Imagens são enviadas via FTP ja redimensionadas e com marca d'agua.<br> Atenção:Este programa funciona no caminho "localhost/store/" ou seja https://tcxsproject.com.br/store/.<br>Confira outros extras do programa:</p>
 <br>
-<b>Parte para administradors:</b><br>
-- pagina de cadastro de usuarios<br>
-- pagina para deletar/banir usuários<br>
-- pagina para gerenciar acesso dos usuarios<br>
-- aplicativo android para banimento dos usuários<br>
-- acesso ao sistema de cadastro via link: <a href="https://tcxsproject.com.br/store/cadastro.php?act=tcxs">https://tcxsproject.com.br/store/cadastro.php?act=tcxs</a><br>
-- acesso so sistema de consulta via link: <a href="https://tcxsproject.com.br/store/consulta.php?act=tcxs">https://tcxsproject.com.br/store/consulta.php?act=tcxs</a> <br>
-- Tutorial para visualização/programação da loja em localhost: <a href="https://youtu.be/o3KJM1d4eHQ">Tutorial Hospedagem Local XAMPP</a> <br>
-- Tutorial para colocar a loja no servidor: <a href="https://youtu.be/gTF19YUih2E">Demonstração de como hospedar Externamente | Deploy</a> <br>
-<p>OBS: Este sistema via link é protegido pelo token "?act=tcxs", se alguem tentar acessar diretamente o arquivo cadastro.php não irá funcionar, este token não pode vazar. O aplicativo de celular ja tem o token inserido em sua programação. </p><br>
+<b>Dados necessários para funcionalidade do programa:</b><br>
+- Nome da Database.<br>
+- User da Database <br>
+- Senha da Database <br>
+- Endereço FTP<br>
+- User FTP<br>
+- Login FTP<br>
 <br>
-<h1> Codigos Utéis da programação:</h1><br>
-<b>Sistema de proteção dos botões permindo download somente em consoles PlayStation3, para ativar ou desativar basta comentar/descomentar o codigo:</b><br>
-	<code>
-		writeEnvInfo();
-		ps3chk();
-</code><br>
 
-<h1> Demonstração:</h1><br>
-<img src="https://i.imgur.com/XyakSdF.png" width="100%"></img><br>
-<img src="https://i.imgur.com/7qmteHR.png" width="100%"></img><br>
-<img src="https://i.imgur.com/8cI4rvm.png" width="100%"></img><br>
-<img src="https://i.imgur.com/6wdkq4V.png" width="100%"></img><br>
+<b>Pacotes necessários:</b><br>
+Pacotes necessários encontram-se no requirements.txt<br>
+<code>pip install requirements.txt</code><br>
 
-<code><script type="text/javascript">
-var OSNome = "";
-if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSNome="Windows 10";
-if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSNome="Windows 8";
-if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSNome="Windows 7";
-if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSNome="Windows Vista";
-if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSNome="Windows XP";
-if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSNome="Windows 2000";
-if (window.navigator.userAgent.indexOf("Mac")            != -1) OSNome="Mac/iOS";
-if (window.navigator.userAgent.indexOf("X11")            != -1) OSNome="UNIX";
-if (window.navigator.userAgent.indexOf("Linux")          != -1) OSNome="Linux";
-if (window.navigator.userAgent.indexOf("5.0 (") + 19, ua.indexOf(") Apple") != -1) OSNome="PlayStation3";
-//var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
-document.write(' | Sistema: '+ OSNome);
-</script> </code>
+<b>Instalação manual dos pacotes:</b><br>
+<code>pip install PyQT5==5.12</code><br>
+<code>pyqtwebengine==5.12</code><br>
+<code>pillow==6.2.2</code><br>
+<code>....</code><br>
+<code>.....</code><br>
+<br>
+
+
+<b>TELA INICIAL:</b><br>
+- Sistema de menu Abre e Fecha com icones para identificação.<br>
+- Sistema "MOUSE OVER" que quando mouse está sobre o botão ou item exibe informações.<br> 
+- Sistema "MOUSE OVER" sobre o titulo do programa exibindo instruções de uso.<br>
+- Necessária inserção dos dados de login Mysql e FTP do servidor que a loja está hospedada.<br>
+- Dados de login salvos em banco de dados local SqLite3 sendo necessário inserir os dados apenas uma vez ou quando alterados no server.<br>
+- [ATENÇÃO] deixe o mouse sobre o titulo do programa para receber instruções de uso!!!<br>
+<img src="https://ia601501.us.archive.org/24/items/prints_programa_tcxs/home_menu_fechado.jpg" width="30%"></img>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/home_menu_aberto.jpg" width="30%"></img>
+<img src="https://ia601501.us.archive.org/24/items/prints_programa_tcxs/mouse_overHOME.jpg" width="30%"></img><br>
+
+<br>
+<b>CADASTRO E CONSULTA DE USUÁRIOS:</b><br>
+- Sistema de cadastro de usuários na database.<br>
+- Para carregar a tabela clique inicialmente em adicionar, isto irá adicionar a tabela de usuários para visualização edição e exclusão.<br>
+- Inserções Necessárias Nome para exibição na loja, user para logar e senha.<br>
+- Botoes adiciona | atualiza | deleta<br>
+- Para adicionar preencha todos os campos e clique em adicionar<br>
+- Para atualizar preencha todos os dados, clique sobre o numero de uma linha na tabela e clique em atualizar, isto irá atualizar toda aquela linha.<br>
+- Para deletar clique sobre a linha desejada e clique em deletar.<br>
+- Sistema de consulta de acesso dos usuários exibe todos os dados do usuário, data e hora de acesso e o endereço de IP que acessou.<br>
+- Para realizar uma consulta digite o user que o usuário entra na loja, e clique em pesquisar.<br>
+- Caso não retorne algum dado é porque o usuário ainda não realizou nenhum login.<br>
+- É necessário ao menos um login do usuario para que tenha algo a ser consultado!<br>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/cadastro_users.jpg" width="45%"></img>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/consulta_users.jpg" width="45%"></img><br>
+
+<br>
+<b>CADASTRO DE JOGOS E EXTRAS:</b><br>
+- Sistema de cadastro de jogos e extras, tudo que tivermos com link direto irá funcionar neste sistema!<br>
+- Para carregar as tabelas dos jogos clique inicialmente em adicionar!!!
+- A tabela de PlayStation3 fica no final das abas.
+- Jogos a serem cadastrados: PSP | PS1 | PS2 | PS3 | EMULADORES | EXTRAS<br>
+- Extras para cadastrar qualquer coisa com link direto como filmes com player compativeis ou homebrew's.<br>
+- Inserções necessárias Titulo | Descrição | Content ID | Imagem | Link<br>
+- Titulo tente manter ele o menor e mais claro possivel.<br>
+- Descrição necessário usar a tag < br > para pular linhas conforme exemplo:<br>
+<code>Idioma: Ingles < br > Legenda: Ingles < br > Plataforma: Playstation3</code><br>
+- [ATENÇÃO] Manter o padrão para descrição.<br>
+- Content ID não necessário, porém o campo nunca poderá ficar vazio, preencha sempre com algo ou use ---.<br>
+- Imagem, basta clicar e enviar, ela será automaticamente redimensionada e aplicada a marca d'agua, logo após upada via ftp, de um tempo até que isto aconteça para finalmente cadastrar (20 segundos??)!!!<br>
+- Links de PSP, PS1 PS2, EMULADORES e EXTRAS são links unicos, portanto sempre necessários.<br>
+- Links de PS3 é possivel cadastrar até 30 links por jogo, caso não va inserir um dos links é sempre necessário p uso de --- no campo de entrada.<br>
+- [ATENÇÃO] Sempre mantenha os --- caso não vá usar os demais campos dos links de PS3!!!<br>
+- Finalmente, para adicionar clique em adicionar.<br>
+- Para atualizar, preencha normalmente todos os campos, suba a imagem e clique sobre a linha atualizar, é necessario subir uma nova imagem para que ela seja cadastrada seu caminho e nome junto a database, não se preocupe em lotar o servidor com imagens, elas ficam com apenas 15kb!!!<br>
+- Para deletar um jogo basta clicar sobre a linha dele e clicar em deletar!<br>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/psp.jpg" width="30%"></img>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/Screenshot_2.jpg" width="30%"></img>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/ps2.jpg" width="30%"></img><br>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/ps3.jpg" width="30%"></img>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/emuladores.jpg" width="30%"></img>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/extras.jpg" width="30%"></img><br>
+
+<br>
+<b>Sistema de Verificação da Database:</b><br>
+- Como demais adm's não tem acesso ao PHPMyAdmin foi criado um painel para visualização de todas as tabelas da database.<br>
+<img src="https://ia601501.us.archive.org/24/items/prints_programa_tcxs/consulta_databases.jpg" width="50%"></img><br>
+
+<br>
+<b>Verificador de links com erro [404]</b><br>
+- Sistema de verificação de links quebrados offline.<br>
+- Sistema funciona somente para links dropbox cadastrados na database.<br>
+- Demais links fora dropbox não irão funcionar neste sistema.<br>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/verifica404.jpg" width="50%"></img><br>
+
+
+<br>
+<b>Sistema de Backup da Database Mysql [loja web]:</b><br>
+- Com apenas um clique todo a databse será salva.<br>
+- O backup será feito em um banco de dados SqLite3.<br>
+- O administrador será avisado quando o backup terminar, após isto salve sua versão de backup em local seguro!<br>
+<img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/sistema_backup.jpg" width="50%"></img><br>
+
+<br>
+<h1> Demonstração do Frontend [loja web]:</h1><br>
+<a href="https://linkdogit.com">Link do Git em breve.</a><br>
+<img src="https://i.imgur.com/XyakSdF.png" width="20%"></img>
+<img src="https://i.imgur.com/7qmteHR.png" width="20%"></img>
+<img src="https://i.imgur.com/8cI4rvm.png" width="20%"></img>
+<img src="https://i.imgur.com/6wdkq4V.png" width="20%"></img><br>
+<br><br><br>
+Nosso site: <a href="https://tcxsproject.com.br">Manicomio TCXS Project</a> | Developers: <a href="https://github.com/gorpo">GorpoOrko</a> | Partnerships:» <a href="https://t.me/tcxsproject2">telegram</a> | ©2020 | <a href="https://t.me/tcxsproject2">TCXS Project Hacker Team™</a><br>
+<img src="https://raw.githubusercontent.com/gorpo/Manicomio-Boot-Theme/master/manicomio/boot.png" width="50%"></img>
+
+
+
+
+
+
+
+
 
 
 <h1> Comandos auxiliares Github - CLI </h1><br>
@@ -180,5 +214,3 @@ Automatic merge failed; fix conflicts and then commit the result.</b><br>
 	<code>git checkout experiment</code><br>
 	<code>git rebase master</code><br>
 
-Nosso site: <a href="https://tcxsproject.com.br">Manicomio TCXS Project</a> | Developers: <a href="https://github.com/gorpo">GorpoOrko</a> | Partnerships:» <a href="https://t.me/tcxsproject2">telegram</a> | ©2020 | <a href="https://t.me/tcxsproject2">TCXS Project Hacker Team™</a><br>
-<img src="https://raw.githubusercontent.com/gorpo/Manicomio-Boot-Theme/master/manicomio/boot.png" width="50%"></img>

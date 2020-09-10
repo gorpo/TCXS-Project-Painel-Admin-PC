@@ -31,13 +31,16 @@ try:
     enderecoFtp_user = tabela_user[0][5]
     usuarioFtp_user = tabela_user[0][6]
     senhaFtp_user = tabela_user[0][7]
-
     conexao_user.close()
 except:
     pass
 
+
 #CONEXAO PYMYSQL PARA BACKUP DA DATABASE ONLINE
-conexao_pymysql = pymysql.connect(host=hostMysql_user, user='root', password=senhaMysql_user, db=databaseMysql_user, charset='utf8mb4',cursorclass=pymysql.cursors.DictCursor)
+try:
+    conexao_pymysql = pymysql.connect(host=hostMysql_user, user='root', password=senhaMysql_user, db=databaseMysql_user, charset='utf8mb4',cursorclass=pymysql.cursors.DictCursor)
+except:
+    pass
 
 
 #CONEXAO FTP ---------------------------

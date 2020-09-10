@@ -870,7 +870,7 @@ class Ui_MainWindow(object):
         self.btn_database_home = QtWidgets.QPushButton(self.frame_5)
         self.btn_database_home.setMinimumSize(QtCore.QSize(210, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1682,7 +1682,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_psp = QtWidgets.QPushButton(self.frame_23)
         self.botao_db_adiciona_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1708,7 +1708,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_psp = QtWidgets.QPushButton(self.frame_23)
         self.botao_db_atualiza_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -1734,7 +1734,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_psp = QtWidgets.QPushButton(self.frame_23)
         self.botao_db_deleta_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2030,7 +2030,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps1 = QtWidgets.QPushButton(self.frame_37)
         self.botao_db_adiciona_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2056,7 +2056,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps1 = QtWidgets.QPushButton(self.frame_37)
         self.botao_db_atualiza_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2082,7 +2082,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps1 = QtWidgets.QPushButton(self.frame_37)
         self.botao_db_deleta_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2375,7 +2375,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps2 = QtWidgets.QPushButton(self.frame_45)
         self.botao_db_adiciona_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2401,7 +2401,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps2 = QtWidgets.QPushButton(self.frame_45)
         self.botao_db_atualiza_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -2427,7 +2427,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps2 = QtWidgets.QPushButton(self.frame_45)
         self.botao_db_deleta_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4185,7 +4185,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps3 = QtWidgets.QPushButton(self.frame_75_ps3)
         self.botao_db_adiciona_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4211,7 +4211,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps3 = QtWidgets.QPushButton(self.frame_75_ps3)
         self.botao_db_atualiza_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4237,7 +4237,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps3 = QtWidgets.QPushButton(self.frame_75_ps3)
         self.botao_db_deleta_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4476,7 +4476,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_retro = QtWidgets.QPushButton(self.frame_58_retro)
         self.botao_db_adiciona_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4502,7 +4502,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_retro = QtWidgets.QPushButton(self.frame_58_retro)
         self.botao_db_atualiza_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4528,7 +4528,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_retro = QtWidgets.QPushButton(self.frame_58_retro)
         self.botao_db_deleta_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4822,7 +4822,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_extras = QtWidgets.QPushButton(self.frame_btns_extras)
         self.botao_db_adiciona_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4848,7 +4848,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_extras = QtWidgets.QPushButton(self.frame_btns_extras)
         self.botao_db_atualiza_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -4874,7 +4874,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_extras = QtWidgets.QPushButton(self.frame_btns_extras)
         self.botao_db_deleta_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
-        font.setFamily("SegoeUIl")
+        font.setFamily("SegoeUIl,12")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
@@ -5026,24 +5026,28 @@ class Ui_MainWindow(object):
         self.btn_iniciar_backup.setObjectName("btn_iniciar_backup")
         self.verticalLayout_15.addWidget(self.frame_65backup)
         self.frame_66_backup = QtWidgets.QFrame(self.conteiner_topo_backup)
-        self.frame_66_backup.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_66_backup.setMinimumSize(QtCore.QSize(0, 450))
         self.frame_66_backup.setMaximumSize(QtCore.QSize(16777215, 450))
         self.frame_66_backup.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_66_backup.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_66_backup.setObjectName("frame_66_backup")
-        self.verticalLayout_28 = QtWidgets.QVBoxLayout(self.frame_66_backup)
-        self.verticalLayout_28.setContentsMargins(-1, 0, -1, 0)
-        self.verticalLayout_28.setSpacing(4)
-        self.verticalLayout_28.setObjectName("verticalLayout_28")
-        self.t_backup = QtWidgets.QLabel(self.frame_66_backup)
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_66_backup)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.frame_2 = QtWidgets.QFrame(self.frame_66_backup)
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.verticalLayout_29 = QtWidgets.QVBoxLayout(self.frame_2)
+        self.verticalLayout_29.setObjectName("verticalLayout_29")
+        self.t_backup = QtWidgets.QLabel(self.frame_2)
         self.t_backup.setStyleSheet("QLabel{\n"
 "    background-color: transparent;\n"
 "    color: rgb(255, 255, 255);\n"
 "font: 15px Segoe UI, bold;\n"
 "}")
         self.t_backup.setObjectName("t_backup")
-        self.verticalLayout_28.addWidget(self.t_backup)
-        self.progressBar_backup_users = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.verticalLayout_29.addWidget(self.t_backup)
+        self.progressBar_backup_users = QtWidgets.QProgressBar(self.frame_2)
         self.progressBar_backup_users.setStyleSheet("QProgressBar{\n"
 "border: 2px solid rgba(45,45,45,0);\n"
 "border-radius: 5px;\n"
@@ -5059,8 +5063,90 @@ class Ui_MainWindow(object):
         self.progressBar_backup_users.setProperty("value", 0)
         self.progressBar_backup_users.setTextVisible(False)
         self.progressBar_backup_users.setObjectName("progressBar_backup_users")
-        self.verticalLayout_28.addWidget(self.progressBar_backup_users)
-        self.t_backup_2 = QtWidgets.QLabel(self.frame_66_backup)
+        self.verticalLayout_29.addWidget(self.progressBar_backup_users)
+        self.explica1cadastro_users_4 = QtWidgets.QLabel(self.frame_2)
+        self.explica1cadastro_users_4.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.explica1cadastro_users_4.setObjectName("explica1cadastro_users_4")
+        self.verticalLayout_29.addWidget(self.explica1cadastro_users_4)
+        self.progressBar_backup_psp = QtWidgets.QProgressBar(self.frame_2)
+        self.progressBar_backup_psp.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_psp.setProperty("value", 0)
+        self.progressBar_backup_psp.setTextVisible(False)
+        self.progressBar_backup_psp.setObjectName("progressBar_backup_psp")
+        self.verticalLayout_29.addWidget(self.progressBar_backup_psp)
+        self.explica1cadastro_users_6 = QtWidgets.QLabel(self.frame_2)
+        self.explica1cadastro_users_6.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.explica1cadastro_users_6.setObjectName("explica1cadastro_users_6")
+        self.verticalLayout_29.addWidget(self.explica1cadastro_users_6)
+        self.progressBar_backup_ps2 = QtWidgets.QProgressBar(self.frame_2)
+        self.progressBar_backup_ps2.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_ps2.setProperty("value", 0)
+        self.progressBar_backup_ps2.setTextVisible(False)
+        self.progressBar_backup_ps2.setObjectName("progressBar_backup_ps2")
+        self.verticalLayout_29.addWidget(self.progressBar_backup_ps2)
+        self.explica1cadastro_users_7 = QtWidgets.QLabel(self.frame_2)
+        self.explica1cadastro_users_7.setStyleSheet("QLabel{\n"
+"    background-color: transparent;\n"
+"    color: rgb(255, 255, 255);\n"
+"font: 15px Segoe UI, bold;\n"
+"}")
+        self.explica1cadastro_users_7.setObjectName("explica1cadastro_users_7")
+        self.verticalLayout_29.addWidget(self.explica1cadastro_users_7)
+        self.progressBar_backup_emuladores = QtWidgets.QProgressBar(self.frame_2)
+        self.progressBar_backup_emuladores.setStyleSheet("QProgressBar{\n"
+"border: 2px solid rgba(45,45,45,0);\n"
+"border-radius: 5px;\n"
+"padding: 10px;\n"
+"background-color: rgb(30,30,30);\n"
+"    color: rgb(203, 203, 203);\n"
+"font: 15px Segoe UI, bold;\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"background-color: rgb(170,0,0);\n"
+"}")
+        self.progressBar_backup_emuladores.setProperty("value", 0)
+        self.progressBar_backup_emuladores.setTextVisible(False)
+        self.progressBar_backup_emuladores.setObjectName("progressBar_backup_emuladores")
+        self.verticalLayout_29.addWidget(self.progressBar_backup_emuladores)
+        self.horizontalLayout_4.addWidget(self.frame_2)
+        self.frame = QtWidgets.QFrame(self.frame_66_backup)
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.verticalLayout_28 = QtWidgets.QVBoxLayout(self.frame)
+        self.verticalLayout_28.setObjectName("verticalLayout_28")
+        self.t_backup_2 = QtWidgets.QLabel(self.frame)
         self.t_backup_2.setStyleSheet("QLabel{\n"
 "    background-color: transparent;\n"
 "    color: rgb(255, 255, 255);\n"
@@ -5068,7 +5154,7 @@ class Ui_MainWindow(object):
 "}")
         self.t_backup_2.setObjectName("t_backup_2")
         self.verticalLayout_28.addWidget(self.t_backup_2)
-        self.progressBar_backup_infos = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_infos = QtWidgets.QProgressBar(self.frame)
         self.progressBar_backup_infos.setStyleSheet("QProgressBar{\n"
 "border: 2px solid rgba(45,45,45,0);\n"
 "border-radius: 5px;\n"
@@ -5085,32 +5171,7 @@ class Ui_MainWindow(object):
         self.progressBar_backup_infos.setTextVisible(False)
         self.progressBar_backup_infos.setObjectName("progressBar_backup_infos")
         self.verticalLayout_28.addWidget(self.progressBar_backup_infos)
-        self.explica1cadastro_users_4 = QtWidgets.QLabel(self.frame_66_backup)
-        self.explica1cadastro_users_4.setStyleSheet("QLabel{\n"
-"    background-color: transparent;\n"
-"    color: rgb(255, 255, 255);\n"
-"font: 15px Segoe UI, bold;\n"
-"}")
-        self.explica1cadastro_users_4.setObjectName("explica1cadastro_users_4")
-        self.verticalLayout_28.addWidget(self.explica1cadastro_users_4)
-        self.progressBar_backup_psp = QtWidgets.QProgressBar(self.frame_66_backup)
-        self.progressBar_backup_psp.setStyleSheet("QProgressBar{\n"
-"border: 2px solid rgba(45,45,45,0);\n"
-"border-radius: 5px;\n"
-"padding: 10px;\n"
-"background-color: rgb(30,30,30);\n"
-"    color: rgb(203, 203, 203);\n"
-"font: 15px Segoe UI, bold;\n"
-"}\n"
-"\n"
-"QProgressBar::chunk{\n"
-"background-color: rgb(170,0,0);\n"
-"}")
-        self.progressBar_backup_psp.setProperty("value", 0)
-        self.progressBar_backup_psp.setTextVisible(False)
-        self.progressBar_backup_psp.setObjectName("progressBar_backup_psp")
-        self.verticalLayout_28.addWidget(self.progressBar_backup_psp)
-        self.explica1cadastro_users_5 = QtWidgets.QLabel(self.frame_66_backup)
+        self.explica1cadastro_users_5 = QtWidgets.QLabel(self.frame)
         self.explica1cadastro_users_5.setStyleSheet("QLabel{\n"
 "    background-color: transparent;\n"
 "    color: rgb(255, 255, 255);\n"
@@ -5118,7 +5179,7 @@ class Ui_MainWindow(object):
 "}")
         self.explica1cadastro_users_5.setObjectName("explica1cadastro_users_5")
         self.verticalLayout_28.addWidget(self.explica1cadastro_users_5)
-        self.progressBar_backup_ps1 = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_ps1 = QtWidgets.QProgressBar(self.frame)
         self.progressBar_backup_ps1.setStyleSheet("QProgressBar{\n"
 "border: 2px solid rgba(45,45,45,0);\n"
 "border-radius: 5px;\n"
@@ -5135,32 +5196,7 @@ class Ui_MainWindow(object):
         self.progressBar_backup_ps1.setTextVisible(False)
         self.progressBar_backup_ps1.setObjectName("progressBar_backup_ps1")
         self.verticalLayout_28.addWidget(self.progressBar_backup_ps1)
-        self.explica1cadastro_users_6 = QtWidgets.QLabel(self.frame_66_backup)
-        self.explica1cadastro_users_6.setStyleSheet("QLabel{\n"
-"    background-color: transparent;\n"
-"    color: rgb(255, 255, 255);\n"
-"font: 15px Segoe UI, bold;\n"
-"}")
-        self.explica1cadastro_users_6.setObjectName("explica1cadastro_users_6")
-        self.verticalLayout_28.addWidget(self.explica1cadastro_users_6)
-        self.progressBar_backup_ps2 = QtWidgets.QProgressBar(self.frame_66_backup)
-        self.progressBar_backup_ps2.setStyleSheet("QProgressBar{\n"
-"border: 2px solid rgba(45,45,45,0);\n"
-"border-radius: 5px;\n"
-"padding: 10px;\n"
-"background-color: rgb(30,30,30);\n"
-"    color: rgb(203, 203, 203);\n"
-"font: 15px Segoe UI, bold;\n"
-"}\n"
-"\n"
-"QProgressBar::chunk{\n"
-"background-color: rgb(170,0,0);\n"
-"}")
-        self.progressBar_backup_ps2.setProperty("value", 0)
-        self.progressBar_backup_ps2.setTextVisible(False)
-        self.progressBar_backup_ps2.setObjectName("progressBar_backup_ps2")
-        self.verticalLayout_28.addWidget(self.progressBar_backup_ps2)
-        self.explica1cadastro_users_8 = QtWidgets.QLabel(self.frame_66_backup)
+        self.explica1cadastro_users_8 = QtWidgets.QLabel(self.frame)
         self.explica1cadastro_users_8.setStyleSheet("QLabel{\n"
 "    background-color: transparent;\n"
 "    color: rgb(255, 255, 255);\n"
@@ -5168,7 +5204,7 @@ class Ui_MainWindow(object):
 "}")
         self.explica1cadastro_users_8.setObjectName("explica1cadastro_users_8")
         self.verticalLayout_28.addWidget(self.explica1cadastro_users_8)
-        self.progressBar_backup_ps3 = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_ps3 = QtWidgets.QProgressBar(self.frame)
         self.progressBar_backup_ps3.setStyleSheet("QProgressBar{\n"
 "border: 2px solid rgba(45,45,45,0);\n"
 "border-radius: 5px;\n"
@@ -5185,32 +5221,7 @@ class Ui_MainWindow(object):
         self.progressBar_backup_ps3.setTextVisible(False)
         self.progressBar_backup_ps3.setObjectName("progressBar_backup_ps3")
         self.verticalLayout_28.addWidget(self.progressBar_backup_ps3)
-        self.explica1cadastro_users_7 = QtWidgets.QLabel(self.frame_66_backup)
-        self.explica1cadastro_users_7.setStyleSheet("QLabel{\n"
-"    background-color: transparent;\n"
-"    color: rgb(255, 255, 255);\n"
-"font: 15px Segoe UI, bold;\n"
-"}")
-        self.explica1cadastro_users_7.setObjectName("explica1cadastro_users_7")
-        self.verticalLayout_28.addWidget(self.explica1cadastro_users_7)
-        self.progressBar_backup_emuladores = QtWidgets.QProgressBar(self.frame_66_backup)
-        self.progressBar_backup_emuladores.setStyleSheet("QProgressBar{\n"
-"border: 2px solid rgba(45,45,45,0);\n"
-"border-radius: 5px;\n"
-"padding: 10px;\n"
-"background-color: rgb(30,30,30);\n"
-"    color: rgb(203, 203, 203);\n"
-"font: 15px Segoe UI, bold;\n"
-"}\n"
-"\n"
-"QProgressBar::chunk{\n"
-"background-color: rgb(170,0,0);\n"
-"}")
-        self.progressBar_backup_emuladores.setProperty("value", 0)
-        self.progressBar_backup_emuladores.setTextVisible(False)
-        self.progressBar_backup_emuladores.setObjectName("progressBar_backup_emuladores")
-        self.verticalLayout_28.addWidget(self.progressBar_backup_emuladores)
-        self.explica1cadastro_users_9 = QtWidgets.QLabel(self.frame_66_backup)
+        self.explica1cadastro_users_9 = QtWidgets.QLabel(self.frame)
         self.explica1cadastro_users_9.setStyleSheet("QLabel{\n"
 "    background-color: transparent;\n"
 "    color: rgb(255, 255, 255);\n"
@@ -5218,7 +5229,7 @@ class Ui_MainWindow(object):
 "}")
         self.explica1cadastro_users_9.setObjectName("explica1cadastro_users_9")
         self.verticalLayout_28.addWidget(self.explica1cadastro_users_9)
-        self.progressBar_backup_extras = QtWidgets.QProgressBar(self.frame_66_backup)
+        self.progressBar_backup_extras = QtWidgets.QProgressBar(self.frame)
         self.progressBar_backup_extras.setStyleSheet("QProgressBar{\n"
 "border: 2px solid rgba(45,45,45,0);\n"
 "border-radius: 5px;\n"
@@ -5235,6 +5246,7 @@ class Ui_MainWindow(object):
         self.progressBar_backup_extras.setTextVisible(False)
         self.progressBar_backup_extras.setObjectName("progressBar_backup_extras")
         self.verticalLayout_28.addWidget(self.progressBar_backup_extras)
+        self.horizontalLayout_4.addWidget(self.frame)
         self.verticalLayout_15.addWidget(self.frame_66_backup)
         self.verticalLayout_16.addWidget(self.conteiner_topo_backup)
         self.stackedWidget.addWidget(self.pagina_backup)
@@ -5745,12 +5757,12 @@ class Ui_MainWindow(object):
         self.ex1_backup.setText(_translate("MainWindow", "- clique em iniciar e o backup será feito."))
         self.btn_iniciar_backup.setText(_translate("MainWindow", "iniciar"))
         self.t_backup.setText(_translate("MainWindow", "backup usuários"))
-        self.t_backup_2.setText(_translate("MainWindow", "backup informações"))
         self.explica1cadastro_users_4.setText(_translate("MainWindow", "backup playstation psp"))
-        self.explica1cadastro_users_5.setText(_translate("MainWindow", "backup playstation ps1"))
         self.explica1cadastro_users_6.setText(_translate("MainWindow", "backup playstation ps2"))
-        self.explica1cadastro_users_8.setText(_translate("MainWindow", "backup playstation ps3"))
         self.explica1cadastro_users_7.setText(_translate("MainWindow", "backup playstation emuladores"))
+        self.t_backup_2.setText(_translate("MainWindow", "backup informações"))
+        self.explica1cadastro_users_5.setText(_translate("MainWindow", "backup playstation ps1"))
+        self.explica1cadastro_users_8.setText(_translate("MainWindow", "backup playstation ps3"))
         self.explica1cadastro_users_9.setText(_translate("MainWindow", "backup playstation extras"))
         self.ex1_databases.setText(_translate("MainWindow", "- basta selecionar uma das tabelas para ver seus dados."))
         self.ex2_databases.setText(_translate("MainWindow", "<html><head/><body><p>- <span style=\" font-weight:600;\">[ATENÇÃO]</span> não edite nada por aqui!</p></body></html>"))

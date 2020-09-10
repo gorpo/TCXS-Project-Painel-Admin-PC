@@ -1673,7 +1673,7 @@ border: 2px solid  rgb(170,0,0);
                       </property>
                       <property name="font">
                        <font>
-                        <family>SegoeUIl</family>
+                        <family>SegoeUIl,12</family>
                         <pointsize>-1</pointsize>
                         <weight>50</weight>
                         <italic>false</italic>
@@ -3224,7 +3224,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3263,7 +3263,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3302,7 +3302,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3890,7 +3890,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3929,7 +3929,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -3968,7 +3968,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -4547,7 +4547,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -4586,7 +4586,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -4625,7 +4625,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -7769,7 +7769,7 @@ border: 2px solid  rgb(170,0,0);
                       </property>
                       <property name="font">
                        <font>
-                        <family>SegoeUIl</family>
+                        <family>SegoeUIl,12</family>
                         <pointsize>-1</pointsize>
                         <weight>50</weight>
                         <italic>false</italic>
@@ -7808,7 +7808,7 @@ QPushButton:pressed {
                       </property>
                       <property name="font">
                        <font>
-                        <family>SegoeUIl</family>
+                        <family>SegoeUIl,12</family>
                         <pointsize>-1</pointsize>
                         <weight>50</weight>
                         <italic>false</italic>
@@ -7847,7 +7847,7 @@ QPushButton:pressed {
                       </property>
                       <property name="font">
                        <font>
-                        <family>SegoeUIl</family>
+                        <family>SegoeUIl,12</family>
                         <pointsize>-1</pointsize>
                         <weight>50</weight>
                         <italic>false</italic>
@@ -8351,7 +8351,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -8390,7 +8390,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -8429,7 +8429,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -9014,7 +9014,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -9053,7 +9053,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -9092,7 +9092,7 @@ QPushButton:pressed {
                          </property>
                          <property name="font">
                           <font>
-                           <family>SegoeUIl</family>
+                           <family>SegoeUIl,12</family>
                            <pointsize>-1</pointsize>
                            <weight>50</weight>
                            <italic>false</italic>
@@ -9382,7 +9382,7 @@ QPushButton:pressed {
                    <property name="minimumSize">
                     <size>
                      <width>0</width>
-                     <height>0</height>
+                     <height>450</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -9397,34 +9397,34 @@ QPushButton:pressed {
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_28">
-                    <property name="spacing">
-                     <number>4</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>0</number>
-                    </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
                     <item>
-                     <widget class="QLabel" name="t_backup">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel{
+                     <widget class="QFrame" name="frame_2">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_29">
+                       <item>
+                        <widget class="QLabel" name="t_backup">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{
 	background-color: transparent;
 	color: rgb(255, 255, 255);
 font: 15px Segoe UI, bold;
 }</string>
-                      </property>
-                      <property name="text">
-                       <string>backup usuários</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QProgressBar" name="progressBar_backup_users">
-                      <property name="styleSheet">
-                       <string notr="true">QProgressBar{
+                         </property>
+                         <property name="text">
+                          <string>backup usuários</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QProgressBar" name="progressBar_backup_users">
+                         <property name="styleSheet">
+                          <string notr="true">QProgressBar{
 border: 2px solid rgba(45,45,45,0);
 border-radius: 5px;
 padding: 10px;
@@ -9436,33 +9436,33 @@ font: 15px Segoe UI, bold;
 QProgressBar::chunk{
 background-color: rgb(170,0,0);
 }</string>
-                      </property>
-                      <property name="value">
-                       <number>0</number>
-                      </property>
-                      <property name="textVisible">
-                       <bool>false</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="t_backup_2">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel{
+                         </property>
+                         <property name="value">
+                          <number>0</number>
+                         </property>
+                         <property name="textVisible">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="explica1cadastro_users_4">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{
 	background-color: transparent;
 	color: rgb(255, 255, 255);
 font: 15px Segoe UI, bold;
 }</string>
-                      </property>
-                      <property name="text">
-                       <string>backup informações</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QProgressBar" name="progressBar_backup_infos">
-                      <property name="styleSheet">
-                       <string notr="true">QProgressBar{
+                         </property>
+                         <property name="text">
+                          <string>backup playstation psp</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QProgressBar" name="progressBar_backup_psp">
+                         <property name="styleSheet">
+                          <string notr="true">QProgressBar{
 border: 2px solid rgba(45,45,45,0);
 border-radius: 5px;
 padding: 10px;
@@ -9474,33 +9474,33 @@ font: 15px Segoe UI, bold;
 QProgressBar::chunk{
 background-color: rgb(170,0,0);
 }</string>
-                      </property>
-                      <property name="value">
-                       <number>0</number>
-                      </property>
-                      <property name="textVisible">
-                       <bool>false</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="explica1cadastro_users_4">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel{
+                         </property>
+                         <property name="value">
+                          <number>0</number>
+                         </property>
+                         <property name="textVisible">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="explica1cadastro_users_6">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{
 	background-color: transparent;
 	color: rgb(255, 255, 255);
 font: 15px Segoe UI, bold;
 }</string>
-                      </property>
-                      <property name="text">
-                       <string>backup playstation psp</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QProgressBar" name="progressBar_backup_psp">
-                      <property name="styleSheet">
-                       <string notr="true">QProgressBar{
+                         </property>
+                         <property name="text">
+                          <string>backup playstation ps2</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QProgressBar" name="progressBar_backup_ps2">
+                         <property name="styleSheet">
+                          <string notr="true">QProgressBar{
 border: 2px solid rgba(45,45,45,0);
 border-radius: 5px;
 padding: 10px;
@@ -9512,33 +9512,33 @@ font: 15px Segoe UI, bold;
 QProgressBar::chunk{
 background-color: rgb(170,0,0);
 }</string>
-                      </property>
-                      <property name="value">
-                       <number>0</number>
-                      </property>
-                      <property name="textVisible">
-                       <bool>false</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="explica1cadastro_users_5">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel{
+                         </property>
+                         <property name="value">
+                          <number>0</number>
+                         </property>
+                         <property name="textVisible">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="explica1cadastro_users_7">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{
 	background-color: transparent;
 	color: rgb(255, 255, 255);
 font: 15px Segoe UI, bold;
 }</string>
-                      </property>
-                      <property name="text">
-                       <string>backup playstation ps1</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QProgressBar" name="progressBar_backup_ps1">
-                      <property name="styleSheet">
-                       <string notr="true">QProgressBar{
+                         </property>
+                         <property name="text">
+                          <string>backup playstation emuladores</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QProgressBar" name="progressBar_backup_emuladores">
+                         <property name="styleSheet">
+                          <string notr="true">QProgressBar{
 border: 2px solid rgba(45,45,45,0);
 border-radius: 5px;
 padding: 10px;
@@ -9550,33 +9550,45 @@ font: 15px Segoe UI, bold;
 QProgressBar::chunk{
 background-color: rgb(170,0,0);
 }</string>
-                      </property>
-                      <property name="value">
-                       <number>0</number>
-                      </property>
-                      <property name="textVisible">
-                       <bool>false</bool>
-                      </property>
+                         </property>
+                         <property name="value">
+                          <number>0</number>
+                         </property>
+                         <property name="textVisible">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </widget>
                     </item>
                     <item>
-                     <widget class="QLabel" name="explica1cadastro_users_6">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel{
+                     <widget class="QFrame" name="frame">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_28">
+                       <item>
+                        <widget class="QLabel" name="t_backup_2">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{
 	background-color: transparent;
 	color: rgb(255, 255, 255);
 font: 15px Segoe UI, bold;
 }</string>
-                      </property>
-                      <property name="text">
-                       <string>backup playstation ps2</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QProgressBar" name="progressBar_backup_ps2">
-                      <property name="styleSheet">
-                       <string notr="true">QProgressBar{
+                         </property>
+                         <property name="text">
+                          <string>backup informações</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QProgressBar" name="progressBar_backup_infos">
+                         <property name="styleSheet">
+                          <string notr="true">QProgressBar{
 border: 2px solid rgba(45,45,45,0);
 border-radius: 5px;
 padding: 10px;
@@ -9588,33 +9600,33 @@ font: 15px Segoe UI, bold;
 QProgressBar::chunk{
 background-color: rgb(170,0,0);
 }</string>
-                      </property>
-                      <property name="value">
-                       <number>0</number>
-                      </property>
-                      <property name="textVisible">
-                       <bool>false</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="explica1cadastro_users_8">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel{
+                         </property>
+                         <property name="value">
+                          <number>0</number>
+                         </property>
+                         <property name="textVisible">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="explica1cadastro_users_5">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{
 	background-color: transparent;
 	color: rgb(255, 255, 255);
 font: 15px Segoe UI, bold;
 }</string>
-                      </property>
-                      <property name="text">
-                       <string>backup playstation ps3</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QProgressBar" name="progressBar_backup_ps3">
-                      <property name="styleSheet">
-                       <string notr="true">QProgressBar{
+                         </property>
+                         <property name="text">
+                          <string>backup playstation ps1</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QProgressBar" name="progressBar_backup_ps1">
+                         <property name="styleSheet">
+                          <string notr="true">QProgressBar{
 border: 2px solid rgba(45,45,45,0);
 border-radius: 5px;
 padding: 10px;
@@ -9626,33 +9638,33 @@ font: 15px Segoe UI, bold;
 QProgressBar::chunk{
 background-color: rgb(170,0,0);
 }</string>
-                      </property>
-                      <property name="value">
-                       <number>0</number>
-                      </property>
-                      <property name="textVisible">
-                       <bool>false</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="explica1cadastro_users_7">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel{
+                         </property>
+                         <property name="value">
+                          <number>0</number>
+                         </property>
+                         <property name="textVisible">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="explica1cadastro_users_8">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{
 	background-color: transparent;
 	color: rgb(255, 255, 255);
 font: 15px Segoe UI, bold;
 }</string>
-                      </property>
-                      <property name="text">
-                       <string>backup playstation emuladores</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QProgressBar" name="progressBar_backup_emuladores">
-                      <property name="styleSheet">
-                       <string notr="true">QProgressBar{
+                         </property>
+                         <property name="text">
+                          <string>backup playstation ps3</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QProgressBar" name="progressBar_backup_ps3">
+                         <property name="styleSheet">
+                          <string notr="true">QProgressBar{
 border: 2px solid rgba(45,45,45,0);
 border-radius: 5px;
 padding: 10px;
@@ -9664,33 +9676,33 @@ font: 15px Segoe UI, bold;
 QProgressBar::chunk{
 background-color: rgb(170,0,0);
 }</string>
-                      </property>
-                      <property name="value">
-                       <number>0</number>
-                      </property>
-                      <property name="textVisible">
-                       <bool>false</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="explica1cadastro_users_9">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel{
+                         </property>
+                         <property name="value">
+                          <number>0</number>
+                         </property>
+                         <property name="textVisible">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="explica1cadastro_users_9">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{
 	background-color: transparent;
 	color: rgb(255, 255, 255);
 font: 15px Segoe UI, bold;
 }</string>
-                      </property>
-                      <property name="text">
-                       <string>backup playstation extras</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QProgressBar" name="progressBar_backup_extras">
-                      <property name="styleSheet">
-                       <string notr="true">QProgressBar{
+                         </property>
+                         <property name="text">
+                          <string>backup playstation extras</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QProgressBar" name="progressBar_backup_extras">
+                         <property name="styleSheet">
+                          <string notr="true">QProgressBar{
 border: 2px solid rgba(45,45,45,0);
 border-radius: 5px;
 padding: 10px;
@@ -9702,13 +9714,16 @@ font: 15px Segoe UI, bold;
 QProgressBar::chunk{
 background-color: rgb(170,0,0);
 }</string>
-                      </property>
-                      <property name="value">
-                       <number>0</number>
-                      </property>
-                      <property name="textVisible">
-                       <bool>false</bool>
-                      </property>
+                         </property>
+                         <property name="value">
+                          <number>0</number>
+                         </property>
+                         <property name="textVisible">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </widget>
                     </item>
                    </layout>
