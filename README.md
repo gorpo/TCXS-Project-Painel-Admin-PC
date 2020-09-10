@@ -25,13 +25,49 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <code>pip install requirements.txt</code><br>
 
 <b>Instalação manual dos pacotes:</b><br>
-<code>pip install PyQT5==5.12</code><br>
-<code>pyqtwebengine==5.12</code><br>
-<code>pillow==6.2.2</code><br>
-<code>....</code><br>
-<code>.....</code><br>
+<code>pip install beautifulsoup4==4.9.1</code><br>
+<code>pip install certifi==2020.6.20</code><br>
+<code>pip install chardet==3.0.4</code><br>
+<code>pip install idna==2.10</code><br>
+<code>pip install Pillow==6.2.2</code><br>
+<code>pip install PyMySQL==0.10.0</code><br>
+<code>pip install PyQt5==5.12</code><br>
+<code>pip install PyQt5-sip==4.19.19</code><br>
+<code>pip install PyQt5-stubs==5.14.2.2</code><br>
+<code>pip install PyQtWebEngine==5.12</code><br>
+<code>pip install requests==2.24.0</code><br>
+<code>pip install soupsieve==2.0.1</code><br>
+<code>pip install urllib3==1.25.10</code><br>
 <br>
 
+<b>Problemas com o PyInstaller:</b><br>
+- Primeiramente adicione o caminho via CMD: set PATH=%PATH%;C:\Windows\System32\downlevel;<br>
+- O caminho acima adicionado pegará as dll's da pasta do windows!<br>
+- Foi usada a instalação padrão do pyinstaller (pip install pyinstaller)<br>
+- Caso necessário a comunidade diz para usar a versão do git instalando com comando abaixo<br>
+- Confira a lista de comandos para arrumar problemas no python<br>
+- O arquivo SPEC é o arquivo de configuração responsável pela criação do arquivo executavel(.exe) pelo pysintaller.<br>
+
+Atualizar o setuptools:<br>
+<code>pip install -U setuptools</code><br>
+Somente em caso de erros com pytest remover o pacote e o resintalar novamente:<br>
+<code>pip uninstall pytest</code><br>
+<code>pip install pytest</code><br>
+<b>Comando utilizado para compilar este programa:</b><br>
+<code>pyinstaller --onefile main.py  --hidden-import PyQt5.sip</code><br>
+Comando para remover o console e por um icone:<br>
+<code>pyinstaller -F --noconsole  -i favicon.ico</code><br>
+Instalação do pyinstaller direto da fonte, como comunidade recomenda:<br>
+<code>pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip</code><br>
+Outros comandos que podem auxiliar futuramente com o pyinstaller:<br>
+<code>pyinstaller --onefile --hidden-import theMissingModule main.py</code><br>
+<code>pyinstaller --onefile --windowed</code><br>
+
+1. Insira todos os arquivos py necessários para que seu código seja executado na primeira lista dentro do Analysis<br>
+por exemplo: Analysis(['file1.py', 'file2.py', 'file3.py'],<br>
+2. Insira todos os arquivos de dados necessários na lista de dados (dentro do Analysis) no arquivo spec. Cada entrada será uma tupla. O primeiro elemento na tupla será o caminho para o recurso e a segunda entrada será o nome da pasta na saída.<br>
+Por exemplo: datas=[('csv\\', 'csv'), ('plotly-latest.min.js', '.')],<br>
+<br>
 
 <b>TELA INICIAL:</b><br>
 - Sistema de menu Abre e Fecha com icones para identificação.<br>
