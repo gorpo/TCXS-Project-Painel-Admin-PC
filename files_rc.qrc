@@ -2,6 +2,9 @@
   <qresource prefix="abre_menu">
     <file>images/menu-4-24.png</file>
   </qresource>
+  <qresource prefix="marcadagua png tcxs para jogos">
+    <file>images/watermark.png</file>
+  </qresource>
   <qresource prefix="BACKGROUND_HOME">
     <file>images/bg_home.jpg</file>
   </qresource>

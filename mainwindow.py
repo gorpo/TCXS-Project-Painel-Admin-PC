@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(897, 700)
+        MainWindow.resize(800, 700)
         self.janela_pai = QtWidgets.QWidget(MainWindow)
         self.janela_pai.setObjectName("janela_pai")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.janela_pai)
@@ -5745,7 +5745,7 @@ class Ui_MainWindow(object):
         self.ex4_extras.setText(_translate("MainWindow", "- insira o link do jogo que o link, em caso de uso dropbox troque o final dl=0 por dl=1."))
         self.ex5_extras.setText(_translate("MainWindow", "- faça o upload da imagem, caso esteja editando copie e cole o nome da imagem cadastrada."))
         self.ex6_extras.setText(_translate("MainWindow", "- para atualizar preencha os dados normalmente, clique sobre o jogo na tabela  e em atualizar."))
-        self.input_titulo_extras.setText(_translate("MainWindow", "Titulo PSP"))
+        self.input_titulo_extras.setText(_translate("MainWindow", "Titulo EXTRAS"))
         self.input_descricao_extras.setText(_translate("MainWindow", "Descrição | Usar tag <br> para pular linhas."))
         self.input_contentid_extras.setText(_translate("MainWindow", "Content ID"))
         self.input_link_extras.setText(_translate("MainWindow", "Link"))
