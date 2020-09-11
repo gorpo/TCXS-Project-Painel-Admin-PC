@@ -158,6 +158,20 @@ por exemplo: Analysis(['file1.py', 'file2.py', 'file3.py'],<br>
 Por exemplo: datas=[('csv\\', 'csv'), ('plotly-latest.min.js', '.')],<br>
 <br>
 
+<p>The code should now look like:
+
+import sys
+from cx_Freeze import setup, Executable
+
+setup(
+    name = "On Dijkstra's Algorithm",
+    version = "3.1",
+    description = "A Dijkstra's Algorithm help tool.",
+    executables = [Executable("Main.py", base = "Win32GUI")])
+
+Use the command prompt (cmd) to run python setup.py build. (Run this command from the folder containing setup.py.) Notice the build parameter we added at the end of the script call.</p><br>
+
+
 <br><br><br>
 Nosso site: <a href="https://tcxsproject.com.br">Manicomio TCXS Project</a> | Developers: <a href="https://github.com/gorpo">GorpoOrko</a> | Partnerships:» <a href="https://t.me/tcxsproject2">telegram</a> | ©2020 | <a href="https://t.me/tcxsproject2">TCXS Project Hacker Team™</a><br>
 <img src="https://raw.githubusercontent.com/gorpo/Manicomio-Boot-Theme/master/manicomio/boot.png" width="50%"></img>
