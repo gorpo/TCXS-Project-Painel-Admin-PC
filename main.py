@@ -412,7 +412,7 @@ if __name__ == "__main__":
 
     #splash
     splash = QSplashScreen()
-    splash.setPixmap(QPixmap("images/logo.png"))
+    splash.setPixmap(QtGui.QPixmap(":logo/images/logo.png"))
     splash.show()
 
     # programa

@@ -2,6 +2,9 @@
   <qresource prefix="abre_menu">
     <file>images/menu-4-24.png</file>
   </qresource>
+  <qresource prefix="logo">
+    <file>images/logo.png</file>
+  </qresource>
   <qresource prefix="ICONE DO PROGRAMA">
     <file>images/icon.ico</file>
   </qresource>
