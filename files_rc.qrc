@@ -5,7 +5,7 @@
   <qresource prefix="ICONE DO PROGRAMA">
     <file>images/icon.ico</file>
   </qresource>
-  <qresource prefix="marcadagua png tcxs para jogos">
+  <qresource prefix="marcadagua">
     <file>images/watermark.png</file>
   </qresource>
   <qresource prefix="BACKGROUND_HOME">

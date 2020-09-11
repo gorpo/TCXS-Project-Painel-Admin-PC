@@ -30,6 +30,14 @@ def funcoesHome(self):
     self.ui.input_senha_ftp.mousePressEvent = self.limpaSenhaFtp
     self.ui.input_senha_ftp.setToolTip('Insira a senha do Ftp')
     self.ui.btn_database_home.clicked.connect(lambda: addDadosMysqlToDb(self))
+    # CRIA A PASTA DE BACKUPS CASO ELA NÃO EXISTA OU TENHA SIDO DELETADA
+    if not os.path.exists('images'):
+        os.makedirs('images')
+    #baixa a imagem watermark.png
+    response = requests.get("https://ia801501.us.archive.org/24/items/prints_programa_tcxs/watermark.png")
+    file = open("images/watermark.png", "wb")
+    file.write(response.content)
+    file.close()
 
 
 def exibeDadosMysql(self):

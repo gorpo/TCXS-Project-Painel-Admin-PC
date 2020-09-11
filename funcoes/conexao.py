@@ -69,8 +69,12 @@ try:
     db_mysql.setUserName(usuarioMysql_user)
     db_mysql.setPassword(senhaMysql_user)
     ok = db_mysql.open()
-    if not ok: print(db_mysql.lastError().text())
-    # else: print("connected")
+    if not ok:
+        print(db_mysql.lastError().text())
+        retorno_conexao_mysql = db_mysql.lastError().text()
+    else:
+        retorno_conexao_mysql = 'Conectado com sucesso ao banco de dados Mysql'
+
     db_mysql.close()
 except:
     pass

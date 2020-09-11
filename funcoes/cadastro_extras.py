@@ -75,10 +75,18 @@ def selecionarImagemextras(self):
         # CONEXAO COM FTP PARA UPLOAD DA imagem
         # arquivo para ser enviado ao server
         file = open(f'images/{self.nome_imagem_extras}', 'rb')  # file to send
-        conexao.ftp.storbinary(f'STOR assets/images/extras/{self.nome_imagem_extras}', file)  # send the file
+        conexao.ftp.storbinary(f'STOR store/assets/images/extras/{self.nome_imagem_extras}', file)  # send the file
         file.close()  # close file and FTP and remove image
+        self.ui.imagem_extras.setPixmap(
+            QtGui.QPixmap(f'images/{self.nome_imagem_extras}').scaled(250, 250, QtCore.Qt.KeepAspectRatio))
         #conexao.ftp.quit()
         os.remove(f'images/{self.nome_imagem_extras}')
+        visita_site = QMessageBox.question(self, 'AVISO | ATENÇÃO',
+                                           """Para ter certeza que sua imagem foi upada, clique em sim, você será redirecionado para a pasta de imagens e podera visualizar se a imagem foi upada com sucesso, caso queira ignorar clique em não!""",
+                                           QMessageBox.Yes | QMessageBox.No)
+        self.show()
+        if str(visita_site) == '16384':  # numero do botao de confirmação do QMessageBox | negação = 65536
+            webbrowser.open('https://tcxsproject.com.br/store/assets/images/extras/', new=2)
     except:
         pass
 
