@@ -38,6 +38,7 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <code>pip install requests==2.24.0</code><br>
 <code>pip install soupsieve==2.0.1</code><br>
 <code>pip install urllib3==1.25.10</code><br>
+<code>pip install cx_Freeze==6.1</code><br>
 <br>
 
 <b>TELA INICIAL:</b><br>

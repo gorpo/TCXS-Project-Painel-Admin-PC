@@ -875,7 +875,7 @@ class Ui_MainWindow(object):
         self.btn_database_home.setMinimumSize(QtCore.QSize(210, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -1687,7 +1687,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -1713,7 +1713,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -1739,7 +1739,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2035,7 +2035,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2061,7 +2061,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2087,7 +2087,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2380,7 +2380,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2406,7 +2406,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2432,7 +2432,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4190,7 +4190,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4216,7 +4216,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4242,7 +4242,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4481,7 +4481,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4507,7 +4507,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4533,7 +4533,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4827,7 +4827,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4853,7 +4853,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4879,7 +4879,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        font.setPointSize(-1)
+        
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)

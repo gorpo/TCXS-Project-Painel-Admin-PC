@@ -16,6 +16,8 @@ criar arquivo mainwindow.py:
 criar arquivo files_rc_rc.py
     pyrcc5 -o files_rc_rc.py files_rc.qrc
 
+criar executavel com o cx freeze:
+    python setup.py build
 
 1. Mysql do sistema principal:
 nome database =           u923273795_users
