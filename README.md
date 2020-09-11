@@ -159,6 +159,9 @@ Por exemplo: datas=[('csv\\', 'csv'), ('plotly-latest.min.js', '.')],<br>
 <br>
 
 <p>The code should now look like:
+	pip install cx_freeze==6.1
+	
+	
 
 import sys
 from cx_Freeze import setup, Executable
@@ -169,7 +172,32 @@ setup(
     description = "A Dijkstra's Algorithm help tool.",
     executables = [Executable("Main.py", base = "Win32GUI")])
 
-Use the command prompt (cmd) to run python setup.py build. (Run this command from the folder containing setup.py.) Notice the build parameter we added at the end of the script call.</p><br>
+Use the command prompt (cmd) to run python setup.py build. (Run this command from the folder containing setup.py.) Notice the build parameter we added at the end of the script call.
+
+
+from cx_Freeze import setup, Executable
+import sys
+
+productName = "ProductName"
+if 'bdist_msi' in sys.argv:
+    sys.argv += ['--initial-target-dir', 'C:\InstallDir\\' + productName]
+    sys.argv += ['--install-script', 'install.py']
+
+exe = Executable(
+      script="main.py",
+      base="Win32GUI",
+      targetName="Product.exe"
+     )
+setup(
+      name="Product.exe",
+      version="1.0",
+      author="Me",
+      description="Copyright 2012",
+      executables=[exe],
+      scripts=[
+               'install.py'
+               ]
+      ) </p><br>
 
 
 <br><br><br>
