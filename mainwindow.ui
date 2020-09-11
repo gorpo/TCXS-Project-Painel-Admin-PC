@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="files_rc.qrc">
-    <normaloff>:/ICONE DO PROGRAMA/images/icon.ico</normaloff>:/ICONE DO PROGRAMA/images/icon.ico</iconset>
+    <normaloff>:/ICONE DO PROGRAMA/images/icone.png</normaloff>:/ICONE DO PROGRAMA/images/icone.png</iconset>
   </property>
   <widget class="QWidget" name="janela_pai">
    <layout class="QVBoxLayout" name="verticalLayout">

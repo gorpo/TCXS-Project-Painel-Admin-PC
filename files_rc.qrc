@@ -6,7 +6,7 @@
     <file>images/logo.png</file>
   </qresource>
   <qresource prefix="ICONE DO PROGRAMA">
-    <file>images/icon.ico</file>
+    <file>images/icone.png</file>
   </qresource>
   <qresource prefix="marcadagua">
     <file>images/watermark.png</file>
