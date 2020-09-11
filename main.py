@@ -73,7 +73,11 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 """
 from PyQt5 import QtCore, QtGui, QtWidgets,QtWebEngineWidgets, QtSql
-from PyQt5.QtWidgets import QApplication, QDialog,  QProgressBar, QPushButton, QMessageBox
+from PyQt5.QtWidgets import QApplication, QDialog,  QProgressBar, QPushButton, QMessageBox, QSplashScreen
+
+from PyQt5.QtCore import QTimer
+from PyQt5.QtGui import QPixmap
+
 from PyQt5.QtGui import *
 from PyQt5.QtSql import QSqlQuery
 from PyQt5.QtWidgets import *
@@ -113,6 +117,9 @@ from funcoes import cadastro_extras
 from funcoes import verificar_databases
 from funcoes import verificador404
 from funcoes import backup_mysql
+
+
+
 
 
 
@@ -395,8 +402,21 @@ linguagem: Python
         backup_mysql.backupDatabaseMysql(self)
 
 
+
+
+
+
 if __name__ == "__main__":
+    #programa
     app = QApplication(sys.argv)
+
+    #splash
+    splash = QSplashScreen()
+    splash.setPixmap(QPixmap("images/logo.png"))
+    splash.show()
+
+    # programa
     window = MainWindow()
     window.show()
+    splash.close()
     sys.exit(app.exec_())
