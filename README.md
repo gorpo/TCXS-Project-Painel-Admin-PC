@@ -137,10 +137,15 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <b>Somente em caso de erros com pytest remover o pacote e o resintalar novamente:</b><br>
 <code>pip uninstall pytest</code><br>
 <code>pip install pytest</code><br>
+
+
 <b>Caso ainda não instale:</b><br>
 <code>pip install pyinstaller==4.0 --no-build-isolation</code><br>
+
 <b>Comando utilizado para compilar este programa:</b><br>
 <code>pyinstaller --onefile --noconsole main.py  --hidden-import PyQt5.sip</code><br>
+
+
 <b>Comando para remover o console e por um icone:<br>
 <code>pyinstaller -F --noconsole  -i favicon.ico</code><br>
 <b>Instalação do pyinstaller direto da fonte, como comunidade recomenda:</b><br>
