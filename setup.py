@@ -22,7 +22,7 @@ from cx_Freeze import setup, Executable
 setup(
     name = "TCXS PROJECT STORE ADMIN",
     version = "1.0",
-    options = {"build_exe": {"include_msvcr": True, "include_files": ['funcoes','images'],  "zip_include_packages": ["*"], "zip_exclude_packages": ["PyQt5","requests","importlib","certifi"]}},
+    options = {"build_exe": {"include_msvcr": True, "include_files": [],  "zip_include_packages": ["*"], "zip_exclude_packages": ["PyQt5","requests","importlib","certifi"]}},
     description = "@GorpoOrko Development",
     executables = [Executable("main.py", base = "Win32GUI", icon="images/icon.ico")])
 

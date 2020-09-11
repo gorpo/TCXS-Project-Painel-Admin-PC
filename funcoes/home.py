@@ -103,6 +103,7 @@ linguagem: Python
     6.3 Será criada uma pasta com nome "backupDb", seus arquivos estarão lá.
     6.4 Serão criados dois arquivos, um dump sql para upload no server e uma database SqLite3.
     6.5 Após salvar seu backup se quiser pode deletar a pasta "backupDb".    """, QMessageBox.Ok)
+        QMessageBox.setStyleSheet("QLabel{min-width:900 px; font-size: 24px;} QPushButton{ width:250px; font-size: 18px; }")
 
 
 
