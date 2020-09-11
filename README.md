@@ -4,11 +4,11 @@
 [![Build](https://img.shields.io/badge/windows-7%208%2010-blue.svg)]()
 [![Build](https://img.shields.io/badge/Linux-Ubuntu%20Debian-orange.svg)]()
 [![Build](https://img.shields.io/badge/arquiterura-64bits-blue.svg)]()
-<h2 align="center">TCXS PROJECT STORE PAINEL ADMINISTRADOR PC</h2>
+<h2 align="center">TCXS PROJECT STORE PAINEL ADMINISTRADOR PC SEM SPLASH SCREEN</h2>
 <h1 align="center">PlayStation3 Store | HAN | HEN | CFW</h1>
 <img src="https://i.imgur.com/3Gmp3Ze.jpg" width="100%"></img><br>
 <br>
-<b>Programa Windows [PC]:</b><br>
+<b>Programa Windows [PC] SEM SPLASH SCREEN:</b><br>
 <p>Sistema de administração para controle da TCXS Store PlayStation3, desenvolvido em python conta com sistema independente de arrasto, redimensionamento, minimização, ampliação e para fechar. Interface grafica(GUI) criada com auxilio do programa QtDesigner incluso no pacote PyQt5. Este programa necessita exclusivamente das versões PyQT5==5.12 pyqtwebengine==5.12. Imagens são enviadas via FTP ja redimensionadas e com marca d'agua.<br> Atenção:Este programa funciona no caminho "localhost/store/" ou seja https://tcxsproject.com.br/store/.<br>Confira outros extras do programa:</p>
 <br>
 <b>Dados necessários para funcionalidade do programa:</b><br>
