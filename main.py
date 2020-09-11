@@ -17,9 +17,16 @@ criar arquivo files_rc_rc.py
     pyrcc5 -o files_rc_rc.py files_rc.qrc
 
 
+1. Mysql do sistema principal:
+nome database =           u923273795_users
+usuario database =        u923273795_users
+senha database = 		  Tcxsproject2020web
+host database =           localhost / 92.249.44.1 / sql254.main-hosting.eu
 
-
-
+2. Login no FTP da tcxs store:
+host ftp =               92.249.44.26
+login ftp =              u923273795.tcxsproject.com.br
+senha ftp =              Tcxsproject2020web
 
 
 #necessario para rodar o QMysql do Pyqt5 versao | PyQT5==5.12  | pyqtwebengine==5.12

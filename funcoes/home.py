@@ -30,14 +30,80 @@ def funcoesHome(self):
     self.ui.input_senha_ftp.mousePressEvent = self.limpaSenhaFtp
     self.ui.input_senha_ftp.setToolTip('Insira a senha do Ftp')
     self.ui.btn_database_home.clicked.connect(lambda: addDadosMysqlToDb(self))
+
     # CRIA A PASTA DE BACKUPS CASO ELA NÃO EXISTA OU TENHA SIDO DELETADA
     if not os.path.exists('images'):
         os.makedirs('images')
+
     #baixa a imagem watermark.png
     response = requests.get("https://ia801501.us.archive.org/24/items/prints_programa_tcxs/watermark.png")
     file = open("images/watermark.png", "wb")
     file.write(response.content)
     file.close()
+
+    try:#VERIFICA A RESPOSTA DO SERVIR FTP ENVIANDO O COMANDO
+        reposta_ftp = conexao.ftp.pwd()
+    except:
+        reposta_ftp = 0
+
+    try:#exibe as mensagens caso não conectado aos sistemas ou caso seja o primeiro uso e nao tenha sido criado a database local
+        # se ambos derem erro - ERRO MYSQL E FTP
+        if conexao.retorno_conexao_mysql == conexao.db_mysql.lastError().text() and reposta_ftp == 0:
+            QMessageBox.question(self, 'AVISO | ERRO DE CONEXÃO',"""Não conseguimos confirmar sua conexão com banco de dados Mysql, nem com o sistema de FTP. Insira os dados corretamente e tente novamente.""", QMessageBox.Ok)
+            self.show()
+        # se der ERRO MYSQL mas o FTP CONECTA
+        elif conexao.retorno_conexao_mysql == conexao.db_mysql.lastError().text() and reposta_ftp != 0:
+            QMessageBox.question(self, 'AVISO | ERRO DE CONEXÃO MYSQL', """Não conseguimos confirmar sua conexão com banco de dados Mysql, insira os dados corretamente e tente novamente.""", QMessageBox.Ok)
+            self.show()
+        #se a conexao ftp falhar e a mysql conectar avisa ERRO DE FTP
+        elif reposta_ftp == 0 and conexao.retorno_conexao_mysql != conexao.db_mysql.lastError().text():
+            QMessageBox.question(self, 'AVISO | ERRO DE CONEXÃO FTP',"""Não conseguimos confirmar sua conexão com o FTP, insira os dados corretamente e tente novamente.""",QMessageBox.Ok)
+            self.show()
+        elif conexao.retorno_conexao_mysql != conexao.db_mysql.lastError().text() and conexao.ftp.getwelcome() == '220 FTP Server ready.':
+            QMessageBox.question(self, 'SUCESSO NA CONEXAO | ESTAMOS CONECTADOS',"""Nossa conexão com o sistema online foi um sucesso, podemos editar, porém tenha cautela, faça suas ações devagar para evitar erros e sempre confira se realmente as imagens foram por FTP.""", QMessageBox.Ok)
+            self.show()
+    except Exception as e:
+        #se der erro é porque não existia o banco de dados local SqLite3 criado e nem os dados inseridos...
+        QMessageBox.question(self, 'Bem vindo ao Painel de Administrador da TCXS Store',"""Insira os dados da Database MySql e os dados de FTP para iniciar o programa!
+
+versão: 1.0
+desenvolvedor: @GorpoOrko
+linguagem: Python
+
+1. Sobre a conexão com a Database MySql e sistema de FTP.
+    1.1 Necessário os dados da database: database | usuário | senha | host.
+    1.2 Necessário os dados sistema FTP: endereço | usuário | senha.
+    1.3 Caso estes dados sejam inseridos não será feita conexão e não será possivel edição.
+    1.4 Os dados são salvos em uma database local, sendo necessário inserir eles apenas uma vez.
+    1.5 Caso os dados do servidor atualizem, atualize os dados no inicio do programa.
+    1.6 Caso não conecte após atualizar os dados, feche e abra novamente o programa.
+
+2. Sobre o cadastro de usuários e consulta:
+    2.1 Necessário os dados: Nome | user | senha - [Permite] cadastrar | atualizar | deletar.
+    2.2 Necessário user que o usuário faz login - [Permite] apenas consultas (clean tables).
+
+3. Sobre o cadastro de jogos e extras:
+    3.1 Necessário os dados: Titulo | Descrição | Content ID | Imagem | Link 
+    3.2 [Permite] cadastrar | atualizar | deletar | upload imagem FTP(resize, borda automatica).
+    3.3 [ATENÇÃO] na descrição usar a tag <br> para pular linhas conforme exemplo:
+    3.4 [EXEMPLO] Idioma: Ingles<br>Legenda: Ingles<br>Plataforma: PlayStation3
+
+4. Sobre o verificador da database:
+    4.1 Verifica todos os bancos de dados a procura de erros, apenas visualização e conferência.
+
+5. Sobre o verificador 404:
+    5.1 Crawler que busca todos os erros 404 e os apresenta para que possam ser alterados na loja.
+    5.2 Este processo é demorado e o programa deve estar sendo usado exclusivamente para ele.
+    5.3 Como este processo verifica link por link demora e podem ocorrer travas ou falhas.
+    5.4 Aconselho que links quebrados sejam arrumados para que não apareçam na proxima verificação.
+    
+6. Sobre o sistema de Backup:
+    6.1 Este programa conta com um sistema automático de backup de toda loja.
+    6.2 Para executar o backup basta apenas clicar no botão e aguardar.    
+    6.3 Será criada uma pasta com nome "backupDb", seus arquivos estarão lá.
+    6.4 Serão criados dois arquivos, um dump sql para upload no server e uma database SqLite3.
+    6.5 Após salvar seu backup se quiser pode deletar a pasta "backupDb".    """, QMessageBox.Ok)
+
 
 
 def exibeDadosMysql(self):

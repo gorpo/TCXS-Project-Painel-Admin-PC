@@ -47,6 +47,8 @@ except:
 try:
     ftp = ftplib.FTP(host=enderecoFtp_user, user=usuarioFtp_user, passwd=senhaFtp_user)
     ftp.encoding = "utf-8"
+    #print(ftp.getwelcome())
+
 except:
     pass
 
@@ -70,11 +72,9 @@ try:
     db_mysql.setPassword(senhaMysql_user)
     ok = db_mysql.open()
     if not ok:
-        print(db_mysql.lastError().text())
         retorno_conexao_mysql = db_mysql.lastError().text()
     else:
         retorno_conexao_mysql = 'Conectado com sucesso ao banco de dados Mysql'
-
     db_mysql.close()
 except:
     pass
