@@ -8,7 +8,7 @@
 # ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
-from main import *
+from TCXSProject import *
 
 def funcoesCadastroInfos(self):
     # eventos para limpar os campos, que buscam funçoes no arquivo main

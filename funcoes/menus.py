@@ -9,7 +9,7 @@
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
 
-from main import *
+from TCXSProject import *
 
 
 #funcoes principais-------------->

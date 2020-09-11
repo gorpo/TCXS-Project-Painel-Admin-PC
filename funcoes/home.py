@@ -8,7 +8,7 @@
 # ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
-from main import *
+from TCXSProject import *
 
 
 
@@ -64,6 +64,7 @@ def funcoesHome(self):
             self.show()
     except Exception as e:
         #se der erro é porque não existia o banco de dados local SqLite3 criado e nem os dados inseridos...
+
         QMessageBox.question(self, 'Bem vindo ao Painel de Administrador da TCXS Store',"""Insira os dados da Database MySql e os dados de FTP para iniciar o programa!
 
 versão: 1.0
@@ -103,7 +104,6 @@ linguagem: Python
     6.3 Será criada uma pasta com nome "backupDb", seus arquivos estarão lá.
     6.4 Serão criados dois arquivos, um dump sql para upload no server e uma database SqLite3.
     6.5 Após salvar seu backup se quiser pode deletar a pasta "backupDb".    """, QMessageBox.Ok)
-        QMessageBox.setStyleSheet("QLabel{min-width:900 px; font-size: 24px;} QPushButton{ width:250px; font-size: 18px; }")
 
 
 

@@ -8,7 +8,7 @@
 # ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
-from main import *
+from TCXSProject import *
 
 def verificar404(self):
     self.ui.comboBox_verifica404.currentIndexChanged.connect(lambda: selecionaVerifica404(self))
