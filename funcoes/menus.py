@@ -96,7 +96,7 @@ def menuEsquerda(self):
     self.ui.botao_menu_extras.setToolTip('PlayStation EXTRAS | TCXS Store')
     # botao botao_menu_bottelegram---------------------------->
     self.ui.botao_menu_bottelegram.clicked.connect(lambda: paginaBot(self))
-    self.ui.botao_menu_bottelegram.setToolTip('Bot TELEGRAM | TCXS Store')
+    self.ui.botao_menu_bottelegram.setToolTip('Backup DATABASE | TCXS Store')
     # botao botao_menu_database---------------------------->
     self.ui.botao_menu_database.clicked.connect(lambda: paginaDatabase(self))
     self.ui.botao_menu_database.setToolTip('PlayStation DATABASE | TCXS Store')

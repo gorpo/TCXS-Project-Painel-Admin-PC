@@ -32,8 +32,12 @@ key_links = dados.find_all('a', href=True)
 
 titulos = []
 for titulo in key_titulo:
-    titulo = str(titulo).split('"titulo_jogo"> ')[1].split(' </h')[0].replace("'","").replace('</h2>','').replace(':','')
-    titulos.append(titulo)
+    try:
+        titulo = str(titulo).split('"titulo_jogo"> ')[1].split(' </h')[0].replace("'","").replace('</h2>','').replace(':','')
+        titulos.append(titulo)
+    except:
+        titulo = str(titulo).split('"titulo_jogo">')[1].split('</h')[0].replace("'", "").replace('</h2>', '').replace(':', '')
+        titulos.append(titulo)
     #print(titulo)
 
 descricoes = []

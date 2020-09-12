@@ -20,7 +20,7 @@ print(conexao)
 
 
 #variavies iniciais
-dados = open('jogos/emuladores.php', 'r', encoding="utf-8").read()
+dados = open('jogos/emuladores_gorp.php', 'r', encoding="utf-8").read()
 dados= BeautifulSoup(dados, 'html5lib')
 key_titulo = dados.find_all('h2', {'class':'titulo_jogo'})
 key_desc = dados.find_all('p', {'class':'textoJogo'})

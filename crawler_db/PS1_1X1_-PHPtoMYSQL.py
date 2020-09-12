@@ -16,12 +16,12 @@ conexao = pymysql.connect(host = 'localhost',
                           charset = 'utf8mb4',
                           cursorclass = pymysql.cursors.DictCursor)
 
-print(conexao)
-
 
 #variavies iniciais
-dados = open('jogos/ps1_gorp.php', 'r', encoding="utf-8").read()
+dados = open('base.html', 'r', encoding="utf-8").read()
 dados= BeautifulSoup(dados, 'html5lib')
+
+
 key_titulo = dados.find_all('h2', {'class':'titulo_jogo'})
 key_desc = dados.find_all('p', {'class':'textoJogo'})
 key_contentid = dados.find_all('a', href=True)
@@ -63,9 +63,9 @@ for id in key_contentid:
 
 imagens = []
 for imagem in key_imagem:
-    imagem = str(imagem).split('ps1/')[1].split('"/>')[0]
+    imagem = str(imagem).split('ps1/')[1].split('"/>')[0].replace('" width="170','')
     imagens.append(imagem)
-    #print(imagem)
+    print(imagem)
 
 
 links = []
@@ -82,28 +82,104 @@ for link in key_links:
 
 print(len(titulos), len(descricoes), len(imagens), len(links))
 dicionario_jogos = list(zip(list(titulos), list(imagens), list(links)))#--
-
-
-
-
+#print(dicionario_jogos)
 now = datetime.now()
 hoje = now.strftime('%Y-%m-%d %H:%M:%S')
-#print(dicionario_jogos)
-for i in range(len(links)):
-    print('[Inserindo dados] Jogo PS1 --> Mysql')
-    print(f'Titulo: {titulos[i]}')
-    print(f'imagem: {imagens[i]}')
-    print(f'Descrição: {descricoes[i]}')
-    print(f'ContentID: {ids[i]}')
-    print(f'Link:{links[i]}')
 
+
+
+
+
+
+
+
+
+if len(links) == 1:
+    print('====  1 LINKS ENCONTRADOS ======')
+    print(f'Titulo: {titulos[0]}')
+    print(f'Descrição: {descricoes[0]}')
+    print(f'ContentID: {ids[0]}')
+    print(f'Link:{links[0:]}')
     with conexao.cursor() as cursor:
         tabela = f"""INSERT INTO playstation_ps1 (titulo,descricao,content_id,imagem,cadastro,
-    link) VALUES ('{titulos[i]}', '{descricoes[i]}', '{ids[i]}', '{imagens[i]}', '{hoje}', '{links[i]}' ) """
+        link ) VALUES ('{titulos[0]}','{descricoes[0]}','{ids[0]}','{imagens[0]}','{hoje}', 
+        '{links[0]}') """
         cursor.execute(tabela)
         conexao.commit()
-        print(f'[Sucesso] Inserido na database... {i} de {len(links)}')
-conexao.close()
+        conexao.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
