@@ -150,8 +150,10 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <code>pyinstaller -F --noconsole  -i favicon.ico</code><br>
 <b>Instalação do pyinstaller direto da fonte, como comunidade recomenda:</b><br>
 <code>pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip</code><br>
-<b>Comando extraido do py-quto-gui</b><br>	
+
+<b>Comando extraido do auto-py-to-exe</b><br>	
 <code>pyinstaller --noconfirm --onefile --windowed --icon "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images/icon.ico" --add-data "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images;images/"  "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/main.py"</code><br>	
+
 <b>Py Auto GUI | funciona somente com o pyinstaller ja rodando</b><br>	
 <code>pip install auto-py-to-exe</code><br>	
 <b>Outros comandos que podem auxiliar futuramente com o pyinstaller:</b><br>
