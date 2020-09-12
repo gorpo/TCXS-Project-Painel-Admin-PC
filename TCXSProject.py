@@ -16,6 +16,9 @@ criar arquivo mainwindow.py:
 criar arquivo files_rc_rc.py
     pyrcc5 -o files_rc_rc.py files_rc.qrc
 
+
+auto-py-to-exe
+
 criar executavel com o cx freeze:
     python setup.py build
 
