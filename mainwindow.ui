@@ -5224,7 +5224,7 @@ border: 2px solid  rgb(170,0,0);
 }</string>
                    </property>
                    <property name="currentIndex">
-                    <number>0</number>
+                    <number>4</number>
                    </property>
                    <property name="elideMode">
                     <enum>Qt::ElideNone</enum>
@@ -5340,6 +5340,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -5375,6 +5378,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
@@ -5412,6 +5418,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -5447,6 +5456,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
@@ -5710,6 +5722,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -5745,6 +5760,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
@@ -5782,6 +5800,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -5818,6 +5839,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -5853,6 +5877,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
@@ -6116,6 +6143,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -6151,6 +6181,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
@@ -6188,6 +6221,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -6224,6 +6260,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -6259,6 +6298,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
@@ -6522,6 +6564,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -6557,6 +6602,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
@@ -6594,6 +6642,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -6630,6 +6681,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -6665,6 +6719,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
@@ -6928,6 +6985,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -6963,6 +7023,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
@@ -7000,6 +7063,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -7036,6 +7102,9 @@ border: 2px solid  rgb(170,0,0);
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
                              </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
+                             </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>
                              </property>
@@ -7071,6 +7140,9 @@ border: 2px solid  rgb(170,0,0);
                              </property>
                              <property name="echoMode">
                               <enum>QLineEdit::Normal</enum>
+                             </property>
+                             <property name="readOnly">
+                              <bool>true</bool>
                              </property>
                              <property name="clearButtonEnabled">
                               <bool>false</bool>

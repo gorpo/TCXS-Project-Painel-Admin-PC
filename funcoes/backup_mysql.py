@@ -94,7 +94,6 @@ CREATE TABLE `playstation_users` (
 
 INSERT INTO `playstation_users` (`id`, `usuario`, `senha`, `nome`, `cadastro`, `nivel`) VALUES\n"""
     dump_mysql.write(texto2users_mysql)
-
     tabela_users = cursor_pymysql.fetchall()
     conexao.conexao_pymysql.commit()
     contador_progress = 0
@@ -111,7 +110,6 @@ INSERT INTO `playstation_users` (`id`, `usuario`, `senha`, `nome`, `cadastro`, `
             #sqlite3
             cursor_sqlite.execute(f"""INSERT INTO playstation_users ( `usuario`, `senha`, `nome`, `cadastro`,`nivel`) VALUES ('{usuario}','{senha}','{nome}','{cadastro}','{nivel}')""")
             conexao_sqlite.commit()
-
         except Exception as e:
             pass
         if contador_progress != len(tabela_users):
@@ -120,7 +118,10 @@ INSERT INTO `playstation_users` (`id`, `usuario`, `senha`, `nome`, `cadastro`, `
         if contador_progress == len(tabela_users):
             texto3users_mysql = f"""('{contador_progress+2}','{usuario}','{senha}','{nome}','{cadastro}','{nivel}');"""
             dump_mysql.write(texto3users_mysql)
+    self.ui.t_backup.setText(f'Backup concluido | Total de Usuários: {len(tabela_users)}')
 
+
+    #playstation infos backup sql
     cursor_pymysql.execute(f"SELECT * FROM playstation_infos")
     cursor_sqlite.execute(   """CREATE TABLE IF NOT EXISTS `playstation_infos` ( id integer not null primary key autoincrement, `informacao` varchar(999) NOT NULL) """)
     conexao_sqlite.commit()
@@ -162,6 +163,7 @@ INSERT INTO `playstation_infos` (`id`, `informacao`) VALUES\n"""
         if contador_progress == len(tabela_infos):
             texto3infos_mysql = f"""('{contador_progress + 2}','{info}');"""
             dump_mysql.write(texto3infos_mysql)
+    self.ui.t_backup_2.setText(f'Backup concluido | Total de Informações: {len(tabela_infos)}')
 
     cursor_pymysql.execute(f"SELECT * FROM playstation_psp")
     cursor_sqlite.execute("""CREATE TABLE IF NOT EXISTS `playstation_psp` ( id integer not null primary key autoincrement,
@@ -216,6 +218,7 @@ INSERT INTO `playstation_psp` (`id`, `titulo`, `descricao`, `content_id`, `image
         if contador_progress == len(tabela_psp):
             texto2psp_mysql = f"""('{contador_progress+2}','{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}');"""
             dump_mysql.write(texto2psp_mysql)
+    self.ui.explica1cadastro_users_4.setText(f'Backup concluido | Total Jogos PSP: {len(tabela_psp)}')
 
 
     #PLAYSTATION1
@@ -271,6 +274,7 @@ INSERT INTO `playstation_ps1` (`id`, `titulo`, `descricao`, `content_id`, `image
         if contador_progress == len(tabela_ps1):
             texto2ps1_mysql = f"""('{contador_progress+2}','{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}');"""
             dump_mysql.write(texto2ps1_mysql)
+    self.ui.explica1cadastro_users_5.setText(f'Backup concluido | Total Jogos PS1: {len(tabela_ps1)}')
 
     cursor_pymysql.execute(f"SELECT * FROM playstation_ps2")
     cursor_sqlite.execute("""CREATE TABLE IF NOT EXISTS `playstation_ps2` ( id integer not null primary key autoincrement,
@@ -324,7 +328,7 @@ INSERT INTO `playstation_ps2` (`id`, `titulo`, `descricao`, `content_id`, `image
         if contador_progress == len(tabela_ps2):
             texto2ps2_mysql = f"""('{contador_progress+2}','{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}');"""
             dump_mysql.write(texto2ps2_mysql)
-
+    self.ui.explica1cadastro_users_6.setText(f'Backup concluido | Total Jogos PS2: {len(tabela_ps2)}')
 
 #ps3----------------------------------------------------------------------------------------------------------------------------
     cursor_pymysql.execute(f"SELECT * FROM playstation_ps3")
@@ -457,7 +461,7 @@ INSERT INTO `playstation_ps3` (`id`, `titulo`, `descricao`, `content_id`, `image
     '{link14}','{link15}','{link16}','{link17}','{link18}','{link19}','{link20}','{link21}','{link22}','{link23}','{link24}','{link25}',
     '{link26}','{link27}','{link28}','{link29}','{link30}');"""
             dump_mysql.write(texto2ps3_mysql)
-
+    self.ui.explica1cadastro_users_8.setText(f'Backup concluido | Total Jogos PS3: {len(tabela_ps3)}')
 
 
     #emuladores------------------------------------------------>
@@ -513,7 +517,7 @@ INSERT INTO `playstation_emuladores` (`id`, `titulo`, `descricao`, `content_id`,
         if contador_progress == len(tabela_emuladores):
             texto2psemu_mysql = f"""('{contador_progress+2}','{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}');"""
             dump_mysql.write(texto2psemu_mysql)
-
+    self.ui.explica1cadastro_users_7.setText(f'Backup concluido | Total Emuladores: {len(tabela_emuladores)}')
 
     cursor_pymysql.execute(f"SELECT * FROM playstation_extras")
     cursor_sqlite.execute("""CREATE TABLE IF NOT EXISTS `playstation_extras` ( id integer not null primary key autoincrement,
@@ -562,9 +566,12 @@ INSERT INTO `playstation_extras` (`id`, `titulo`, `descricao`, `content_id`, `im
             pass
         if contador_progress != len(tabela_extras):
             texto2psex_mysql = f"""('{contador_progress+2}','{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}'),\n"""
+            dump_mysql.write(texto2psex_mysql)
         if contador_progress == len(tabela_extras):
             texto2psex_mysql = f"""('{contador_progress+2}','{titulo}','{descricao}','{content_id}','{imagem}','{cadastro}','{link}');"""
-        dump_mysql.write(texto2psex_mysql)
+            dump_mysql.write(texto2psex_mysql)
+    self.ui.explica1cadastro_users_9.setText(f'Backup concluido | Total Extras: {len(tabela_extras)}')
+
 
     #texto final para ser escrito no dump mysql informando as ids que devem começar as tabelas:
 
@@ -680,6 +687,8 @@ COMMIT;
     dump_mysql.write(texto_final_mysql)
 
     #mensagem final de confirmação do backup
-    QMessageBox.question(self, 'Backup Database TCXS Store', f"""Backup concluido com sucesso.\n Seu arquivo foi salvo com o nome: {datetime.now().strftime("%d_%m_%Y_")}dump_MYSQL.db""", QMessageBox.Ok)
+    QMessageBox.question(self, 'Backup Database TCXS Store', f"""Backups concluidos com sucesso.\n Seus arquivos foram salvos com os nomes:
+{datetime.now().strftime("%d_%m_%Y_%Y-%H_%M")}dump_SQLITE3.db
+{datetime.now().strftime("%d_%m_%Y_%Y-%H_%M")}dump_MYSQL.sql""", QMessageBox.Ok)
     #abre a pasta
     os.startfile(os.path.realpath('backupDb'))

@@ -875,7 +875,7 @@ class Ui_MainWindow(object):
         self.btn_database_home.setMinimumSize(QtCore.QSize(210, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -1687,7 +1687,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -1713,7 +1713,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -1739,7 +1739,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_psp.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2035,7 +2035,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2061,7 +2061,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2087,7 +2087,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps1.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2380,7 +2380,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2406,7 +2406,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2432,7 +2432,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps2.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -2788,6 +2788,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link2.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link2.setReadOnly(True)
         self.info_link2.setClearButtonEnabled(False)
         self.info_link2.setObjectName("info_link2")
         self.verticalLayout_56.addWidget(self.info_link2)
@@ -2809,6 +2810,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link3.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link3.setReadOnly(True)
         self.info_link3.setClearButtonEnabled(False)
         self.info_link3.setObjectName("info_link3")
         self.verticalLayout_56.addWidget(self.info_link3)
@@ -2830,6 +2832,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link4.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link4.setReadOnly(True)
         self.info_link4.setClearButtonEnabled(False)
         self.info_link4.setObjectName("info_link4")
         self.verticalLayout_56.addWidget(self.info_link4)
@@ -2851,6 +2854,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link5.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link5.setReadOnly(True)
         self.info_link5.setClearButtonEnabled(False)
         self.info_link5.setObjectName("info_link5")
         self.verticalLayout_56.addWidget(self.info_link5)
@@ -3000,6 +3004,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link6.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link6.setReadOnly(True)
         self.info_link6.setClearButtonEnabled(False)
         self.info_link6.setObjectName("info_link6")
         self.verticalLayout_58.addWidget(self.info_link6)
@@ -3021,6 +3026,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link7.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link7.setReadOnly(True)
         self.info_link7.setClearButtonEnabled(False)
         self.info_link7.setObjectName("info_link7")
         self.verticalLayout_58.addWidget(self.info_link7)
@@ -3042,6 +3048,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link8.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link8.setReadOnly(True)
         self.info_link8.setClearButtonEnabled(False)
         self.info_link8.setObjectName("info_link8")
         self.verticalLayout_58.addWidget(self.info_link8)
@@ -3063,6 +3070,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link9.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link9.setReadOnly(True)
         self.info_link9.setClearButtonEnabled(False)
         self.info_link9.setObjectName("info_link9")
         self.verticalLayout_58.addWidget(self.info_link9)
@@ -3084,6 +3092,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link10.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link10.setReadOnly(True)
         self.info_link10.setClearButtonEnabled(False)
         self.info_link10.setObjectName("info_link10")
         self.verticalLayout_58.addWidget(self.info_link10)
@@ -3233,6 +3242,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link11.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link11.setReadOnly(True)
         self.info_link11.setClearButtonEnabled(False)
         self.info_link11.setObjectName("info_link11")
         self.verticalLayout_60.addWidget(self.info_link11)
@@ -3254,6 +3264,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link12.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link12.setReadOnly(True)
         self.info_link12.setClearButtonEnabled(False)
         self.info_link12.setObjectName("info_link12")
         self.verticalLayout_60.addWidget(self.info_link12)
@@ -3275,6 +3286,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link13.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link13.setReadOnly(True)
         self.info_link13.setClearButtonEnabled(False)
         self.info_link13.setObjectName("info_link13")
         self.verticalLayout_60.addWidget(self.info_link13)
@@ -3296,6 +3308,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link14.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link14.setReadOnly(True)
         self.info_link14.setClearButtonEnabled(False)
         self.info_link14.setObjectName("info_link14")
         self.verticalLayout_60.addWidget(self.info_link14)
@@ -3317,6 +3330,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link15.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link15.setReadOnly(True)
         self.info_link15.setClearButtonEnabled(False)
         self.info_link15.setObjectName("info_link15")
         self.verticalLayout_60.addWidget(self.info_link15)
@@ -3466,6 +3480,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link16.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link16.setReadOnly(True)
         self.info_link16.setClearButtonEnabled(False)
         self.info_link16.setObjectName("info_link16")
         self.verticalLayout_62.addWidget(self.info_link16)
@@ -3487,6 +3502,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link17.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link17.setReadOnly(True)
         self.info_link17.setClearButtonEnabled(False)
         self.info_link17.setObjectName("info_link17")
         self.verticalLayout_62.addWidget(self.info_link17)
@@ -3508,6 +3524,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link18.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link18.setReadOnly(True)
         self.info_link18.setClearButtonEnabled(False)
         self.info_link18.setObjectName("info_link18")
         self.verticalLayout_62.addWidget(self.info_link18)
@@ -3529,6 +3546,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link19.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link19.setReadOnly(True)
         self.info_link19.setClearButtonEnabled(False)
         self.info_link19.setObjectName("info_link19")
         self.verticalLayout_62.addWidget(self.info_link19)
@@ -3550,6 +3568,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link20.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link20.setReadOnly(True)
         self.info_link20.setClearButtonEnabled(False)
         self.info_link20.setObjectName("info_link20")
         self.verticalLayout_62.addWidget(self.info_link20)
@@ -3699,6 +3718,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link21.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link21.setReadOnly(True)
         self.info_link21.setClearButtonEnabled(False)
         self.info_link21.setObjectName("info_link21")
         self.verticalLayout_64.addWidget(self.info_link21)
@@ -3720,6 +3740,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link22.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link22.setReadOnly(True)
         self.info_link22.setClearButtonEnabled(False)
         self.info_link22.setObjectName("info_link22")
         self.verticalLayout_64.addWidget(self.info_link22)
@@ -3741,6 +3762,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link23.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link23.setReadOnly(True)
         self.info_link23.setClearButtonEnabled(False)
         self.info_link23.setObjectName("info_link23")
         self.verticalLayout_64.addWidget(self.info_link23)
@@ -3762,6 +3784,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link24.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link24.setReadOnly(True)
         self.info_link24.setClearButtonEnabled(False)
         self.info_link24.setObjectName("info_link24")
         self.verticalLayout_64.addWidget(self.info_link24)
@@ -3783,6 +3806,7 @@ class Ui_MainWindow(object):
 "    color: rgb(170,0,0);\n"
 "}")
         self.info_link25.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.info_link25.setReadOnly(True)
         self.info_link25.setClearButtonEnabled(False)
         self.info_link25.setObjectName("info_link25")
         self.verticalLayout_64.addWidget(self.info_link25)
@@ -4190,7 +4214,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4216,7 +4240,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4242,7 +4266,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_ps3.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4481,7 +4505,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4507,7 +4531,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4533,7 +4557,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_retro.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4827,7 +4851,7 @@ class Ui_MainWindow(object):
         self.botao_db_adiciona_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4853,7 +4877,7 @@ class Ui_MainWindow(object):
         self.botao_db_atualiza_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -4879,7 +4903,7 @@ class Ui_MainWindow(object):
         self.botao_db_deleta_extras.setMinimumSize(QtCore.QSize(0, 40))
         font = QtGui.QFont()
         font.setFamily("SegoeUIl,12")
-        
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -5546,7 +5570,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(0)
-        self.tabWidget_ps3.setCurrentIndex(0)
+        self.tabWidget_ps3.setCurrentIndex(4)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
