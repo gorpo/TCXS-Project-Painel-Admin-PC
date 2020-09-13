@@ -115,9 +115,12 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/sistema_backup.jpg" width="50%"></img><br>
 
 <br>
+<b>[ATENÇÃO] APLICATIVO ANDROID store/admin/tools/...</b><br>
+<br>
 <h2 align="center">FRONTEND MYSQL WITH APP ANDROID E PAINEL ADMIN</h2>
 
 <b>Databases:</b><br>
+- Arquivos de apoio na pasta store/admin/tools/...<br>
 - Editar os arquivos "database.php" e "conexao.php" com os dados do host.<br>
 - Dump SQL limpo junto ao código apenas com admins cadastrados.
 - Dump de testes adicionado.<br>
