@@ -118,7 +118,10 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <b>[ATENÇÃO] APLICATIVO ANDROID store/admin/tools/...</b><br>
 <br>
 <h2 align="center">FRONTEND MYSQL WITH APP ANDROID E PAINEL ADMIN</h2>
-
+<img src="https://archive.org/download/nova-tcxs-project/home.png" width="42%"></img>
+<img src="https://archive.org/download/nova-tcxs-project/avisos.png" width="42%"></img><br>
+<img src="https://archive.org/download/nova-tcxs-project/psp.png" width="42%"></img>
+<img src="https://archive.org/download/nova-tcxs-project/ps3.png" width="42%"></img><br>
 <b>Databases:</b><br>
 - Arquivos de apoio na pasta store/admin/tools/...<br>
 - Editar os arquivos "database.php" e "conexao.php" com os dados do host.<br>
@@ -148,12 +151,6 @@ if (window.navigator.userAgent.indexOf("5.0 (") + 19, ua.indexOf(") Apple") != -
 //var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
 document.write(' | Sistema: '+ OSNome);
 </script> </code>
-
-
-<img src="https://i.imgur.com/XyakSdF.png" width="20%"></img>
-<img src="https://i.imgur.com/7qmteHR.png" width="20%"></img>
-<img src="https://i.imgur.com/8cI4rvm.png" width="20%"></img>
-<img src="https://i.imgur.com/6wdkq4V.png" width="20%"></img><br>
 <br>
 
 <b>Problemas com o PyInstaller:</b><br>
