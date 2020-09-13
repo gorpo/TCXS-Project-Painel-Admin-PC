@@ -1,0 +1,745 @@
+/* global */
+/* VT323*/
+/*████████╗ ██████╗██╗  ██╗███████╗    ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗
+  ╚══██╔══╝██╔════╝╚██╗██╔╝██╔════╝    ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝
+     ██║   ██║      ╚███╔╝ ███████╗    ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   
+     ██║   ██║      ██╔██╗ ╚════██║    ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   
+     ██║   ╚██████╗██╔╝ ██╗███████║    ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   
+     ╚═╝    ╚═════╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   */
+@import url('https://fonts.googleapis.com/css?family=Share Tech Mono');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+
+/* gb template */
+body {
+background-color: #939393;
+background-repeat: no-repeat;
+background-size: 100%;
+    }
+
+/* background da homepage*/
+.bghome{
+background-image: url("../../assets/images/bg.jpg");
+background-color: #000000;
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+
+.barraTopo{
+  padding:2rem 1rem;
+  margin-bottom:0rem;
+  background-color:#000000;
+}
+
+.blocoDadosInputs{
+    display: inline-block;
+    width: 95%;
+    margin: 0 auto; 
+    padding: 10px;
+    margin-left: 2.5%;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+.titulo {
+  font-family: 'Share Tech Mono', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 180px;
+  margin-top: 30px;
+}
+
+.tituloRed {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.tituloBranco {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+
+
+
+.tituloRedHome {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 15px;
+  color: rgb(156, 0, 0);
+  text-align: center;
+}
+
+
+.tituloWhiteHome {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.infoLogin {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 20px;
+  color: rgb(156, 0, 0);
+  text-align: center;
+}
+
+/*botao de download dos jogos dentro da pop up */
+.botaoVermelho {
+  font-family: 'VT323', sans-serif;
+  font-size: 16px;
+  background-color: #AD0000; /* Cor do botao cinza */
+  border: none;
+  color: white;
+  display: block;
+  margin-top: 1px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;    
+  display: inline-block;
+}
+
+.botaoIcones {
+  font-size: 12px;
+  background-color: #AD0000; 
+   border: 2px solid #9b0202;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  margin-top: 1px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;    
+  display: inline-block;
+}
+
+label.titulo {
+    color: #fff;
+    margin: 50px auto;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Share Tech Mono', sans-serif;
+    font-size: 24px;
+  
+}
+
+
+.linkCrud  {
+  padding: .35em;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: white;
+  text-decoration: none;    
+}
+
+
+.linkCrud:hover {
+  padding: .35em;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: red;
+  text-decoration: none;    
+}
+
+.tm-main-content { margin-left: 290px; }
+.media-body { height: auto; margin-bottom: 10px; }
+.tm-bg-light-gray { background-color: #000000; }
+img.caixa_imagem {
+  width: 150px;
+  height: 150px;
+  display: block;
+  background-color: #101214; 
+  border: none;
+  margin-left: 80px;
+}
+
+
+img.caixa_imagemPs3crud {
+  width: 150px;
+  height: 150px;
+  display: block;
+  background-color: #101214; 
+  border: none;
+  margin-left: 10px;
+}
+
+.titulo_jogo {
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+  opacity: none; /* 0.7*/
+  text-align: left;
+  color: rgb(255, 255, 255);
+  margin-left: 0px;
+  font-family: 'VT323', sans-serif;
+  text-shadow: 0px 2px 3px #090A08;
+  color: #AD0000;
+}
+
+
+p.textoJogo {
+  font-family: 'Share Tech Mono', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 16px;
+  background-color: #540303; /* Cor do botao cinza */
+  border: none;
+  color: white;
+  display: block;
+  margin-top: 1px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;    
+  display: inline-block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  margin-top: 2px;
+  display: none;
+  position: absolute;
+  min-width: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #101214; /* Cor do botao cinza */
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  border: solid;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 16px;
+  color: red;
+  display: block;
+  margin-top: -1px;
+  text-align: center;
+  text-decoration: none;  
+  padding: 12px 16px;
+  border: none;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #540303;
+  color: white;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0px 3px 3px red;
+
+  } /* cinza  #101214 */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #fff;}
+
+
+
+
+
+/* faz as imagens balançar */
+img:hover {
+    /* animation: shake 0.5s;  */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.matrix {
+    color: #370909;
+    font-family: Arial, Courier, Monotype;
+    font-size: 10pt;
+    text-align: center;
+    width: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+/* EXIBIÇÃO DAS TABELAS DOS JOGOS MYSQL DATABASE*/
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 16px;
+  background-color: #AD0000;
+  color: white;
+  text-align: center;
+  text-decoration: none;   
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: white;
+  text-decoration: none;    
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+
+.labelImagem {
+  position: absolute;
+  left:  0px;
+  margin-left: 8%;
+}
+
+
+table td.preto {
+  padding: .625em;
+  text-align: center;
+    background-color: #000000;
+}
+
+
+.encolheTabelaX{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20px;
+}
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+
+
+/* --------BARRA MENUS -----------*/
+/*---------------------------------*/
+.logo {
+  float: center;
+  width: 98%;
+
+  padding: 0px;
+  margin: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 991px) {
+  .menu-content {
+    max-width: 100%;   /*800px*/
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .list-menu {
+    display: flex!important;
+    justify-content: space-between;
+    width: 100%;
+    background: #AD0000;
+    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+  }
+
+  .item-menu {
+    flex: auto;
+    background-color: #1E1E1E;
+    border: 0.5px solid #121111;
+    font-family: 'Share Tech Mono', sans-serif;
+    text-transform: uppercase;
+  font-size: 16px;
+  background-color: #AD0000;
+  color: white;
+  text-align: center;
+  text-decoration: none; 
+
+  }
+
+
+ /* rodape */
+.rodape {
+position:fixed;
+color:red;
+left:0px;
+right:0px;
+bottom:0px; 
+background:rgb(0,0,0); 
+text-align:center; 
+border-top: 1px solid #91060d; 
+border-bottom: 1px solid #91060d;
+}
+
+
+
+
+  a{
+    text-decoration:none;
+
+  }
+  .item-menu .link-menu {
+    color: #AD0000;
+    display: block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center
+
+  }
+
+  .item-menu .link-menu:hover {
+    background: #990505;
+    color: #1c1c1c;
+  }
+  
+  .navegacao-mobile {
+    display: none!important;
+  }
+ }
+
+.navegacao-mobile {
+  background-color: #1E1E1E;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+
+}
+.linha-menu {
+  width: 25px;
+  height: 3px;
+  border-radius: 5px;
+  background: #555;
+  margin: 4px;
+  display: block;
+
+}
+.input-menu-all {
+  display: none!important;
+}
+.list-menu {
+  display: none;
+   width: 100%;
+   background: #2e2d2d;
+   box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+
+
+}
+.item-menu {
+    flex: auto;
+    border: 1.5px solid #121111;
+  }
+  .item-menu .link-menu {
+    padding: 15px;
+    color: #ffffff;
+    display: block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  text-transform: uppercase;
+  }
+.input-menu-all:checked ~ .list-menu {
+       display: block;
+       font-size: 14px;
+      
+}
+.input-menu-all:checked ~ .list-menu .link-menu  {
+  text-align: left;
+}
+
+.input-menu-all:checked ~ .list-menu .link-menu:hover  {
+  background-color: #AD0000;
+}
+
+
+/* ---------------------------------------------------- */
+/* =====  CAIXAS DE INPUT PADRONIZADAS ==================*/
+/*-------------------------------------------------------*/
+.barraBase{
+  padding:0.5rem 0.5rem;
+  margin-bottom:-10rem;
+  background-color:#000000;
+}
+
+
+
+
+.barraCadastro{
+  padding:0.5rem 0.5rem;
+  margin-bottom:-100rem;
+  background-color:#000000;
+}
+
+
+
+/*margem entre os botoes e input da home */
+.m-b-16 {margin-bottom: 8px;}
+
+/*---------------------------------------------*/
+/* efeito das caixas de input */
+.login100-form {
+  width: 1000px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrap-input100 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.input100 {
+  font-family: Raleway-SemiBold;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #686868;
+  text-align: left;
+  padding-left:25px;
+  width: 100%;
+  background: #e6e6e6;
+  height: 40px;
+  border-radius: 3px;
+}
+
+
+.areaBotoesUpload {
+  padding-top: 10px;
+  padding-bottom: 2px;
+  padding-left:2px;
+  width: 100%;
+  background: #e6e6e6;
+  height: auto;
+  border-radius: 3px;
+}
+
+/* INPUT PERSONALIZADO PARA UPLOAD DAS IMAGENZ */
+/* Esconde o input */
+input[type='file'] {
+  display: none
+}
+
+.inputUploadImagem {
+  padding-top: 5px;
+  padding-left:40px;
+  width: 100%;
+  background: #e6e6e6;
+  height: 250px;
+  border-radius: 0px;
+}
+
+
+
+.focus-input100 {
+  display: block;
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 2px 2px;
+  background-color: rgba(173, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.9);
+}
+
+
+/*  efeito do botao login */
+.container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.login100-form-btn {
+  font-family: 'Share Tech Mono', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  background: #930405;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.login100-form-btn:hover {
+  background: #333333;
+}
+
+
+/* DIVIDE O ESPAÇO ENTRE OS BOTOES */
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}

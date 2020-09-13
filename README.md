@@ -38,7 +38,6 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <code>pip install requests==2.24.0</code><br>
 <code>pip install soupsieve==2.0.1</code><br>
 <code>pip install urllib3==1.25.10</code><br>
-<code>pip install cx_Freeze==6.1</code><br>
 <br>
 
 <b>TELA INICIAL:</b><br>
@@ -116,8 +115,38 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/sistema_backup.jpg" width="50%"></img><br>
 
 <br>
-<h1> Demonstração do Frontend [loja web]:</h1><br>
-<a href="https://linkdogit.com">Link do Git em breve.</a><br>
+<h2 align="center">FRONTEND MYSQL WITH APP ANDROID E PAINEL ADMIN</h2>
+
+<b>Databases:</b><br>
+- Editar os arquivos "database.php" e "conexao.php" com os dados do host.<br>
+- Dump SQL limpo junto ao código apenas com admins cadastrados.
+- Dump de testes adicionado.<br>
+- Tutorial para colocar a loja no servidor: <a href="https://youtu.be/gTF19YUih2E">Demonstração de como hospedar Externamente | Deploy</a> <br>
+
+<h1> Codigos Utéis da programação:</h1><br>
+<b>Sistema de proteção dos botões permindo download somente em consoles PlayStation3, para ativar ou desativar basta comentar/descomentar o codigo:</b><br>
+	<code>
+		writeEnvInfo();
+		ps3chk();
+</code><br>
+
+<code><script type="text/javascript">
+var OSNome = "";
+if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSNome="Windows 10";
+if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSNome="Windows 8";
+if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSNome="Windows 7";
+if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSNome="Windows Vista";
+if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSNome="Windows XP";
+if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSNome="Windows 2000";
+if (window.navigator.userAgent.indexOf("Mac")            != -1) OSNome="Mac/iOS";
+if (window.navigator.userAgent.indexOf("X11")            != -1) OSNome="UNIX";
+if (window.navigator.userAgent.indexOf("Linux")          != -1) OSNome="Linux";
+if (window.navigator.userAgent.indexOf("5.0 (") + 19, ua.indexOf(") Apple") != -1) OSNome="PlayStation3";
+//var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
+document.write(' | Sistema: '+ OSNome);
+</script> </code>
+
+
 <img src="https://i.imgur.com/XyakSdF.png" width="20%"></img>
 <img src="https://i.imgur.com/7qmteHR.png" width="20%"></img>
 <img src="https://i.imgur.com/8cI4rvm.png" width="20%"></img>
@@ -131,13 +160,13 @@ Pacotes necessários encontram-se no requirements.txt<br>
 - Caso necessário a comunidade diz para usar a versão do git instalando com comando abaixo<br>
 - Confira a lista de comandos para arrumar problemas no python<br>
 - O arquivo SPEC é o arquivo de configuração responsável pela criação do arquivo executavel(.exe) pelo pysintaller.<br>
-
+- Existe um repositorio em no gdrive os arquivos que devem ir na pasta %appdata% /roaming/<br>
 <b>Atualizar o setuptools:</b><br>
 <code>pip install -U setuptools</code><br>
+
 <b>Somente em caso de erros com pytest remover o pacote e o resintalar novamente:</b><br>
 <code>pip uninstall pytest</code><br>
 <code>pip install pytest</code><br>
-
 
 <b>Caso ainda não instale:</b><br>
 <code>pip install pyinstaller==4.0 --no-build-isolation</code><br>
@@ -154,59 +183,21 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <b>Comando extraido do auto-py-to-exe</b><br>	
 <code>pyinstaller --noconfirm --onefile --windowed --icon "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images/icon.ico" --add-data "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images;images/"  "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/main.py"</code><br>	
 
-<b>Py Auto GUI | funciona somente com o pyinstaller ja rodando</b><br>	
+<b>auto-py-to-exe GUI | funciona somente com o pyinstaller ja rodando</b><br>	
 <code>pip install auto-py-to-exe</code><br>	
+
+
 <b>Outros comandos que podem auxiliar futuramente com o pyinstaller:</b><br>
 <code>pyinstaller --onefile --hidden-import theMissingModule main.py</code><br>
 <code>pyinstaller --onefile --windowed</code><br><br>
+
+
 <b>Mais informações sobre o arquivo spec:</b><br>
 1. Insira todos os arquivos py necessários para que seu código seja executado na primeira lista dentro do Analysis<br>
 por exemplo: Analysis(['file1.py', 'file2.py', 'file3.py'],<br>
 2. Insira todos os arquivos de dados necessários na lista de dados (dentro do Analysis) no arquivo spec. Cada entrada será uma tupla. O primeiro elemento na tupla será o caminho para o recurso e a segunda entrada será o nome da pasta na saída.<br>
 Por exemplo: datas=[('csv\\', 'csv'), ('plotly-latest.min.js', '.')],<br>
 <br>
-
-<p>The code should now look like:
-	pip install cx_freeze==6.1
-	
-	
-
-import sys
-from cx_Freeze import setup, Executable
-
-setup(
-    name = "On Dijkstra's Algorithm",
-    version = "3.1",
-    description = "A Dijkstra's Algorithm help tool.",
-    executables = [Executable("Main.py", base = "Win32GUI")])
-
-Use the command prompt (cmd) to run python setup.py build. (Run this command from the folder containing setup.py.) Notice the build parameter we added at the end of the script call.
-
-
-from cx_Freeze import setup, Executable
-import sys
-
-productName = "ProductName"
-if 'bdist_msi' in sys.argv:
-    sys.argv += ['--initial-target-dir', 'C:\InstallDir\\' + productName]
-    sys.argv += ['--install-script', 'install.py']
-
-exe = Executable(
-      script="main.py",
-      base="Win32GUI",
-      targetName="Product.exe"
-     )
-setup(
-      name="Product.exe",
-      version="1.0",
-      author="Me",
-      description="Copyright 2012",
-      executables=[exe],
-      scripts=[
-               'install.py'
-               ]
-      ) </p><br>
-
 
 <br><br><br>
 Nosso site: <a href="https://tcxsproject.com.br">Manicomio TCXS Project</a> | Developers: <a href="https://github.com/gorpo">GorpoOrko</a> | Partnerships:» <a href="https://t.me/tcxsproject2">telegram</a> | ©2020 | <a href="https://t.me/tcxsproject2">TCXS Project Hacker Team™</a><br>
