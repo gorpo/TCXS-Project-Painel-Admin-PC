@@ -8,7 +8,7 @@
 <?php
 //sql254.main-hosting.eu
 define('HOST', 'localhost');
-define('USUARIO', 'u923273795_testesgorpo');
-define('DB', 'u923273795_testesgorpo');
+define('USUARIO', 'u923273795_users');
+define('DB', 'u923273795_users');
 define('SENHA', 'Tcxsproject2020web');
 $conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar');

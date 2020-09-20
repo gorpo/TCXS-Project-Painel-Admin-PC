@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12-Set-2020 às 19:57
--- Versão do servidor: 10.4.13-MariaDB
--- versão do PHP: 7.2.32
+-- Tempo de geração: 20-Set-2020 às 22:38
+-- Versão do servidor: 10.4.6-MariaDB
+-- versão do PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -818,7 +819,100 @@ CREATE TABLE `playstation_users` (
 INSERT INTO `playstation_users` (`id`, `usuario`, `senha`, `nome`, `cadastro`, `nivel`) VALUES
 (1, 'gorpo', 'corpo', 'Gorpo', '2500-01-11 19:42:12', 'admin'),
 (2, 'mitsuki', 'tcxsproject2020web', 'Mitsuki', '2500-09-07 15:06:19', 'admin'),
-(3, 'mste3dz', 'tcxsproject2020web', 'MsTe3dz', '2500-09-07 15:06:25', 'admin');
+(3, 'mst3dz', 'tcxsproject2020web', 'MsT3Dz', '2500-09-07 15:06:25', 'admin'),
+(5, ' Marcelo', ' 13991644566', ' Marcelo castro', '2020-08-16 18:40:06', 'user'),
+(6, ' Avenir', ' 32991334798', ' Avenir', '2020-08-16 18:42:39', 'user'),
+(7, ' Emersom', ' Emersontcxs2020', ' Emerson Prince ', '2020-08-16 18:46:12', 'user'),
+(8, ' Larissa', ' Larissatcxs2020', ' Larissa menezes', '2020-08-16 18:50:42', 'user'),
+(9, ' Rodrigo Moraes', ' Rodrigotcxs2020', ' Rodrigo Moraes ', '2020-08-16 18:54:37', 'user'),
+(10, ' @TH14HU', ' @TH14HUTCXS2020', ' @TH14HU', '2025-08-16 18:57:42', 'user'),
+(11, ' Toni', ' Tonimaxtcxs2020', ' Tonimax', '2020-08-16 19:01:45', 'user'),
+(12, ' Caio hatake', ' Caiotcxs2020', ' Caio hatake', '2020-08-16 19:08:20', 'user'),
+(13, ' Kleverton', ' Klevertontcxs2020', ' Kleverton Braga', '2020-08-16 19:11:10', 'user'),
+(14, ' Pablo', ' Pablotcxs2020', ' Pablo', '2020-08-16 19:14:18', 'user'),
+(15, ' Scorpion', ' Scorpiontcxs2020', ' Scorpion fly', '2025-08-16 19:15:44', 'user'),
+(16, ' Jose', ' Josetcxs2020', ' José Antonio Silva ', '2020-08-16 19:18:36', 'user'),
+(17, ' Tom', ' Tomtcxs2020', ' Tom cangusso', '2020-08-16 19:19:53', 'user'),
+(18, ' Léo', ' Leotcxs2020', ' Só Leo', '2020-08-16 19:23:07', 'user'),
+(19, ' Denner', ' Dennertcxs2020', ' Denner Siriano', '2020-08-16 19:26:53', 'user'),
+(20, ' Andre Guimarães', ' Andreguitcxs2020', ' André Guimarães', '2020-08-16 19:27:36', 'user'),
+(21, ' Alex Scheufele', ' Alexscheufele2020', ' Alex Scheufele', '2020-08-16 19:29:34', 'user'),
+(22, ' André Ninja', ' Ninjatcxs2020', ' André Ninja', '2020-08-16 19:34:42', 'user'),
+(23, ' Marcelo', ' Marcelotcxs2020', ' Marcelo Santos ', '2020-08-16 19:37:13', 'user'),
+(24, ' Jamerson', ' Jametcxs2020', ' Jamerson jose', '2020-08-16 19:39:01', 'user'),
+(25, ' João Henrique ', ' Joãohenriquetcxs2020', ' João Henrique', '2020-08-16 19:41:47', 'user'),
+(26, ' Denílson', ' Denitcxs2020', ' Denilson Amaral', '2020-08-16 19:43:43', 'user'),
+(27, ' Kairionio', ' Kaitcxs2020', ' Kaironio ', '2020-08-16 19:45:20', 'user'),
+(28, ' Dam', ' Dam27tcxs2020', ' Dam27a', '2020-08-16 19:46:56', 'user'),
+(29, ' GB', ' Tcxs2020GB', ' GB', '2020-08-16 19:50:50', 'user'),
+(30, ' Will', ' Willtcxs2020', ' Willam', '2020-08-16 19:52:32', 'user'),
+(31, ' José', ' Joaquimtcxs2020', ' José Joaquim ', '2020-08-16 19:55:06', 'user'),
+(32, ' Livertom', ' Livetcxs2020', ' Livertom', '2020-08-16 19:57:32', 'user'),
+(33, ' Luiz', ' Henrriquetcxs2020', ' Luiz Henrique', '2020-08-16 19:58:58', 'user'),
+(34, ' Danni', ' Danitcxs2020', ' Dannilo', '2020-08-16 20:01:33', 'user'),
+(35, ' Renan', ' Grandotcxs2020', ' Renan Grando ', '2020-08-16 20:03:22', 'user'),
+(36, ' Renan', ' Grandotcxs2020', ' Renan Grando ', '2020-08-16 20:03:27', 'user'),
+(37, ' Saulo', ' Tcxs2020saulo', ' Saulo ', '2020-08-16 20:05:17', 'user'),
+(38, ' Cassy', ' Tcxs2020cassy', ' Cassy', '2020-08-16 20:06:28', 'user'),
+(39, ' Lucas naga', ' Nagatcxs2020', ' Lucas naga', '2020-08-16 20:07:44', 'user'),
+(40, ' Rodrigo', ' Bispotcxs2020', ' Rodrigo bispo', '2020-08-16 20:09:28', 'user'),
+(41, ' David', ' Davidtcxs2020dias', ' David dias ', '2020-08-16 20:12:07', 'user'),
+(42, ' Ws', ' TCXS2020ws', ' Ws', '2020-08-16 20:13:13', 'user'),
+(43, ' Lucas Vinicius', ' Tcxs2020vinicius', ' Lucas Vinicius ', '2020-08-16 20:14:44', 'user'),
+(44, ' Neidson', ' TCXS2020neidson', ' Neidson', '2020-08-16 20:16:15', 'user'),
+(45, ' @senhrl7', ' Tcxs2020@senhrl7', ' @senhrl7', '2020-08-16 20:19:12', 'user'),
+(46, ' Alexandre Chaves', ' Chavestcxs2020', ' Alexandre Chaves ', '2020-08-16 20:20:29', 'user'),
+(47, ' Geilson', ' Maiatcxs2020', ' Geilson maia ', '2020-08-16 20:21:44', 'user'),
+(48, ' Deloan', ' Tcxs2020deloan', ' Deloan', '2020-08-16 20:22:54', 'user'),
+(49, ' Jerferson', ' TCXS2020jefferson', ' Jefferson ', '2020-08-16 20:24:22', 'user'),
+(50, ' Ghost', ' Tcxs2020ghost', ' Ghost landy', '2020-08-16 20:26:59', 'user'),
+(51, ' Moraes', ' Tcxs2020w', ' W Moraes', '2020-08-16 20:28:04', 'user'),
+(52, ' Roney', ' Tcxs2020roney', ' Roney Jacinto', '2020-08-16 20:29:41', 'user'),
+(53, ' Scannor', ' Tcxs2020lord', ' Lord scannor', '2020-08-16 20:31:15', 'user'),
+(54, ' Italo', ' Tcxsitalo2020', ' Ítalo Lucas ', '2020-08-16 20:32:24', 'user'),
+(55, ' Sandro', ' Silvatcxs2020', ' Sandro silva', '2020-08-16 21:23:04', 'user'),
+(56, ' Rafael', ' Araujotcxs2020', ' Rafael Araújo', '2020-08-16 21:27:54', 'user'),
+(57, ' Wagner', ' Muratori2020tcxs', ' Wagner muratori', '2020-08-16 21:29:47', 'user'),
+(58, ' Valdecir', ' Tcxsvaldecir2020', ' Valdecir ', '2020-08-16 21:31:17', 'user'),
+(59, ' Anderson', ' Tcxsanderson2020', ' Anderson', '2020-08-16 21:32:29', 'user'),
+(60, ' Nino', ' Tcxs2020nino', ' Nino charra ', '2020-08-16 21:33:30', 'user'),
+(61, ' Diego', ' Tcxsdiego2020', ' Diego Silva ', '2020-08-16 21:34:47', 'user'),
+(62, ' Iury', ' Tcxsiury2020', ' Iury', '2020-08-16 21:37:20', 'user'),
+(63, ' Pablo2', ' Pablo2tcxs2020', ' Pablo', '2020-08-16 21:51:21', 'user'),
+(64, ' Thiago', ' Tcxsthiago2020', ' Thiago', '2020-08-16 21:52:05', 'user'),
+(65, ' Andrey', ' Bragatcxs2020', ' Andrey braga', '2020-08-16 21:54:04', 'user'),
+(66, ' Hyury', ' Tcxs2020hyury', ' Hyury', '2020-08-17 02:08:14', 'user'),
+(67, ' Freitas', ' Freitas2020tcxs', ' Nicolas Freitas ', '2020-08-17 22:57:12', 'user'),
+(68, ' Fernando', ' Nascimentos2020txs', ' Fernando Nascimento ', '2020-08-18 14:02:55', 'user'),
+(69, ' Thales', ' Tcxsthales2020', ' Thales pisco', '2020-08-18 14:28:37', 'user'),
+(70, ' Allif', ' nightwish51', ' Allif', '2020-08-18 23:01:47', 'user'),
+(71, ' Adriano', ' 198100', ' Adriano silva', '2020-08-19 13:41:53', 'user'),
+(72, ' Leonardo', ' Leodmccr7', ' Leonardo silva', '2020-08-21 23:52:40', 'user'),
+(73, ' Andre', ' 030281', ' André', '2020-08-22 20:58:45', 'user'),
+(74, ' gorp', ' corp', ' Gorpo', '2020-08-23 19:17:55', 'user'),
+(75, ' Felipe', ' 2002mfb', ' Felipe Santos ', '2020-08-23 21:43:35', 'user'),
+(76, ' Agenor', ' 91859013', ' Agenor', '2020-08-24 18:02:35', 'user'),
+(77, ' Lucas', ' @rth3m13', ' Lucas Cordeiro', '2020-08-24 19:22:18', 'user'),
+(78, ' brenocouto', ' brenocoutotcxs', ' brenocouto', '2020-08-25 05:21:14', 'user'),
+(79, ' Frank', ' Slipknot90', ' Frank Souza ', '2020-08-25 15:58:31', 'user'),
+(80, ' lucasjorge', ' lucasjorgetcxs', ' lucas Jorge', '2020-08-27 08:39:58', 'user'),
+(81, ' Vagner', ' Vagner8848', ' Vagner', '2020-08-28 23:17:14', 'user'),
+(82, ' Lucas', ' Nascimento21', ' Lucas01', '2020-08-30 01:48:08', 'user'),
+(83, ' Eduardo', ' kadu987', ' Eduardo Santos ', '2020-08-30 23:23:52', 'user'),
+(84, ' Chelly', ' 97246155', ' Chelly', '2020-08-31 13:48:49', 'user'),
+(85, ' phenrique', ' henriquetcxs', ' Paulo Henrique', '2020-09-07 00:51:53', 'user'),
+(86, ' Fernando', ' LRLRLR', ' Fernando Campos', '2020-09-08 12:58:12', 'user'),
+(87, ' josstcxs', ' josstcxs', ' José Passos', '2020-09-09 19:08:30', 'user'),
+(88, ' robertotcxs', ' robertotcxs', ' José Roberto ', '2020-09-10 01:48:13', 'user'),
+(89, ' Leonardo', ' macaco9879', ' Leonardo silva', '2020-09-11 19:14:25', 'user'),
+(90, ' Teste', ' Teste', ' Fla matos', '2020-09-11 19:54:19', 'user'),
+(91, ' Teste2', ' Teste2', ' Luiz', '2020-09-11 20:56:12', 'user'),
+(92, ' darshtcxs', ' darshtcxs', ' Henrique Darsh', '2020-09-18 23:51:42', 'user'),
+(93, ' jeronymotcxs', ' jeronymotcxs', ' Jeronymo Chermont', '2020-09-18 23:54:32', 'user'),
+(94, ' vitortcxs', ' vitortcxs', ' Vitor', '2020-09-19 03:45:19', 'user'),
+(95, ' wesleytcxs', ' wesleytcxs', ' Wesley Lopes', '2020-09-20 02:57:41', 'user'),
+(96, ' viniciustcxs', ' viniciustcxs', ' Vinícius', '2020-09-20 02:58:14', 'user'),
+(97, ' liahtcxs', ' liahtcxs', ' Liah Rebeca', '2020-09-20 02:59:28', 'user');
 
 -- --------------------------------------------------------
 
@@ -839,7 +933,9 @@ CREATE TABLE `user_gorpo` (
 
 INSERT INTO `user_gorpo` (`usuario`, `senha`, `ip`, `data_atual`) VALUES
 ('gorpo', 'corpo', '192.168.0.3', '2020-09-12 13:19:05'),
-('gorpo', 'corpo', '192.168.0.3', '2020-09-12 14:55:34');
+('gorpo', 'corpo', '192.168.0.3', '2020-09-12 14:55:34'),
+('gorpo', 'corpo', '192.168.0.2', '2020-09-12 23:43:27'),
+('gorpo', 'corpo', '192.168.1.5', '2020-09-20 16:42:11');
 
 --
 -- Índices para tabelas despejadas
@@ -943,7 +1039,7 @@ ALTER TABLE `playstation_psp`
 -- AUTO_INCREMENT de tabela `playstation_users`
 --
 ALTER TABLE `playstation_users`
-  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
