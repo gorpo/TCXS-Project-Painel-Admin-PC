@@ -9,7 +9,7 @@
 #            @GorpoOrko | Manicomio TCXS Project | 2020
 
 from TCXSProject import *
-
+from funcoes import conexao
 
 def backupDatabaseMysql(self):
     self.ui.btn_iniciar_backup.clicked.connect(lambda: backupdb(self))

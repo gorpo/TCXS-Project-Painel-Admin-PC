@@ -38,8 +38,9 @@ except:
 
 #CONEXAO PYMYSQL PARA BACKUP DA DATABASE ONLINE
 try:
-    conexao_pymysql = pymysql.connect(host=hostMysql_user, user='root', password=senhaMysql_user, db=databaseMysql_user, charset='utf8mb4',cursorclass=pymysql.cursors.DictCursor)
-except:
+    conexao_pymysql = pymysql.connect(host=hostMysql_user, user=usuarioMysql_user, password=senhaMysql_user, db=databaseMysql_user, charset='utf8mb4',cursorclass=pymysql.cursors.DictCursor)
+except Exception as e:
+    print(f'conexao mysql {e}')
     pass
 
 
