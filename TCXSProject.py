@@ -18,7 +18,6 @@ criar arquivo files_rc_rc.py
 
 
 auto-py-to-exe
-
 criar executavel com o cx freeze:
     python setup.py build
 

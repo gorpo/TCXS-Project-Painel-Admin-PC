@@ -4,11 +4,11 @@
 [![Build](https://img.shields.io/badge/windows-7%208%2010-blue.svg)]()
 [![Build](https://img.shields.io/badge/Linux-Ubuntu%20Debian-orange.svg)]()
 [![Build](https://img.shields.io/badge/arquiterura-64bits-blue.svg)]()
-<h2 align="center">TCXS PROJECT STORE PAINEL ADMINISTRADOR PC</h2>
+<h2 align="center">TCXS PROJECT STORE PAINEL ADMINISTRADOR PC SEM SPLASH SCREEN</h2>
 <h1 align="center">PlayStation3 Store | HAN | HEN | CFW</h1>
 <img src="https://i.imgur.com/3Gmp3Ze.jpg" width="100%"></img><br>
 <br>
-<b>Programa Windows [PC]:</b><br>
+<b>Programa Windows [PC] SEM SPLASH SCREEN:</b><br>
 <p>Sistema de administração para controle da TCXS Store PlayStation3, desenvolvido em python conta com sistema independente de arrasto, redimensionamento, minimização, ampliação e para fechar. Interface grafica(GUI) criada com auxilio do programa QtDesigner incluso no pacote PyQt5. Este programa necessita exclusivamente das versões PyQT5==5.12 pyqtwebengine==5.12. Imagens são enviadas via FTP ja redimensionadas e com marca d'agua.<br> Atenção:Este programa funciona no caminho "localhost/store/" ou seja https://tcxsproject.com.br/store/.<br>Confira outros extras do programa:</p>
 <br>
 <b>Dados necessários para funcionalidade do programa:</b><br>
@@ -115,42 +115,12 @@ Pacotes necessários encontram-se no requirements.txt<br>
 <img src="https://ia801501.us.archive.org/24/items/prints_programa_tcxs/sistema_backup.jpg" width="50%"></img><br>
 
 <br>
-<b>[ATENÇÃO] APLICATIVO ANDROID store/admin/tools/...</b><br>
-<br>
-<h2 align="center">FRONTEND MYSQL WITH APP ANDROID E PAINEL ADMIN</h2>
-<img src="https://archive.org/download/nova-tcxs-project/home.png" width="42%"></img>
-<img src="https://archive.org/download/nova-tcxs-project/avisos.png" width="42%"></img><br>
-<img src="https://archive.org/download/nova-tcxs-project/psp.png" width="42%"></img>
-<img src="https://archive.org/download/nova-tcxs-project/ps3.png" width="42%"></img><br>
-<b>Databases:</b><br>
-- Arquivos de apoio na pasta store/admin/tools/...<br>
-- Editar os arquivos "database.php" e "conexao.php" com os dados do host.<br>
-- Dump SQL limpo junto ao código apenas com admins cadastrados.
-- Dump de testes adicionado.<br>
-- Tutorial para colocar a loja no servidor: <a href="https://youtu.be/gTF19YUih2E">Demonstração de como hospedar Externamente | Deploy</a> <br>
-
-<h1> Codigos Utéis da programação:</h1><br>
-<b>Sistema de proteção dos botões permindo download somente em consoles PlayStation3, para ativar ou desativar basta comentar/descomentar o codigo:</b><br>
-	<code>
-		writeEnvInfo();
-		ps3chk();
-</code><br>
-
-<code><script type="text/javascript">
-var OSNome = "";
-if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSNome="Windows 10";
-if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSNome="Windows 8";
-if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSNome="Windows 7";
-if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSNome="Windows Vista";
-if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSNome="Windows XP";
-if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSNome="Windows 2000";
-if (window.navigator.userAgent.indexOf("Mac")            != -1) OSNome="Mac/iOS";
-if (window.navigator.userAgent.indexOf("X11")            != -1) OSNome="UNIX";
-if (window.navigator.userAgent.indexOf("Linux")          != -1) OSNome="Linux";
-if (window.navigator.userAgent.indexOf("5.0 (") + 19, ua.indexOf(") Apple") != -1) OSNome="PlayStation3";
-//var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
-document.write(' | Sistema: '+ OSNome);
-</script> </code>
+<h1> Demonstração do Frontend [loja web]:</h1><br>
+<a href="https://linkdogit.com">Link do Git em breve.</a><br>
+<img src="https://i.imgur.com/XyakSdF.png" width="20%"></img>
+<img src="https://i.imgur.com/7qmteHR.png" width="20%"></img>
+<img src="https://i.imgur.com/8cI4rvm.png" width="20%"></img>
+<img src="https://i.imgur.com/6wdkq4V.png" width="20%"></img><br>
 <br>
 
 <b>Problemas com o PyInstaller:</b><br>
@@ -160,38 +130,27 @@ document.write(' | Sistema: '+ OSNome);
 - Caso necessário a comunidade diz para usar a versão do git instalando com comando abaixo<br>
 - Confira a lista de comandos para arrumar problemas no python<br>
 - O arquivo SPEC é o arquivo de configuração responsável pela criação do arquivo executavel(.exe) pelo pysintaller.<br>
-- Existe um repositorio em no gdrive os arquivos que devem ir na pasta %appdata% /roaming/<br>
+
 <b>Atualizar o setuptools:</b><br>
 <code>pip install -U setuptools</code><br>
-
 <b>Somente em caso de erros com pytest remover o pacote e o resintalar novamente:</b><br>
 <code>pip uninstall pytest</code><br>
 <code>pip install pytest</code><br>
-
 <b>Caso ainda não instale:</b><br>
 <code>pip install pyinstaller==4.0 --no-build-isolation</code><br>
-
 <b>Comando utilizado para compilar este programa:</b><br>
 <code>pyinstaller --onefile --noconsole main.py  --hidden-import PyQt5.sip</code><br>
-
-
 <b>Comando para remover o console e por um icone:<br>
 <code>pyinstaller -F --noconsole  -i favicon.ico</code><br>
 <b>Instalação do pyinstaller direto da fonte, como comunidade recomenda:</b><br>
 <code>pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip</code><br>
-
-<b>Comando extraido do auto-py-to-exe</b><br>	
+<b>Comando extraido do py-quto-gui</b><br>	
 <code>pyinstaller --noconfirm --onefile --windowed --icon "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images/icon.ico" --add-data "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/images;images/"  "C:/Users/guilh/Desktop/TCXS-Project-Painel-Admin-PC/main.py"</code><br>	
-
-<b>auto-py-to-exe GUI | funciona somente com o pyinstaller ja rodando</b><br>	
+<b>Py Auto GUI | funciona somente com o pyinstaller ja rodando</b><br>	
 <code>pip install auto-py-to-exe</code><br>	
-
-
 <b>Outros comandos que podem auxiliar futuramente com o pyinstaller:</b><br>
 <code>pyinstaller --onefile --hidden-import theMissingModule main.py</code><br>
 <code>pyinstaller --onefile --windowed</code><br><br>
-
-
 <b>Mais informações sobre o arquivo spec:</b><br>
 1. Insira todos os arquivos py necessários para que seu código seja executado na primeira lista dentro do Analysis<br>
 por exemplo: Analysis(['file1.py', 'file2.py', 'file3.py'],<br>
